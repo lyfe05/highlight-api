@@ -1,16 +1,13 @@
 services:
   - type: web
-    name: streamxi-highlight
+    name: football-matches-api
     env: python
-    region: oregon
-    plan: free  # Required for private repos
-    branch: main
-    repo: https://github.com/lyfe05/highlight-api  # Your private repo URL
+    plan: free
+    region: oregon  # or oregon, ohio, etc.
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn main:app
+    startCommand: python main.py
     envVars:
       - key: API_KEYS
-        value: hoofoot_stream_2025_ZxY9wV8u  # Secure keys here
-      - key: PYTHON_VERSION
-        value: 3.8.1
+        value: hoofoot_stream_2025_ZxY9wV8u
+    healthCheckPath: /health
     autoDeploy: true
