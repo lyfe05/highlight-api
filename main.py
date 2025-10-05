@@ -42,8 +42,18 @@ def fetch(url, timeout=30):
     c.setopt(c.ACCEPT_ENCODING, "gzip, deflate")
     c.setopt(c.CONNECTTIMEOUT, 10)
     c.setopt(c.TIMEOUT, timeout)
+    c.setopt(c.SSL_VERIFYPEER, False)
+    c.setopt(c.SSL_VERIFYHOST, False)
+    
     try:
         c.perform()
+        status_code = c.getinfo(pycurl.RESPONSE_CODE)
+        if status_code != 200:
+            logger.error(f"HTTP {status_code} from {url}")
+            return ""
+    except Exception as e:
+        logger.error(f"Fetch error: {e}")
+        return ""
     finally:
         c.close()
     return buf.getvalue().decode("utf-8", errors="ignore")
@@ -60,6 +70,9 @@ def normalize_url(src):
     return src
 
 def find_matches_from_html(html):
+    if not html:
+        return []
+        
     soup = BeautifulSoup(html, "html.parser")
     matches = []
 
@@ -105,6 +118,7 @@ def find_matches_from_html(html):
                 "league": league
             })
         except Exception as e:
+            logger.debug(f"Error processing match container: {e}")
             continue
 
     return matches
@@ -159,7 +173,8 @@ def process_match(match):
             "date": match.get("date"),
             "league": match.get("league")
         }
-    except Exception:
+    except Exception as e:
+        logger.error(f"Error processing match {match['title']}: {e}")
         return {
             "title": match['title'], 
             "embed": None, 
@@ -173,7 +188,7 @@ def fetch_and_parse_logos():
     """Fetch and parse team logos"""
     logger.info("📸 Fetching team logos...")
     try:
-        logos_response = requests.get(LOGOS_URL)
+        logos_response = requests.get(LOGOS_URL, timeout=30)
         logos_response.raise_for_status()
         logos_content = logos_response.text
         
@@ -274,9 +289,14 @@ def run_scraping_job():
         logger.info("📡 Fetching HooFoot homepage...")
         home_html = fetch(BASE)
         
+        if not home_html:
+            logger.error("❌ No HTML content received from HooFoot")
+            return False
+            
         matches = find_matches_from_html(home_html)
         if not matches:
-            logger.error("❌ No matches found.")
+            logger.error("❌ No matches found in HTML")
+            logger.info(f"HTML length: {len(home_html)}")
             return False
 
         logger.info(f"✅ Found {len(matches)} matches")
@@ -381,7 +401,8 @@ async def root():
         "message": "Football Matches API", 
         "status": "running",
         "docs": "/docs",
-        "health": "/health"
+        "health": "/health",
+        "debug": "/debug-scrape"
     }
 
 @app.get("/health")
@@ -394,6 +415,26 @@ async def health_check():
         "timestamp": time.time(),
         "service": "football-matches-api"
     }
+
+@app.get("/debug-scrape")
+async def debug_scrape():
+    """Debug endpoint to check scraping issues"""
+    try:
+        html = fetch(BASE)
+        matches = find_matches_from_html(html)
+        
+        return {
+            "status": "success" if matches else "no_matches",
+            "html_length": len(html),
+            "matches_found": len(matches),
+            "first_500_chars": html[:500] if html else "No HTML",
+            "match_titles": [m['title'] for m in matches] if matches else []
+        }
+    except Exception as e:
+        return {
+            "status": "error",
+            "error": str(e)
+        }
 
 @app.get("/matches")
 async def get_matches(api_key: str = Depends(verify_api_key)):
