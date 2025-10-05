@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import time
 import logging
-from scraper import run_scraping_job
+from .scraper import run_scraping_job  # Changed from absolute to relative import
 
 logger = logging.getLogger(__name__)
 
