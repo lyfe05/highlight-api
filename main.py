@@ -13,12 +13,16 @@ from urllib.parse import urljoin
 import re
 import requests
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging for Render
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 logger = logging.getLogger(__name__)
 
-# API Keys from environment variable (fallback for local testing)
-API_KEYS = os.environ.get('API_KEYS', 'hoofoot_stream_2025_ZxY9wV8u,test-key-123').split(',')
+# API Keys (from environment variable on Render)
+API_KEYS = os.getenv("API_KEYS", "hoofoot_stream_2025_ZxY9wV8u").split(",")
 CACHE_FILE = "matches_cache.json"
 CACHE_DURATION = 1200  # 20 minutes
 
@@ -63,6 +67,7 @@ def fetch(url, timeout=30):
         if status_code != 200:
             logger.error(f"HTTP {status_code} from {url}")
             return ""
+        logger.info(f"✅ Successfully fetched {url}")
     except Exception as e:
         logger.error(f"Fetch error: {e}")
         return ""
@@ -130,7 +135,6 @@ def find_matches_from_html(html):
                 "league": league
             })
         except Exception as e:
-            logger.debug(f"Error processing match container: {e}")
             continue
 
     return matches
@@ -404,10 +408,8 @@ def root():
         "status": "running",
         "endpoints": {
             "health": "/health",
-            "matches": "/matches",
-            "debug": "/debug-scrape"
-        },
-        "test_key": "hoofoot_stream_2025_ZxY9wV8u"
+            "matches": "/matches"
+        }
     })
 
 @app.route('/health')
@@ -421,52 +423,27 @@ def health_check():
         "service": "football-matches-api"
     })
 
-@app.route('/debug-scrape')
-def debug_scrape():
-    """Debug endpoint to check scraping issues"""
-    try:
-        html = fetch(BASE)
-        matches = find_matches_from_html(html)
-        
-        return jsonify({
-            "status": "success" if matches else "no_matches",
-            "html_length": len(html),
-            "matches_found": len(matches),
-            "first_500_chars": html[:500] if html else "No HTML",
-            "match_titles": [m['title'] for m in matches] if matches else []
-        })
-    except Exception as e:
-        return jsonify({
-            "status": "error",
-            "error": str(e)
-        })
-
 @app.route('/matches')
 @require_api_key
 def get_matches():
     """Get all football matches with streams (API key required)"""
+    logger.info("📡 API request received for matches")
     matches = get_cached_matches()
     if matches is not None:
-        logger.info("Serving cached matches")
+        logger.info(f"✅ Serving {len(matches)} cached matches")
         return jsonify(matches)
     else:
-        logger.warning("No valid cache available")
+        logger.warning("❌ No valid cache available")
         return jsonify({"error": "Data temporarily unavailable. Please try again shortly."}), 503
 
-# For production (Render) and local testing
+# Start scheduler when app starts
+logger.info("🚀 Starting Football Matches API...")
+scheduler_thread = threading.Thread(target=start_scheduler, daemon=True)
+scheduler_thread.start()
+logger.info("✅ Background scheduler started")
+
+# For Render deployment
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))  # Use Render's PORT or 8000 locally
-    print("🚀 Starting Football Matches API...")
-    print("📝 Test API Key: hoofoot_stream_2025_ZxY9wV8u")
-    print("🌐 Endpoints:")
-    print("   - /health")
-    print("   - /debug-scrape")
-    print("   - /matches (requires API key)")
-    print()
-    
-    # Start scheduler in background
-    scheduler_thread = threading.Thread(target=start_scheduler, daemon=True)
-    scheduler_thread.start()
-    
-    # Run Flask app
-    app.run(host="0.0.0.0", port=port, debug=False)  # debug=False for production
+    port = int(os.getenv("PORT", 8000))
+    logger.info(f"🌐 Starting Flask server on port {port}")
+    app.run(host="0.0.0.0", port=port, debug=False)
