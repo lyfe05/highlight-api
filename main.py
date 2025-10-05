@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from fastapi import FastAPI, HTTPException, Depends, status
+from fastapi import FastAPI, HTTPException, Depends, status, BackgroundTasks
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import re
 import requests
+from datetime import datetime
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,10 +22,37 @@ logger = logging.getLogger(__name__)
 
 # API Keys (comma-separated in environment variable)
 API_KEYS = os.getenv("API_KEYS", "hoofoot_stream_2025_ZxY9wV8u").split(",")
-CACHE_FILE = "matches_cache.json"
 CACHE_DURATION = 1200  # 20 minutes
 
 security = HTTPBearer()
+
+# ========== IN-MEMORY CACHE ==========
+class MatchCache:
+    def __init__(self):
+        self.data = []
+        self.last_updated = 0
+        self.lock = threading.Lock()
+        self.is_updating = False
+    
+    def is_stale(self):
+        return (time.time() - self.last_updated) > CACHE_DURATION
+    
+    def get(self):
+        with self.lock:
+            return {
+                "matches": self.data,
+                "last_updated": datetime.fromtimestamp(self.last_updated).isoformat() if self.last_updated else None,
+                "cache_age_seconds": int(time.time() - self.last_updated) if self.last_updated else None
+            }
+    
+    def set(self, data):
+        with self.lock:
+            self.data = data
+            self.last_updated = time.time()
+            self.is_updating = False
+            logger.info(f"✅ Cache updated with {len(data)} matches")
+
+cache = MatchCache()
 
 # ========== SCRAPER FUNCTIONS ==========
 
@@ -52,7 +80,7 @@ def fetch(url, timeout=30):
             logger.error(f"HTTP {status_code} from {url}")
             return ""
     except Exception as e:
-        logger.error(f"Fetch error: {e}")
+        logger.error(f"Fetch error for {url}: {e}")
         return ""
     finally:
         c.close()
@@ -93,7 +121,6 @@ def find_matches_from_html(html):
             img_element = container.find("img", src=True)
             image_url = normalize_url(img_element["src"]) if img_element else None
 
-            # Extract date and league from info section
             info_section = container.find("div", class_="info")
             date = None
             league = None
@@ -124,6 +151,8 @@ def find_matches_from_html(html):
     return matches
 
 def extract_embed_url(match_html):
+    if not match_html:
+        return None
     soup = BeautifulSoup(match_html, "html.parser")
     player = soup.find("div", id="player")
     if player:
@@ -136,6 +165,8 @@ def extract_embed_url(match_html):
     return None
 
 def extract_m3u8_from_embed(embed_html):
+    if not embed_html:
+        return None
     m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'\s*}", embed_html)
     if m:
         return "https:" + m.group("u")
@@ -185,7 +216,6 @@ def process_match(match):
         }
 
 def fetch_and_parse_logos():
-    """Fetch and parse team logos"""
     logger.info("📸 Fetching team logos...")
     try:
         logos_response = requests.get(LOGOS_URL, timeout=30)
@@ -211,7 +241,6 @@ def fetch_and_parse_logos():
         return {}
 
 def find_logo_url(team_name, logo_dict):
-    """Find logo URL using improved matching"""
     team_lower = team_name.lower().strip()
     
     exact_match = team_lower.replace(" ", "-")
@@ -232,7 +261,6 @@ def find_logo_url(team_name, logo_dict):
     return ""
 
 def process_matches_to_json(matches_data, logo_dict):
-    """Process scraped matches into structured JSON"""
     logger.info("🔄 Processing matches and matching team logos...")
     
     match_groups = {}
@@ -280,75 +308,90 @@ def process_matches_to_json(matches_data, logo_dict):
     return result
 
 def run_scraping_job():
-    """Main scraping function to be called by scheduler"""
+    """Main scraping function"""
+    if cache.is_updating:
+        logger.info("⏳ Scraping already in progress, skipping...")
+        return
+        
+    cache.is_updating = True
     logger.info("🚀 Starting scheduled scraping job...")
     start_time = time.time()
     
     try:
-        # Step 1: Fetch matches from HooFoot
-        logger.info("📡 Fetching HooFoot homepage...")
         home_html = fetch(BASE)
         
         if not home_html:
-            logger.error("❌ No HTML content received from HooFoot")
-            return False
+            logger.error("❌ No HTML content received")
+            cache.is_updating = False
+            return
             
         matches = find_matches_from_html(home_html)
         if not matches:
-            logger.error("❌ No matches found in HTML")
-            logger.info(f"HTML length: {len(home_html)}")
-            return False
+            logger.error("❌ No matches found")
+            cache.is_updating = False
+            return
 
         logger.info(f"✅ Found {len(matches)} matches")
         
-        # Step 2: Extract stream URLs
-        logger.info("🎬 Extracting stream URLs...")
         matches_data = []
         for i, match in enumerate(matches, 1):
             logger.info(f"⏳ [{i}/{len(matches)}] Processing: {match['title']}")
             result = process_match(match)
             matches_data.append(result)
-            time.sleep(1)  # Be respectful to the server
+            time.sleep(0.5)  # Be gentle on the server
         
-        # Step 3: Fetch logos
         logo_dict = fetch_and_parse_logos()
-        
-        # Step 4: Process everything into final JSON
         final_json = process_matches_to_json(matches_data, logo_dict)
         
-        # Step 5: Save to cache
-        cache_data = {
-            'timestamp': time.time(),
-            'matches': final_json
-        }
+        cache.set(final_json)
         
-        with open(CACHE_FILE, 'w') as f:
-            json.dump(cache_data, f, indent=2)
-        
-        elapsed_time = time.time() - start_time
-        logger.info(f"✅ Scraping completed in {elapsed_time:.1f}s. Found {len(final_json)} matches. Cache updated.")
-        return True
+        elapsed = time.time() - start_time
+        logger.info(f"✅ Scraping completed in {elapsed:.2f}s - {len(final_json)} matches cached")
         
     except Exception as e:
         logger.error(f"❌ Scraping job failed: {e}")
-        return False
+        cache.is_updating = False
 
-def start_scheduler():
-    """Start the 20-minute scraping scheduler"""
-    logger.info("⏰ Starting background scheduler (20-minute intervals)")
+# ========== BACKGROUND SCHEDULER ==========
+def schedule_scraping():
+    """Background thread to periodically update cache"""
+    logger.info("🔄 Starting background scraping scheduler...")
     
     # Run immediately on startup
-    logger.info("🔄 Running initial scrape...")
     run_scraping_job()
     
-    # Then run every 20 minutes
     while True:
-        time.sleep(1200)  # 20 minutes
-        logger.info("🔄 Running scheduled scrape...")
-        run_scraping_job()
+        try:
+            time.sleep(60)  # Check every minute
+            
+            if cache.is_stale():
+                logger.info("⏰ Cache is stale, triggering refresh...")
+                run_scraping_job()
+                
+        except Exception as e:
+            logger.error(f"Scheduler error: {e}")
 
 # ========== FASTAPI APP ==========
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Start background scraping thread
+    scraping_thread = threading.Thread(target=schedule_scraping, daemon=True)
+    scraping_thread.start()
+    logger.info("✅ Background scraper started")
+    
+    yield
+    
+    logger.info("🛑 Shutting down...")
+
+app = FastAPI(
+    title="HooFoot Match Scraper API",
+    description="Scrapes and caches football match streams every 20 minutes",
+    version="2.0",
+    lifespan=lifespan
+)
+
+# ========== AUTH ==========
 def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)):
     if credentials.credentials not in API_KEYS:
         raise HTTPException(
@@ -357,103 +400,60 @@ def verify_api_key(credentials: HTTPAuthorizationCredentials = Depends(security)
         )
     return credentials.credentials
 
-def get_cached_matches():
-    """Read matches from cache file if valid"""
-    try:
-        if not os.path.exists(CACHE_FILE):
-            return None
-            
-        with open(CACHE_FILE, 'r') as f:
-            cache_data = json.load(f)
-            
-        # Check if cache is still valid
-        if time.time() - cache_data.get('timestamp', 0) < CACHE_DURATION:
-            return cache_data['matches']
-        else:
-            logger.info("Cache expired, needs refresh")
-            return None
-    except Exception as e:
-        logger.error(f"Error reading cache: {e}")
-        return None
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup: Start background scheduler
-    logger.info("🚀 Starting background scheduler...")
-    scheduler_thread = threading.Thread(target=start_scheduler, daemon=True)
-    scheduler_thread.start()
-    logger.info("✅ Background scheduler started")
-    
-    yield  # App runs here
-    
-    # Shutdown: Cleanup if needed
-    logger.info("🛑 Shutting down...")
-
-app = FastAPI(
-    title="Football Matches API", 
-    version="1.0.0",
-    lifespan=lifespan
-)
+# ========== ENDPOINTS ==========
 
 @app.get("/")
 async def root():
     return {
-        "message": "Football Matches API", 
-        "status": "running",
-        "docs": "/docs",
-        "health": "/health",
-        "debug": "/debug-scrape"
+        "message": "HooFoot Match Scraper API",
+        "version": "2.0",
+        "endpoints": {
+            "/matches": "Get cached matches (requires auth)",
+            "/health": "Health check",
+            "/refresh": "Force refresh cache (requires auth)"
+        }
     }
 
 @app.get("/health")
-async def health_check():
-    """Health check endpoint"""
-    cache_status = "valid" if get_cached_matches() is not None else "expired/missing"
+async def health():
+    cache_data = cache.get()
     return {
         "status": "healthy",
-        "cache_status": cache_status,
-        "timestamp": time.time(),
-        "service": "football-matches-api"
+        "cache_status": "empty" if not cache_data["matches"] else "populated",
+        "matches_count": len(cache_data["matches"]),
+        "last_updated": cache_data["last_updated"],
+        "cache_age_seconds": cache_data["cache_age_seconds"],
+        "is_updating": cache.is_updating
     }
-
-@app.get("/debug-scrape")
-async def debug_scrape():
-    """Debug endpoint to check scraping issues"""
-    try:
-        html = fetch(BASE)
-        matches = find_matches_from_html(html)
-        
-        return {
-            "status": "success" if matches else "no_matches",
-            "html_length": len(html),
-            "matches_found": len(matches),
-            "first_500_chars": html[:500] if html else "No HTML",
-            "match_titles": [m['title'] for m in matches] if matches else []
-        }
-    except Exception as e:
-        return {
-            "status": "error",
-            "error": str(e)
-        }
 
 @app.get("/matches")
 async def get_matches(api_key: str = Depends(verify_api_key)):
-    """Get all football matches with streams (API key required)"""
-    logger.info(f"API request from key: {api_key[:8]}...")
+    cache_data = cache.get()
     
-    matches = get_cached_matches()
-    if matches is not None:
-        logger.info("Serving cached matches")
-        return JSONResponse(content=matches)
-    else:
-        logger.warning("No valid cache available")
+    if not cache_data["matches"]:
         raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail="Data temporarily unavailable. Please try again shortly."
+            status_code=503,
+            detail="Cache is still initializing, please try again in a moment"
         )
+    
+    return cache_data
 
-# For Render deployment
+@app.post("/refresh")
+async def force_refresh(background_tasks: BackgroundTasks, api_key: str = Depends(verify_api_key)):
+    if cache.is_updating:
+        return {
+            "message": "Scraping already in progress",
+            "status": "pending"
+        }
+    
+    background_tasks.add_task(run_scraping_job)
+    
+    return {
+        "message": "Cache refresh triggered",
+        "status": "initiated"
+    }
+
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port, reload=False)
+    uvicorn.run(app, host="0.0.0.0", port=port)
