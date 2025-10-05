@@ -9,10 +9,6 @@ import json
 import logging
 import threading
 
-# Import our modules
-from .scraper import run_scraping_job
-from .scheduler import start_scheduler
-
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -51,11 +47,16 @@ def get_cached_matches():
         logger.error(f"Error reading cache: {e}")
         return None
 
+# Import inside function to avoid circular imports
+def get_scheduler():
+    from .scheduler import start_scheduler
+    return start_scheduler
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup: Start background scheduler
     logger.info("🚀 Starting background scheduler...")
-    scheduler_thread = threading.Thread(target=start_scheduler, daemon=True)
+    scheduler_thread = threading.Thread(target=get_scheduler(), daemon=True)
     scheduler_thread.start()
     logger.info("✅ Background scheduler started")
     
@@ -110,4 +111,4 @@ async def get_matches(api_key: str = Depends(verify_api_key)):
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
-    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=False)
+    uvicorn.run(app, host="0.0.0.0", port=port, reload=False)
