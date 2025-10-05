@@ -1,10 +1,16 @@
 services:
   - type: web
-    name: football-matches-api
+    name: highlight-api
     env: python
-    plan: free
+    region: oregon
+    plan: starter  # Required for private repos
+    branch: main
+    repo: https://github.com/lyfe05/highlight-api  # Your private repo URL
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    startCommand: gunicorn app:app
     envVars:
       - key: API_KEYS
-        value: your-secret-key-here
+        value: hoofoot_stream_2025_ZxY9wV8u  # Secure keys here
+      - key: PYTHON_VERSION
+        value: 3.11
+    autoDeploy: true
