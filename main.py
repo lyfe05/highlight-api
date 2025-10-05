@@ -1,39 +1,36 @@
 #!/usr/bin/env python3
-"""
-Termux-grade scraper exposed as Render-hosted FastAPI service.
-Keeps 100 % of the original pycurl / BeautifulSoup logic.
-Only additions: minimal async wrapper + optional auth + cache.
-"""
+from flask import Flask, jsonify, request
+from functools import wraps
 import os
 import time
 import json
 import logging
-from contextlib import asynccontextmanager
-from fastapi import FastAPI, Depends, HTTPException, status
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from fastapi.responses import JSONResponse
 import threading
-import requests
-import re
 import pycurl
 from io import BytesIO
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+import re
+import requests
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# ---------- CONFIG ----------
-BASE        = "https://hoofoot.com/"
-UA          = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-LOGOS_URL   = "https://raw.githubusercontent.com/lyfe05/foot_logo/refs/heads/main/logos.txt"
-API_KEYS    = os.getenv("API_KEYS", "hoofoot_stream_2025_ZxY9wV8u").split(",")
-CACHE_FILE  = "matches_cache.json"
-CACHE_TTL   = 1200          # 20 min
-security    = HTTPBearer()
+# API Keys from environment variable (fallback for local testing)
+API_KEYS = os.environ.get('API_KEYS', 'hoofoot_stream_2025_ZxY9wV8u,test-key-123').split(',')
+CACHE_FILE = "matches_cache.json"
+CACHE_DURATION = 1200  # 20 minutes
 
-# ---------- TERMUX-GRADE FETCH ----------
-def fetch(url: str, timeout: int = 30) -> str:
+app = Flask(__name__)
+
+# ========== SCRAPER FUNCTIONS ==========
+
+BASE = "https://hoofoot.com/"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+LOGOS_URL = "https://raw.githubusercontent.com/lyfe05/foot_logo/refs/heads/main/logos.txt"
+
+def fetch(url, timeout=30):
     buf = BytesIO()
     c = pycurl.Curl()
     c.setopt(c.URL, url)
@@ -43,52 +40,102 @@ def fetch(url: str, timeout: int = 30) -> str:
     c.setopt(c.ACCEPT_ENCODING, "gzip, deflate")
     c.setopt(c.CONNECTTIMEOUT, 10)
     c.setopt(c.TIMEOUT, timeout)
+    c.setopt(c.SSL_VERIFYPEER, False)
+    c.setopt(c.SSL_VERIFYHOST, False)
+    
+    # Add more headers to look like a real browser
+    headers = [
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language: en-US,en;q=0.9",
+        "Cache-Control: no-cache",
+        "Connection: keep-alive",
+        "Pragma: no-cache",
+        "Sec-Fetch-Dest: document",
+        "Sec-Fetch-Mode: navigate",
+        "Sec-Fetch-Site: none",
+        "Upgrade-Insecure-Requests: 1",
+    ]
+    c.setopt(c.HTTPHEADER, headers)
+    
     try:
         c.perform()
-        if c.getinfo(pycurl.RESPONSE_CODE) != 200:
+        status_code = c.getinfo(pycurl.RESPONSE_CODE)
+        if status_code != 200:
+            logger.error(f"HTTP {status_code} from {url}")
             return ""
     except Exception as e:
-        logger.error("Fetch fail: %s", e)
+        logger.error(f"Fetch error: {e}")
         return ""
     finally:
         c.close()
     return buf.getvalue().decode("utf-8", errors="ignore")
 
-# ---------- ORIGINAL HELPERS ----------
-normalize_url = lambda src: (
-    None if not src else
-    "https:" + src if src.startswith("//") else
-    urljoin(BASE, src) if src.startswith("/") else
-    urljoin(BASE, src) if not src.startswith("http") else
-    src
-)
+def normalize_url(src):
+    if not src:
+        return None
+    if src.startswith("//"):
+        return "https:" + src
+    if src.startswith("/"):
+        return urljoin(BASE, src)
+    if not src.startswith("http"):
+        return urljoin(BASE, src)
+    return src
 
-def find_matches_from_html(html: str):
+def find_matches_from_html(html):
+    if not html:
+        return []
+        
     soup = BeautifulSoup(html, "html.parser")
     matches = []
-    for container in soup.find_all("div", id=lambda x: x and x.startswith("port")):
+
+    match_containers = soup.find_all("div", id=lambda x: x and x.startswith("port"))
+
+    for container in match_containers:
         try:
-            title = container.find("h2").get_text(strip=True)
-            link = container.find("a", href=True)
-            if not link or "match=" not in link["href"]:
+            title_element = container.find("h2")
+            if not title_element:
                 continue
-            url = normalize_url(link["href"])
-            img = container.find("img", src=True)
-            image_url = normalize_url(img["src"]) if img else None
+            title = title_element.get_text(strip=True)
 
-            info = container.find("div", class_="info")
-            date = info and info.find("span") and info.find("span").get_text(strip=True)
-            league_img = info and info.find("img", src=True)
+            link_element = container.find("a", href=True)
+            if not link_element or "match=" not in link_element["href"]:
+                continue
+            url = normalize_url(link_element["href"])
+
+            img_element = container.find("img", src=True)
+            image_url = normalize_url(img_element["src"]) if img_element else None
+
+            # Extract date and league from info section
+            info_section = container.find("div", class_="info")
+            date = None
             league = None
-            if league_img and "/x/" in league_img["src"]:
-                league = league_img["src"].split("/x/")[-1].replace(".jpg", "").replace("_", " ")
+            
+            if info_section:
+                date_span = info_section.find("span")
+                if date_span:
+                    date = date_span.get_text(strip=True)
+                
+                league_img = info_section.find("img", src=True)
+                if league_img and "src" in league_img.attrs:
+                    league_src = league_img["src"]
+                    if "/x/" in league_src:
+                        league_name = league_src.split("/x/")[-1].replace(".jpg", "").replace("_", " ")
+                        league = league_name
 
-            matches.append({"title": title, "url": url, "image": image_url, "date": date, "league": league})
-        except Exception:
+            matches.append({
+                "title": title,
+                "url": url,
+                "image": image_url,
+                "date": date,
+                "league": league
+            })
+        except Exception as e:
+            logger.debug(f"Error processing match container: {e}")
             continue
+
     return matches
 
-def extract_embed_url(match_html: str):
+def extract_embed_url(match_html):
     soup = BeautifulSoup(match_html, "html.parser")
     player = soup.find("div", id="player")
     if player:
@@ -100,119 +147,326 @@ def extract_embed_url(match_html: str):
             return urljoin(BASE, a["href"])
     return None
 
-def extract_m3u8(embed_html: str):
-    for pat in [
-        r"src\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'\s*}",
-        r"backupSrc\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'\s*}",
-        r"(https?:)?//[^\s'\";]+\.m3u8[^\s'\";]*"
-    ]:
-        m = re.search(pat, embed_html)
-        if m:
-            u = m.group(1) if m.lastindex else m.group(0)
-            return "https:" + u if u.startswith("//") else u
+def extract_m3u8_from_embed(embed_html):
+    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'\s*}", embed_html)
+    if m:
+        return "https:" + m.group("u")
+    m = re.search(r"backupSrc\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'\s*}", embed_html)
+    if m:
+        return "https:" + m.group("u")
+    m = re.search(r"(https?:)?//[^\s'\";]+\.m3u8[^\s'\";]*", embed_html)
+    if m:
+        url = m.group(0)
+        if url.startswith("//"):
+            return "https:" + url
+        return url
     return None
 
-def fetch_logos() -> dict:
+def process_match(match):
     try:
-        txt = requests.get(LOGOS_URL, timeout=30).text
-        logos = {}
-        for block in txt.split("------------------------------"):
-            fname = re.search(r"Filename: (.+?)\.png", block)
-            url   = re.search(r"URL: (https?://.+)", block)
-            if fname and url:
-                logos[fname.group(1).strip()] = url.group(1).strip()
-        return logos
+        m_html = fetch(match['url'])
+        embed = extract_embed_url(m_html)
+        if not embed:
+            return {
+                "title": match['title'], 
+                "embed": None, 
+                "m3u8": None, 
+                "image": match.get("image"),
+                "date": match.get("date"),
+                "league": match.get("league")
+            }
+        embed_html = fetch(embed)
+        m3u8 = extract_m3u8_from_embed(embed_html)
+        return {
+            "title": match['title'], 
+            "embed": embed, 
+            "m3u8": m3u8, 
+            "image": match.get("image"),
+            "date": match.get("date"),
+            "league": match.get("league")
+        }
     except Exception as e:
-        logger.error("Logo fetch: %s", e)
+        logger.error(f"Error processing match {match['title']}: {e}")
+        return {
+            "title": match['title'], 
+            "embed": None, 
+            "m3u8": None, 
+            "image": match.get("image"),
+            "date": match.get("date"),
+            "league": match.get("league")
+        }
+
+def fetch_and_parse_logos():
+    """Fetch and parse team logos"""
+    logger.info("📸 Fetching team logos...")
+    try:
+        logos_response = requests.get(LOGOS_URL, timeout=30)
+        logos_response.raise_for_status()
+        logos_content = logos_response.text
+        
+        logo_dict = {}
+        logo_entries = logos_content.split("------------------------------")
+        
+        for entry in logo_entries:
+            filename_match = re.search(r"Filename: (.+?)\.png", entry)
+            url_match = re.search(r"URL: (https?://[^\s]+)", entry)
+            
+            if filename_match and url_match:
+                filename = filename_match.group(1).strip()
+                url = url_match.group(1).strip()
+                logo_dict[filename] = url
+        
+        logger.info(f"✅ Loaded {len(logo_dict)} team logos")
+        return logo_dict
+    except Exception as e:
+        logger.error(f"❌ Error fetching logos: {e}")
         return {}
 
-def find_logo(team: str, logos: dict) -> str:
-    team = team.lower().strip()
-    key  = team.replace(" ", "-")
-    if key in logos:
-        return logos[key]
-    for logo_name, url in logos.items():
-        if team in logo_name.split("-"):
-            return url
+def find_logo_url(team_name, logo_dict):
+    """Find logo URL using improved matching"""
+    team_lower = team_name.lower().strip()
+    
+    exact_match = team_lower.replace(" ", "-")
+    if exact_match in logo_dict:
+        return logo_dict[exact_match]
+    
+    for logo_filename, logo_url in logo_dict.items():
+        words = logo_filename.split('-')
+        
+        if team_lower in words:
+            return logo_url
+            
+        team_words = team_lower.split()
+        for team_word in team_words:
+            if team_word in words:
+                return logo_url
+    
     return ""
 
-# ---------- FULL SCRAPE ----------
-def scrape_full() -> list:
-    logger.info("Scraping full cycle …")
-    home = fetch(BASE)
-    if not home:
-        return []
-    matches = find_matches_from_html(home)
-    logos   = fetch_logos()
-    out     = []
+def process_matches_to_json(matches_data, logo_dict):
+    """Process scraped matches into structured JSON"""
+    logger.info("🔄 Processing matches and matching team logos...")
+    
+    match_groups = {}
     referer = "|Referer=https://hoofootay4.spotlightmoment.com/"
-    for idx, m in enumerate(matches, 1):
-        logger.info("[%d/%d] %s", idx, len(matches), m["title"])
-        html   = fetch(m["url"])
-        embed  = extract_embed_url(html) if html else None
-        m3u8   = None
-        if embed:
-            m3u8 = extract_m3u8(fetch(embed))
-        if m3u8:
-            if " v " in m["title"]:
-                home_team, away_team = m["title"].split(" v ", 1)
-                out.append({
-                    "home": {"name": home_team.strip(), "logo_url": find_logo(home_team, logos)},
-                    "away": {"name": away_team.strip(), "logo_url": find_logo(away_team, logos)},
-                    "stream_urls": [m3u8 + referer],
-                    "date": m.get("date") or "",
-                    "league": m.get("league") or ""
-                })
-        time.sleep(1)
-    return out
+    
+    for match_data in matches_data:
+        if match_data['m3u8']:
+            match_name = match_data['title']
+            m3u8_url = match_data['m3u8'] + referer
+            
+            if match_name not in match_groups:
+                match_groups[match_name] = {
+                    'image': match_data['image'] or '',
+                    'stream_urls': [],
+                    'date': match_data.get('date', ''),
+                    'league': match_data.get('league', '')
+                }
+            
+            match_groups[match_name]['stream_urls'].append(m3u8_url)
+    
+    result = []
+    
+    for match_name, data in match_groups.items():
+        if " v " in match_name:
+            home_team, away_team = match_name.split(" v ", 1)
+            
+            home_logo = find_logo_url(home_team, logo_dict)
+            away_logo = find_logo_url(away_team, logo_dict)
+            
+            match_data = {
+                "home": {
+                    "name": home_team.strip(),
+                    "logo_url": home_logo
+                },
+                "away": {
+                    "name": away_team.strip(),
+                    "logo_url": away_logo
+                },
+                "stream_urls": data['stream_urls'],
+                "date": data['date'],
+                "league": data['league']
+            }
+            result.append(match_data)
+    
+    return result
 
-# ---------- CACHE ----------
-def read_cache():
+def run_scraping_job():
+    """Main scraping function to be called by scheduler"""
+    logger.info("🚀 Starting scheduled scraping job...")
+    start_time = time.time()
+    
     try:
-        with open(CACHE_FILE) as f:
-            data = json.load(f)
-            return data["matches"] if time.time() - data["timestamp"] < CACHE_TTL else None
-    except Exception:
+        # Step 1: Fetch matches from HooFoot
+        logger.info("📡 Fetching HooFoot homepage...")
+        home_html = fetch(BASE)
+        
+        if not home_html:
+            logger.error("❌ No HTML content received from HooFoot")
+            return False
+            
+        matches = find_matches_from_html(home_html)
+        if not matches:
+            logger.error("❌ No matches found in HTML")
+            logger.info(f"HTML length: {len(home_html)}")
+            return False
+
+        logger.info(f"✅ Found {len(matches)} matches")
+        
+        # Step 2: Extract stream URLs
+        logger.info("🎬 Extracting stream URLs...")
+        matches_data = []
+        for i, match in enumerate(matches, 1):
+            logger.info(f"⏳ [{i}/{len(matches)}] Processing: {match['title']}")
+            result = process_match(match)
+            matches_data.append(result)
+            time.sleep(1)  # Be respectful to the server
+        
+        # Step 3: Fetch logos
+        logo_dict = fetch_and_parse_logos()
+        
+        # Step 4: Process everything into final JSON
+        final_json = process_matches_to_json(matches_data, logo_dict)
+        
+        # Step 5: Save to cache
+        cache_data = {
+            'timestamp': time.time(),
+            'matches': final_json
+        }
+        
+        with open(CACHE_FILE, 'w') as f:
+            json.dump(cache_data, f, indent=2)
+        
+        elapsed_time = time.time() - start_time
+        logger.info(f"✅ Scraping completed in {elapsed_time:.1f}s. Found {len(final_json)} matches. Cache updated.")
+        return True
+        
+    except Exception as e:
+        logger.error(f"❌ Scraping job failed: {e}")
+        return False
+
+def start_scheduler():
+    """Start the 20-minute scraping scheduler"""
+    logger.info("⏰ Starting background scheduler (20-minute intervals)")
+    
+    # Run immediately on startup
+    logger.info("🔄 Running initial scrape...")
+    run_scraping_job()
+    
+    # Then run every 20 minutes
+    while True:
+        time.sleep(1200)  # 20 minutes
+        logger.info("🔄 Running scheduled scrape...")
+        run_scraping_job()
+
+# ========== FLASK APP ==========
+
+def require_api_key(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        api_key = request.headers.get('Authorization')
+        if not api_key:
+            return jsonify({"error": "API key required"}), 401
+        
+        # Remove 'Bearer ' prefix if present
+        if api_key.startswith('Bearer '):
+            api_key = api_key[7:]
+        
+        if api_key not in API_KEYS:
+            return jsonify({"error": "Invalid API key"}), 401
+        
+        return f(*args, **kwargs)
+    return decorated
+
+def get_cached_matches():
+    """Read matches from cache file if valid"""
+    try:
+        if not os.path.exists(CACHE_FILE):
+            return None
+            
+        with open(CACHE_FILE, 'r') as f:
+            cache_data = json.load(f)
+            
+        # Check if cache is still valid
+        if time.time() - cache_data.get('timestamp', 0) < CACHE_DURATION:
+            return cache_data['matches']
+        else:
+            logger.info("Cache expired, needs refresh")
+            return None
+    except Exception as e:
+        logger.error(f"Error reading cache: {e}")
         return None
 
-def write_cache(matches):
-    with open(CACHE_FILE, "w") as f:
-        json.dump({"timestamp": time.time(), "matches": matches}, f, indent=2)
-
-# ---------- FASTAPI ----------
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    threading.Thread(target=cache_refresher, daemon=True).start()
-    yield
-
-def cache_refresher():
-    while True:
-        logger.info("Background refresh …")
-        matches = scrape_full()
-        write_cache(matches)
-        logger.info("Cache refreshed – %d matches", len(matches))
-        time.sleep(CACHE_TTL)
-
-app = FastAPI(title="Football Matches API", version="1.0.0", lifespan=lifespan)
-
-def check_key(creds: HTTPAuthorizationCredentials = Depends(security)):
-    if creds.credentials not in API_KEYS:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid API key")
-    return creds.credentials
-
-@app.get("/")
+@app.route('/')
 def root():
-    return {"message": "Football Matches API", "docs": "/docs", "matches": "/matches"}
+    return jsonify({
+        "message": "Football Matches API", 
+        "status": "running",
+        "endpoints": {
+            "health": "/health",
+            "matches": "/matches",
+            "debug": "/debug-scrape"
+        },
+        "test_key": "hoofoot_stream_2025_ZxY9wV8u"
+    })
 
-@app.get("/matches")
-def get_matches(api_key: str = Depends(check_key)):
-    cached = read_cache()
-    if cached is None:
-        raise HTTPException(status_code=503, detail="Data temporarily unavailable – retry shortly.")
-    return JSONResponse(content=cached)
+@app.route('/health')
+def health_check():
+    """Health check endpoint"""
+    cache_status = "valid" if get_cached_matches() is not None else "expired/missing"
+    return jsonify({
+        "status": "healthy",
+        "cache_status": cache_status,
+        "timestamp": time.time(),
+        "service": "football-matches-api"
+    })
 
-# ---------- RENDER ENTRY ----------
+@app.route('/debug-scrape')
+def debug_scrape():
+    """Debug endpoint to check scraping issues"""
+    try:
+        html = fetch(BASE)
+        matches = find_matches_from_html(html)
+        
+        return jsonify({
+            "status": "success" if matches else "no_matches",
+            "html_length": len(html),
+            "matches_found": len(matches),
+            "first_500_chars": html[:500] if html else "No HTML",
+            "match_titles": [m['title'] for m in matches] if matches else []
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "error": str(e)
+        })
+
+@app.route('/matches')
+@require_api_key
+def get_matches():
+    """Get all football matches with streams (API key required)"""
+    matches = get_cached_matches()
+    if matches is not None:
+        logger.info("Serving cached matches")
+        return jsonify(matches)
+    else:
+        logger.warning("No valid cache available")
+        return jsonify({"error": "Data temporarily unavailable. Please try again shortly."}), 503
+
+# For production (Render) and local testing
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 8000)))
-                
+    port = int(os.environ.get("PORT", 8000))  # Use Render's PORT or 8000 locally
+    print("🚀 Starting Football Matches API...")
+    print("📝 Test API Key: hoofoot_stream_2025_ZxY9wV8u")
+    print("🌐 Endpoints:")
+    print("   - /health")
+    print("   - /debug-scrape")
+    print("   - /matches (requires API key)")
+    print()
+    
+    # Start scheduler in background
+    scheduler_thread = threading.Thread(target=start_scheduler, daemon=True)
+    scheduler_thread.start()
+    
+    # Run Flask app
+    app.run(host="0.0.0.0", port=port, debug=False)  # debug=False for production
