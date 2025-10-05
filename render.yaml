@@ -12,5 +12,5 @@ services:
       - key: API_KEYS
         value: hoofoot_stream_2025_ZxY9wV8u  # Secure keys here
       - key: PYTHON_VERSION
-        value: 3.11
+        value: 3.8.1
     autoDeploy: true
