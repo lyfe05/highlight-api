@@ -3,7 +3,7 @@ services:
     name: highlight-api
     env: python
     region: oregon
-    plan: starter  # Required for private repos
+    plan: free  # Required for private repos
     branch: main
     repo: https://github.com/lyfe05/highlight-api  # Your private repo URL
     buildCommand: pip install -r requirements.txt
