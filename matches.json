@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-09T20:49:41.529741",
-  "matches_count": 2,
+  "last_updated": "2025-10-09T21:22:52.957029",
+  "matches_count": 4,
   "data": [
     {
       "home": {
@@ -12,8 +12,8 @@
         "logo_url": "https://football-logos.cc/logos/wales/256x256/wales-national-team.png"
       },
       "stream_urls": [
-        "https://bdttt.gooforkoora.com/UpFiles/2025/10/9/51/306734/0.m3u8?token=09102025234853|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/9/51/306734/0.m3u8?token=09102025234855|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://bdttt.gooforkoora.com/UpFiles/2025/10/9/51/306734/0.m3u8?token=10102025002208|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/9/51/306734/0.m3u8?token=10102025002209|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Friendly Match"
@@ -28,8 +28,40 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/9/51/306726/0.m3u8?token=09102025234856|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/9/51/306726/0.m3u8?token=09102025234858|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://bdttt.gooforkoora.com/UpFiles/2025/10/9/51/306726/0.m3u8?token=10102025002211|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://bdttt.gooforkoora.com/UpFiles/2025/10/9/51/306726/0.m3u8?token=10102025002213|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "World Cup Qualifiers"
+    },
+    {
+      "home": {
+        "name": "Scotland",
+        "logo_url": "https://football-logos.cc/logos/scotland/256x256/scotland-national-team.png"
+      },
+      "away": {
+        "name": "Greece",
+        "logo_url": "https://football-logos.cc/logos/greece/256x256/greece-national-team.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/10/51/306737/0.m3u8?token=10102025002214|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://bdttt.gooforkoora.com/UpFiles/2025/10/10/51/306737/0.m3u8?token=10102025002216|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "World Cup Qualifiers"
+    },
+    {
+      "home": {
+        "name": "Czech Republic",
+        "logo_url": ""
+      },
+      "away": {
+        "name": "Croatia",
+        "logo_url": ""
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/10/51/306739/0.m3u8?token=10102025002217|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://bdttt.gooforkoora.com/UpFiles/2025/10/10/51/306739/0.m3u8?token=10102025002218|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "World Cup Qualifiers"
