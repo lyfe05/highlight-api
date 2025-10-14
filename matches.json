@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-14T19:36:06.356979",
+  "last_updated": "2025-10-14T19:49:45.727512",
   "matches_count": 16,
   "data": [
     {
@@ -12,11 +12,43 @@
         "logo_url": "https://football-logos.cc/logos/brazil/256x256/brazil-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306892/0.m3u8?token=14102025223520|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306892/0.m3u8?token=14102025223521|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306892/0.m3u8?token=14102025224859|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306892/0.m3u8?token=14102025224901|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Friendly Match"
+    },
+    {
+      "home": {
+        "name": "Norway",
+        "logo_url": "https://football-logos.cc/logos/norway/256x256/norway-national-team.png"
+      },
+      "away": {
+        "name": "New Zealand",
+        "logo_url": "https://football-logos.cc/logos/usa/256x256/new-england-revolution.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306913/0.m3u8?token=14102025224902|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306913/0.m3u8?token=14102025224904|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Friendly Match"
+    },
+    {
+      "home": {
+        "name": "Estonia",
+        "logo_url": ""
+      },
+      "away": {
+        "name": "Moldova",
+        "logo_url": ""
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306915/0.m3u8?token=14102025224905|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306915/0.m3u8?token=14102025224907|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "World Cup Qualifiers"
     },
     {
       "home": {
@@ -28,8 +60,8 @@
         "logo_url": "https://football-logos.cc/logos/belgium/256x256/belgium-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306883/0.m3u8?token=14102025223523|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306883/0.m3u8?token=14102025223525|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306883/0.m3u8?token=14102025224908|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306883/0.m3u8?token=14102025224910|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -44,8 +76,8 @@
         "logo_url": "https://football-logos.cc/logos/france/256x256/france-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306882/0.m3u8?token=14102025223526|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306882/0.m3u8?token=14102025223528|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306882/0.m3u8?token=14102025224911|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306882/0.m3u8?token=14102025224913|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -60,8 +92,8 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/germany-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306884/0.m3u8?token=14102025223529|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306884/0.m3u8?token=14102025223531|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306884/0.m3u8?token=14102025224914|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306884/0.m3u8?token=14102025224915|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -76,8 +108,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306877/0.m3u8?token=14102025223532|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306877/0.m3u8?token=14102025223533|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306877/0.m3u8?token=14102025224917|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306877/0.m3u8?token=14102025224918|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -92,8 +124,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306875/0.m3u8?token=14102025223535|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306875/0.m3u8?token=14102025223536|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306875/0.m3u8?token=14102025224920|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306875/0.m3u8?token=14102025224921|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -108,8 +140,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306881/0.m3u8?token=14102025223537|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306881/0.m3u8?token=14102025223539|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306881/0.m3u8?token=14102025224922|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306881/0.m3u8?token=14102025224924|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -124,8 +156,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306880/0.m3u8?token=14102025223541|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306880/0.m3u8?token=14102025223542|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306880/0.m3u8?token=14102025224925|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/14/51/306880/0.m3u8?token=14102025224927|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "World Cup Qualifiers"
@@ -140,8 +172,8 @@
         "logo_url": "https://football-logos.cc/logos/finland/256x256/finland-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306852/0.m3u8?token=14102025223543|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306852/0.m3u8?token=14102025223545|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306852/0.m3u8?token=14102025224928|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306852/0.m3u8?token=14102025224930|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "World Cup Qualifiers"
@@ -156,8 +188,8 @@
         "logo_url": "https://football-logos.cc/logos/poland/256x256/poland-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306850/0.m3u8?token=14102025223546|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306850/0.m3u8?token=14102025223548|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306850/0.m3u8?token=14102025224931|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306850/0.m3u8?token=14102025224932|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "World Cup Qualifiers"
@@ -172,8 +204,8 @@
         "logo_url": "https://football-logos.cc/logos/gibraltar/256x256/lions-gibraltar.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306849/0.m3u8?token=14102025223549|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306849/0.m3u8?token=14102025223551|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306849/0.m3u8?token=14102025224934|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/13/51/306849/0.m3u8?token=14102025224935|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "World Cup Qualifiers"
@@ -188,8 +220,8 @@
         "logo_url": "https://football-logos.cc/logos/greece/256x256/greece-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306848/0.m3u8?token=14102025223552|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306848/0.m3u8?token=14102025223553|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306848/0.m3u8?token=14102025224937|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306848/0.m3u8?token=14102025224938|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "World Cup Qualifiers"
@@ -204,8 +236,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306841/0.m3u8?token=14102025223555|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306841/0.m3u8?token=14102025223556|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306841/0.m3u8?token=14102025224939|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306841/0.m3u8?token=14102025224941|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "World Cup Qualifiers"
@@ -220,42 +252,10 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306840/0.m3u8?token=14102025223558|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306840/0.m3u8?token=14102025223559|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306840/0.m3u8?token=14102025224942|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306840/0.m3u8?token=14102025224944|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
-      "league": "World Cup Qualifiers"
-    },
-    {
-      "home": {
-        "name": "San Marino",
-        "logo_url": "https://football-logos.cc/logos/mexico/256x256/atletico-de-san-luis.png"
-      },
-      "away": {
-        "name": "Cyprus",
-        "logo_url": ""
-      },
-      "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306830/0.m3u8?token=14102025223600|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306830/0.m3u8?token=14102025223602|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "World Cup Qualifiers"
-    },
-    {
-      "home": {
-        "name": "Portugal",
-        "logo_url": "https://football-logos.cc/logos/portugal/256x256/atletico-clube-de-portugal.png"
-      },
-      "away": {
-        "name": "Ireland",
-        "logo_url": ""
-      },
-      "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306821/0.m3u8?token=14102025223603|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/12/51/306821/0.m3u8?token=14102025223605|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "3 days ago",
       "league": "World Cup Qualifiers"
     }
   ]
