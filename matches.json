@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-17T22:49:09.889159",
-  "matches_count": 5,
+  "last_updated": "2025-10-17T23:22:42.963233",
+  "matches_count": 4,
   "data": [
     {
       "home": {
@@ -12,8 +12,8 @@
         "logo_url": "https://football-logos.cc/logos/france/256x256/rc-strasbourg-alsace.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025014823|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025014825|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025022156|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025022158|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Ligue 1"
@@ -28,8 +28,8 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025014826|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025014828|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025022200|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025022201|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "BundesLiga"
@@ -44,8 +44,8 @@
         "logo_url": "https://football-logos.cc/logos/spain/256x256/espanyol.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025014830|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025014831|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025022203|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025022205|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "La Liga"
@@ -60,27 +60,11 @@
         "logo_url": "https://football-logos.cc/logos/argentina/256x256/argentina-national-team.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306953/0.m3u8?token=18102025014832|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306953/0.m3u8?token=18102025014834|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306953/0.m3u8?token=18102025022206|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306953/0.m3u8?token=18102025022207|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Friendly Match"
-    },
-    {
-      "home": {
-        "name": "Italy",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/italy-national-team.png"
-      },
-      "away": {
-        "name": "Israel",
-        "logo_url": "https://football-logos.cc/logos/israel/256x256/israel-national-team.png"
-      },
-      "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306943/0.m3u8?token=18102025014844|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/15/51/306943/0.m3u8?token=18102025014845|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "3 days ago",
-      "league": "World Cup Qualifiers"
     }
   ]
 }
