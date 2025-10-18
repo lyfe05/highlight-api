@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-18T15:49:49.876929",
-  "matches_count": 10,
+  "last_updated": "2025-10-18T16:29:37.445966",
+  "matches_count": 16,
   "data": [
     {
       "home": {
@@ -12,8 +12,56 @@
         "logo_url": "https://football-logos.cc/logos/england/256x256/chelsea.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306996/0.m3u8?token=18102025184901|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306996/0.m3u8?token=18102025184903|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306996/0.m3u8?token=18102025192848|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306996/0.m3u8?token=18102025192849|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Premier League"
+    },
+    {
+      "home": {
+        "name": "Manchester City",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/manchester-city.png"
+      },
+      "away": {
+        "name": "Everton",
+        "logo_url": "https://football-logos.cc/logos/chile/256x256/everton.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307010/0.m3u8?token=18102025192851|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307010/0.m3u8?token=18102025192853|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Premier League"
+    },
+    {
+      "home": {
+        "name": "Barcelona",
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/barcelona.png"
+      },
+      "away": {
+        "name": "Girona",
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/girona.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307022/0.m3u8?token=18102025192855|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307022/0.m3u8?token=18102025192857|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "La Liga"
+    },
+    {
+      "home": {
+        "name": "Crystal Palace",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/crystal-palace.png"
+      },
+      "away": {
+        "name": "Bournemouth",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/bournemouth.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307023/0.m3u8?token=18102025192858|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307023/0.m3u8?token=18102025192900|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Premier League"
@@ -28,11 +76,27 @@
         "logo_url": "https://football-logos.cc/logos/spain/256x256/mallorca.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307000/0.m3u8?token=18102025184905|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307000/0.m3u8?token=18102025184906|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307000/0.m3u8?token=18102025192901|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307000/0.m3u8?token=18102025192903|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "La Liga"
+    },
+    {
+      "home": {
+        "name": "Brighton",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/brighton.png"
+      },
+      "away": {
+        "name": "Newcastle",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/newcastle.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307013/0.m3u8?token=18102025192904|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307013/0.m3u8?token=18102025192906|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Premier League"
     },
     {
       "home": {
@@ -44,8 +108,8 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/bayer-leverkusen.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307006/0.m3u8?token=18102025184908|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307006/0.m3u8?token=18102025184909|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307021/0.m3u8?token=18102025192907|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307021/0.m3u8?token=18102025192909|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "BundesLiga"
@@ -60,11 +124,43 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307003/0.m3u8?token=18102025184911|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307003/0.m3u8?token=18102025184912|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307003/0.m3u8?token=18102025192910|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307003/0.m3u8?token=18102025192912|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "BundesLiga"
+    },
+    {
+      "home": {
+        "name": "Burnley",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/burnley.png"
+      },
+      "away": {
+        "name": "Leeds",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/leeds-united.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307012/0.m3u8?token=18102025192913|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307012/0.m3u8?token=18102025192915|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Premier League"
+    },
+    {
+      "home": {
+        "name": "Sunderland",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/sunderland.png"
+      },
+      "away": {
+        "name": "Wolves",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/wolves.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307017/0.m3u8?token=18102025192916|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307017/0.m3u8?token=18102025192918|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Premier League"
     },
     {
       "home": {
@@ -76,27 +172,11 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/vfb-stuttgart.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307002/0.m3u8?token=18102025184914|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307002/0.m3u8?token=18102025184916|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307002/0.m3u8?token=18102025192919|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307002/0.m3u8?token=18102025192921|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "BundesLiga"
-    },
-    {
-      "home": {
-        "name": "Lecce",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/lecce.png"
-      },
-      "away": {
-        "name": "Sassuolo",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/sassuolo.png"
-      },
-      "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307009/0.m3u8?token=18102025184918|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307009/0.m3u8?token=18102025184919|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Today",
-      "league": "Serie A"
     },
     {
       "home": {
@@ -108,11 +188,43 @@
         "logo_url": "https://football-logos.cc/logos/italy/256x256/verona.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307007/0.m3u8?token=18102025184920|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307007/0.m3u8?token=18102025184922|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307007/0.m3u8?token=18102025192922|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307007/0.m3u8?token=18102025192923|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Serie A"
+    },
+    {
+      "home": {
+        "name": "Lecce",
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/lecce.png"
+      },
+      "away": {
+        "name": "Sassuolo",
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/sassuolo.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307009/0.m3u8?token=18102025192925|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307009/0.m3u8?token=18102025192926|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Serie A"
+    },
+    {
+      "home": {
+        "name": "FC Cologne",
+        "logo_url": "https://football-logos.cc/logos/portugal/256x256/fc-porto.png"
+      },
+      "away": {
+        "name": "Augsburg",
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/augsburg.png"
+      },
+      "stream_urls": [
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307020/0.m3u8?token=18102025192928|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/307020/0.m3u8?token=18102025192930|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "BundesLiga"
     },
     {
       "home": {
@@ -124,8 +236,8 @@
         "logo_url": "https://football-logos.cc/logos/france/256x256/rc-strasbourg-alsace.png"
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025184923|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025184925|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025192931|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306984/0.m3u8?token=18102025192933|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Ligue 1"
@@ -140,27 +252,11 @@
         "logo_url": ""
       },
       "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025184926|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025184928|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025192934|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://vrd.dirgventures.net/UpFiles/2025/10/17/51/306983/0.m3u8?token=18102025192936|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "BundesLiga"
-    },
-    {
-      "home": {
-        "name": "Real Oviedo",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/real-madrid.png"
-      },
-      "away": {
-        "name": "Espanyol",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/espanyol.png"
-      },
-      "stream_urls": [
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025184929|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://vrd.dirgventures.net/UpFiles/2025/10/18/51/306985/0.m3u8?token=18102025184931|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Yesterday",
-      "league": "La Liga"
     }
   ]
 }
