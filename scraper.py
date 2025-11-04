@@ -166,9 +166,17 @@ def extract_m3u8_from_embed(embed_html: str) -> str | None:
     return None
 
 def _fix_cdn(url: str) -> str:
-    """Rewrite broken CDN prefix -> working origin, keep path."""
-    # dead CDN pattern: cdn<digits>.gcdn.co
+    """
+    Rewrite dead CDN prefix -> working origin for all known path patterns.
+    """
+    # Pattern 1: /manifest/0.m3u8 (older embeds)
     if re.match(r"https?://cdn\d+\.gcdn\.co", url) and "/manifest/0.m3u8" in url:
+        url = re.sub(r"https?://[^/]+", WORKING_ORIGIN, url)
+        return url
+
+    # Pattern 2: /UpFiles/YYYY/MM/DD/<id1>/<id2>//0.m3u8 (current embeds)
+    if re.match(r"https?://cdn\d+\.gcdn\.co", url):
+        # keep everything after the host, just swap origin
         url = re.sub(r"https?://[^/]+", WORKING_ORIGIN, url)
     return url
 
