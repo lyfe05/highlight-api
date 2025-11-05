@@ -3,7 +3,6 @@
 Auto-updated scraper for hoofoot.com
 – pulls match list
 – extracts m3u8 from embed pages
-– rewrites broken CDN prefixes to working origin
 – decorates with team logos
 – dumps api/matches.json
 """
@@ -28,8 +27,6 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 LOGOS_URL = ("https://raw.githubusercontent.com/lyfe05/foot_logo/"
              "refs/heads/main/logos.txt")
 
-# working origin that hosts the SAME paths the dead CDNs expose
-WORKING_ORIGIN = "https://hls.videohatkora.com/upfiles/source/hls"
 
 # ------------------------------------------------------------------
 # LOW-LEVEL FETCH
@@ -146,35 +143,12 @@ def extract_embed_url(match_html: str) -> str | None:
     return None
 
 def extract_m3u8_from_embed(embed_html: str) -> str | None:
-    # 1. try JS object variants
-    for pattern in [
-        r"src\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'",
-        r"backupSrc\s*:\s*{\s*hls\s*:\s*'(?P<u>//[^']+)'",
-    ]:
-        m = re.search(pattern, embed_html)
-        if m:
-            url = "https:" + m.group("u")
-            return _fix_cdn(url)
-
-    # 2. loose m3u8 url
-    m = re.search(r"(https?:)?//[^\s'\";]+\.m3u8[^\s'\";]*", embed_html)
+    # grab the first absolute URL inside src:{hls:'<here>'}
+    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(https://[^']+)'", embed_html)
     if m:
-        url = m.group(0)
-        if url.startswith("//"):
-            url = "https:" + url
-        return _fix_cdn(url)
+        return m.group(1)          # already absolute, no fix-up needed
     return None
-
-def _fix_cdn(url: str) -> str:
-    m = re.search(r"cdn\d+\.gcdn\.co/UpFiles/\d{4}/\d{1,2}/\d{1,2}/(\d+)/(\d+)//0\.m3u8", url)
-    if m:
-        id1, id2 = m.groups()
-        url = re.sub(
-            r"https?://[^/]+/UpFiles/\d{4}/\d{1,2}/\d{1,2}/\d+/\d+//0\.m3u8",
-            f"{WORKING_ORIGIN}/{id1}/{id2}/manifest/0.m3u8",
-            url,
-        )
-    return url
+      
 
 # ------------------------------------------------------------------
 # PROCESS ONE MATCH
