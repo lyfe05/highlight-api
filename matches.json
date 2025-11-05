@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-05T22:25:54.433529",
+  "last_updated": "2025-11-05T22:49:39.215936",
   "matches_count": 16,
   "data": [
     {
@@ -12,8 +12,8 @@
         "logo_url": "https://football-logos.cc/logos/england/256x256/chelsea.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307997/0.m3u8?token=05112025142516|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307997/0.m3u8?token=05112025142518|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307997/0.m3u8?token=05112025144907|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307997/0.m3u8?token=05112025144909|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -28,8 +28,8 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/borussia-dortmund.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308025/0.m3u8?token=05112025142519|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308025/0.m3u8?token=05112025142520|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308025/0.m3u8?token=05112025144910|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308025/0.m3u8?token=05112025144911|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -44,8 +44,8 @@
         "logo_url": "https://football-logos.cc/logos/spain/256x256/barcelona.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308020/0.m3u8?token=05112025142521|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308020/0.m3u8?token=05112025142522|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308020/0.m3u8?token=05112025144912|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308020/0.m3u8?token=05112025144913|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -60,8 +60,56 @@
         "logo_url": "https://football-logos.cc/logos/scotland/256x256/alloa-athletic.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308015/0.m3u8?token=05112025142525|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/308015/0.m3u8?token=05112025142526|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308029/0.m3u8?token=05112025144914|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308029/0.m3u8?token=05112025144914|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Ajax",
+        "logo_url": "https://football-logos.cc/logos/netherlands/256x256/ajax.png"
+      },
+      "away": {
+        "name": "Galatasaray",
+        "logo_url": "https://football-logos.cc/logos/turkey/256x256/galatasaray.png"
+      },
+      "stream_urls": [
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308033/0.m3u8?token=05112025144915|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308033/0.m3u8?token=05112025144916|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Inter",
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/inter.png"
+      },
+      "away": {
+        "name": "Kairat",
+        "logo_url": "https://football-logos.cc/logos/kazakhstan/256x256/kairat.png"
+      },
+      "stream_urls": [
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308037/0.m3u8?token=05112025144918|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308037/0.m3u8?token=05112025144919|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Benfica",
+        "logo_url": "https://football-logos.cc/logos/portugal/256x256/benfica.png"
+      },
+      "away": {
+        "name": "Bayer Leverkusen",
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/bayer-leverkusen.png"
+      },
+      "stream_urls": [
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308035/0.m3u8?token=05112025144920|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308035/0.m3u8?token=05112025144921|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -76,8 +124,8 @@
         "logo_url": "https://football-logos.cc/logos/spain/256x256/villarreal.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307999/0.m3u8?token=05112025142527|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307999/0.m3u8?token=05112025142528|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307999/0.m3u8?token=05112025144922|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307999/0.m3u8?token=05112025144923|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -92,8 +140,8 @@
         "logo_url": "https://football-logos.cc/logos/italy/256x256/atalanta.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308022/0.m3u8?token=05112025142530|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308022/0.m3u8?token=05112025142531|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308022/0.m3u8?token=05112025144924|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/6/51/308022/0.m3u8?token=05112025144925|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -108,8 +156,8 @@
         "logo_url": "https://football-logos.cc/logos/spain/256x256/real-madrid.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307979/0.m3u8?token=05112025142532|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307979/0.m3u8?token=05112025142533|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307979/0.m3u8?token=05112025144926|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307979/0.m3u8?token=05112025144927|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -124,8 +172,8 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/bayern-munchen.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307984/0.m3u8?token=05112025142534|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307984/0.m3u8?token=05112025142535|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307984/0.m3u8?token=05112025144928|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307984/0.m3u8?token=05112025144929|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -140,8 +188,8 @@
         "logo_url": "https://football-logos.cc/logos/england/256x256/arsenal.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307947/0.m3u8?token=05112025142536|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307947/0.m3u8?token=05112025142538|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307947/0.m3u8?token=05112025144930|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307947/0.m3u8?token=05112025144931|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -156,8 +204,8 @@
         "logo_url": "https://football-logos.cc/logos/denmark/256x256/copenhagen.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307981/0.m3u8?token=05112025142539|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307981/0.m3u8?token=05112025142540|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307981/0.m3u8?token=05112025144932|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307981/0.m3u8?token=05112025144932|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -172,8 +220,8 @@
         "logo_url": "https://football-logos.cc/logos/portugal/256x256/sporting-cp.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307977/0.m3u8?token=05112025142541|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307977/0.m3u8?token=05112025142542|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307977/0.m3u8?token=05112025144933|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307977/0.m3u8?token=05112025144934|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -188,8 +236,8 @@
         "logo_url": "https://football-logos.cc/logos/usa/256x256/philadelphia-union.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307980/0.m3u8?token=05112025142543|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307980/0.m3u8?token=05112025142544|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307980/0.m3u8?token=05112025144935|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307980/0.m3u8?token=05112025144936|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -204,59 +252,11 @@
         "logo_url": "https://football-logos.cc/logos/germany/256x256/eintracht-frankfurt.png"
       },
       "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307948/0.m3u8?token=05112025142545|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307948/0.m3u8?token=05112025142547|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307948/0.m3u8?token=05112025144937|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307948/0.m3u8?token=05112025144938|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
-    },
-    {
-      "home": {
-        "name": "Olympiakos",
-        "logo_url": "https://football-logos.cc/logos/cyprus/256x256/olympiakos.png"
-      },
-      "away": {
-        "name": "PSV",
-        "logo_url": "https://football-logos.cc/logos/netherlands/256x256/psv.png"
-      },
-      "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307982/0.m3u8?token=05112025142548|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307982/0.m3u8?token=05112025142549|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Yesterday",
-      "league": "Champions Laegue"
-    },
-    {
-      "home": {
-        "name": "Bodo Glimt",
-        "logo_url": "https://football-logos.cc/logos/norway/256x256/bodo-glimt.png"
-      },
-      "away": {
-        "name": "Monaco",
-        "logo_url": "https://football-logos.cc/logos/france/256x256/as-monaco.png"
-      },
-      "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307983/0.m3u8?token=05112025142550|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/5/51/307983/0.m3u8?token=05112025142551|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Yesterday",
-      "league": "Champions Laegue"
-    },
-    {
-      "home": {
-        "name": "Sunderland",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/sunderland.png"
-      },
-      "away": {
-        "name": "Everton",
-        "logo_url": "https://football-logos.cc/logos/chile/256x256/everton.png"
-      },
-      "stream_urls": [
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307916/0.m3u8?token=05112025142552|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://ghb.stad90.com/UpFiles/2025/11/4/51/307916/0.m3u8?token=05112025142553|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "Premier League"
     }
   ]
 }
