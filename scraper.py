@@ -166,32 +166,87 @@ def process_match(match: dict) -> dict:
         return {**match, "embed": None, "m3u8": None}
 
 # ------------------------------------------------------------------
-# TEAM LOGOS HELPERS
+# TEAM LOGOS HELPERS  (country-aware)
 # ------------------------------------------------------------------
-def fetch_and_parse_logos() -> dict[str, str]:
+def fetch_and_parse_logos() -> dict[str, dict]:
+    """
+    Returns dict  filename -> {url, country, name_clean}
+    country & name_clean are lower-cased for easy matching.
+    """
     print("📸 Fetching team logos...")
     try:
         txt = requests.get(LOGOS_URL, timeout=30).text
-        logos = {}
-        for chunk in txt.split("------------------------------"):
-            fname = re.search(r"Filename: (.+?)\.png", chunk)
-            url = re.search(r"URL: (https?://[^\s]+)", chunk)
-            if fname and url:
-                logos[fname.group(1).strip()] = url.group(1).strip()
-        print(f"✅ Loaded {len(logos)} logos")
-        return logos
     except Exception as e:
         print(f"❌ Logo fetch failed: {e}")
         return {}
 
-def find_logo_url(team: str, logos: dict[str, str]) -> str:
-    team = team.lower().strip()
-    exact = team.replace(" ", "-")
+    logos: dict[str, dict] = {}
+    for chunk in txt.split("------------------------------"):
+        # Filename
+        fname_m = re.search(r"Filename: (.+?)\.png", chunk)
+        # URL
+        url_m   = re.search(r"URL: (https?://[^\s]+)", chunk)
+        # Description  (everything after "Description: " up to next blank line or dashes)
+        desc_m  = re.search(r"Description: ([^\r\n]+)", chunk, re.I)
+
+        if not (fname_m and url_m and desc_m):
+            continue
+
+        fname = fname_m.group(1).strip()
+        url   = url_m.group(1).strip()
+        desc  = desc_m.group(1).strip()
+
+        # ---- extract country inside parentheses ----
+        country_m = re.search(r"\(([^)]+)\)", desc)
+        country   = country_m.group(1).lower() if country_m else ""
+
+        # ---- clean team name (remove parenthetical country) ----
+        name_clean = re.sub(r"\s*\([^)]*\)", "", desc).strip().lower()
+
+        logos[fname] = {"url": url, "country": country, "name_clean": name_clean}
+
+    print(f"✅ Loaded {len(logos)} logos")
+    return logos
+
+
+def league_to_country(league: str) -> str:
+    """Tiny mapper – extend as you add leagues."""
+    league = league.lower()
+    if "premier league" in league:
+        return "england"
+    if "la liga" in league:
+        return "spain"
+    if "serie a" in league:
+        return "italy"
+    if "bundesliga" in league or "dfb-pokal" in league:
+        return "germany"
+    if "super lig" in league:
+        return "turkey"
+    return ""
+
+
+def find_logo_url(team_name: str, league: str, logos: dict[str, dict]) -> str:
+    """
+    team_name : e.g. "Manchester City"
+    league    : e.g. "Premier League"
+    logos     : dict from fetch_and_parse_logos()
+    """
+    team   = team_name.lower().strip()
+    country = league_to_country(league)
+
+    # 1. remove league-country from team string  (Barcelona (Spain) -> barcelona)
+    team_no_country = re.sub(rf"\b{re.escape(country)}\b", "", team).strip()
+
+    # 2. exact filename match  (fulham, manchester-city, barcelona)
+    exact = team_no_country.replace(" ", "-")
     if exact in logos:
-        return logos[exact]
-    for name, url in logos.items():
-        if team in name.split("-") or any(w in name.split("-") for w in team.split()):
-            return url
+        return logos[exact]["url"]
+
+    # 3. word-wise match on cleaned description
+    team_words = set(team_no_country.split())
+    for data in logos.values():
+        if team_words.issubset(set(data["name_clean"].split())):
+            return data["url"]
     return ""
 
 # ------------------------------------------------------------------
