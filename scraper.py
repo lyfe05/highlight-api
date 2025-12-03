@@ -277,8 +277,8 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
             continue
         home, away = (x.strip() for x in title.split(" v ", 1))
         result.append({
-            "home": {"name": home, "logo_url": find_logo_url(home, logos)},
-            "away": {"name": away, "logo_url": find_logo_url(away, logos)},
+"home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos)},
+"away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos)},
             "stream_urls": data["streams"],
             "date": data["date"],
             "league": data["league"],
