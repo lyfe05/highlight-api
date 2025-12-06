@@ -6,7 +6,6 @@ Auto-updated scraper for hoofoot.com
 – decorates with team logos
 – dumps api/matches.json
 """
-
 import pycurl
 from io import BytesIO
 from bs4 import BeautifulSoup
@@ -27,7 +26,6 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 LOGOS_URL = ("https://raw.githubusercontent.com/lyfe05/foot_logo/"
              "refs/heads/main/logos.txt")
 
-
 # ------------------------------------------------------------------
 # LOW-LEVEL FETCH
 # ------------------------------------------------------------------
@@ -43,7 +41,6 @@ def fetch(url: str, timeout: int = 30) -> str:
     c.setopt(c.TIMEOUT, timeout)
     c.setopt(c.SSL_VERIFYPEER, False)
     c.setopt(c.SSL_VERIFYHOST, False)
-
     headers = [
         "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,"
         "image/avif,image/webp,image/apng,*/*;q=0.8",
@@ -57,7 +54,6 @@ def fetch(url: str, timeout: int = 30) -> str:
         "Upgrade-Insecure-Requests: 1",
     ]
     c.setopt(c.HTTPHEADER, headers)
-
     try:
         c.perform()
         if c.getinfo(pycurl.RESPONSE_CODE) != 200:
@@ -89,22 +85,18 @@ def normalize_url(src: str) -> str | None:
 def find_matches_from_html(html: str):
     soup = BeautifulSoup(html, "html.parser")
     matches = []
-
     for container in soup.find_all("div", id=lambda x: x and x.startswith("port")):
         try:
             title_el = container.find("h2")
             if not title_el:
                 continue
             title = title_el.get_text(strip=True)
-
             link_el = container.find("a", href=True)
             if not link_el or "match=" not in link_el["href"]:
                 continue
             url = normalize_url(link_el["href"])
-
             img_el = container.find("img", src=True)
             image_url = normalize_url(img_el["src"]) if img_el else None
-
             info = container.find("div", class_="info")
             date, league = None, None
             if info:
@@ -115,7 +107,6 @@ def find_matches_from_html(html: str):
                 if league_img and "/x/" in league_img["src"]:
                     league = (league_img["src"].split("/x/")[-1]
                               .replace(".jpg", "").replace("_", " "))
-
             matches.append({
                 "title": title,
                 "url": url,
@@ -144,7 +135,6 @@ def extract_embed_url(match_html: str) -> str | None:
 
 def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
     urls = []
-
     # Patterns to extract main and backup HLS URLs
     patterns = [
         (r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", False),
@@ -152,7 +142,6 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
         (r"backupSrc\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", False),
         (r"backupSrc\s*:\s*{\s*hls\s*:\s*'//([^']+)'", True)
     ]
-
     for pattern, add_https in patterns:
         match = re.search(pattern, embed_html)
         if match:
@@ -163,7 +152,6 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
             if not url.startswith('https://'):
                 url = url.replace('https:', 'https://', 1)
             urls.append(url)
-
     return urls if urls else None
 
 def extract_score(detail_html: str) -> tuple[int | None, int | None]:
@@ -180,10 +168,9 @@ def extract_score(detail_html: str) -> tuple[int | None, int | None]:
         home, away = int(m.group(1)), int(m.group(2))
         print(f"        ↳ score found in JS  →  {home}:{away}")
         return home, away
-
     print("        ↳ no JS score pattern matched")
     return None, None
-      
+
 def process_match(match: dict) -> dict:
     try:
         print(f"   [processing] {match['title']}")
@@ -192,31 +179,27 @@ def process_match(match: dict) -> dict:
             print("        ↳ empty detail page")
             return {**match, "embed": None, "m3u8": None,
                     "home_score": None, "away_score": None}
-
         # ---------- score ----------
         home_score, away_score = extract_score(m_html)
         # ---------------------------
-
         embed = extract_embed_url(m_html)
         if not embed:
             print("        ↳ no embed link")
             return {**match, "embed": None, "m3u8": None,
                     "home_score": home_score, "away_score": away_score}
-
         embed_html = fetch(embed)
         m3u8_urls = extract_m3u8_from_embed(embed_html)
         if m3u8_urls:
             print(f"        ↳ {len(m3u8_urls)} stream(s) extracted")
         else:
             print("        ↳ no m3u8 found in embed")
-
         return {**match, "embed": embed, "m3u8": m3u8_urls,
                 "home_score": home_score, "away_score": away_score}
-
     except Exception as e:
         print(f"        ↳ exception: {e}")
         return {**match, "embed": None, "m3u8": None,
                 "home_score": None, "away_score": None}
+
 # ------------------------------------------------------------------
 # TEAM LOGOS HELPERS  (country-aware)
 # ------------------------------------------------------------------
@@ -231,7 +214,6 @@ def fetch_and_parse_logos() -> dict[str, dict]:
     except Exception as e:
         print(f"❌ Logo fetch failed: {e}")
         return {}
-
     logos: dict[str, dict] = {}
     for chunk in txt.split("------------------------------"):
         # Filename
@@ -240,26 +222,19 @@ def fetch_and_parse_logos() -> dict[str, dict]:
         url_m   = re.search(r"URL: (https?://[^\s]+)", chunk)
         # Description  (everything after "Description: " up to next blank line or dashes)
         desc_m  = re.search(r"Description: ([^\r\n]+)", chunk, re.I)
-
         if not (fname_m and url_m and desc_m):
             continue
-
         fname = fname_m.group(1).strip()
         url   = url_m.group(1).strip()
         desc  = desc_m.group(1).strip()
-
         # ---- extract country inside parentheses ----
         country_m = re.search(r"\(([^)]+)\)", desc)
         country   = country_m.group(1).lower() if country_m else ""
-
         # ---- clean team name (remove parenthetical country) ----
         name_clean = re.sub(r"\s*\([^)]*\)", "", desc).strip().lower()
-
         logos[fname] = {"url": url, "country": country, "name_clean": name_clean}
-
     print(f"✅ Loaded {len(logos)} logos")
     return logos
-
 
 def league_to_country(league: str) -> str:
     """Tiny mapper – extend as you add leagues."""
@@ -276,7 +251,6 @@ def league_to_country(league: str) -> str:
         return "turkey"
     return ""
 
-
 def find_logo_url(team_name: str, league: str, logos: dict[str, dict]) -> str:
     """
     team_name : e.g. "Manchester City"
@@ -285,15 +259,12 @@ def find_logo_url(team_name: str, league: str, logos: dict[str, dict]) -> str:
     """
     team   = team_name.lower().strip()
     country = league_to_country(league)
-
     # 1. remove league-country from team string  (Barcelona (Spain) -> barcelona)
     team_no_country = re.sub(rf"\b{re.escape(country)}\b", "", team).strip()
-
     # 2. exact filename match  (fulham, manchester-city, barcelona)
     exact = team_no_country.replace(" ", "-")
     if exact in logos:
         return logos[exact]["url"]
-
     # 3. word-wise match on cleaned description
     team_words = set(team_no_country.split())
     for data in logos.values():
@@ -308,7 +279,6 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
     print("🔄 Matching logos & grouping streams...")
     groups: dict[str, dict] = {}
     referer = "|Referer=https://hoofootay4.spotlightmoment.com/"
-
     for m in matches_data:
         if not m.get("m3u8"):
             continue
@@ -324,34 +294,33 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
             if '/manifest/0.m3u8' in url:
                 # Append the referer
                 streams.append(f"{url}{referer}")
-       if title not in groups:
-    groups[title] = {
-        "image": m.get("image") or "",
-        "date": m.get("date") or "",
-        "league": m.get("league") or "",
-        "streams": [],
-        "home_score": m.get("home_score"),
-        "away_score": m.get("away_score"),
-    }
+        if title not in groups:
+            groups[title] = {
+                "image": m.get("image") or "",
+                "date": m.get("date") or "",
+                "league": m.get("league") or "",
+                "streams": [],
+                "home_score": m.get("home_score"),
+                "away_score": m.get("away_score"),
+            }
         # Extend streams to avoid duplicates if title already exists
         groups[title]["streams"].extend(streams)
-
     result = []
     for title, data in groups.items():
         if " v " not in title:
             continue
         home, away = (x.strip() for x in title.split(" v ", 1))
-       result.append({
-    "home": {
-        "name": home,
-        "logo_url": find_logo_url(home, data["league"], logos),
-        "score": data["home_score"],   # ← was m.get(...)
-    },
-    "away": {
-        "name": away,
-        "logo_url": find_logo_url(away, data["league"], logos),
-        "score": data["away_score"],   # ← was m.get(...)
-    },
+        result.append({
+            "home": {
+                "name": home,
+                "logo_url": find_logo_url(home, data["league"], logos),
+                "score": data["home_score"],
+            },
+            "away": {
+                "name": away,
+                "logo_url": find_logo_url(away, data["league"], logos),
+                "score": data["away_score"],
+            },
             "stream_urls": data["streams"],
             "date": data["date"],
             "league": data["league"],
@@ -364,18 +333,15 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
 def main():
     print("🚀 Starting hoofoot scraper…")
     t0 = time.time()
-
     html = fetch(BASE)
     if not html:
         print("❌ Could not reach homepage")
         return
-
     matches = find_matches_from_html(html)
     if not matches:
         print("❌ No matches found")
         return
     print(f"✅ Found {len(matches)} matches on homepage")
-
     # ---------- stream extraction ----------
     print("🎬 Extracting stream URLs …")
     matches_data = []
@@ -388,15 +354,12 @@ def main():
             print(f"        ↳ no stream found")
         matches_data.append(res)
         time.sleep(0.2)          # be polite
-
     # ---------- logos ----------
     logos = fetch_and_parse_logos()
-
     # ---------- build json ----------
     print("🔄 Building final JSON …")
     final = process_matches_to_json(matches_data, logos)
     print(f"   {len(final)} matches left after logo merge / grouping")
-
     # ---------- save ----------
     os.makedirs("api", exist_ok=True)
     out_file = "api/matches.json"
@@ -406,7 +369,6 @@ def main():
             "matches_count": len(final),
             "data": final,
         }, f, indent=2, ensure_ascii=False)
-
     elapsed = time.time() - t0
     print(f"✅ Saved {len(final)} matches to {out_file}  ({elapsed:.1f}s)")
 
