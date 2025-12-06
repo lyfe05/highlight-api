@@ -168,37 +168,53 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
 
 def extract_score(detail_html: str) -> tuple[int | None, int | None]:
     """
-    Extracts the score from the JavaScript code in the match detail page.
-    Returns (home_score, away_score) or (None, None) if not found.
+    Extracts the score from the JavaScript block
+    document.querySelector('#bts').innerHTML = 'X:Y</br></br>';
+    Returns (home, away) or (None, None)
     """
-    # Regular expression to find the score in the JavaScript code
-    score_pattern = re.compile(
-        r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)</br></br>';"
+    m = re.search(
+        r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)</br></br>';",
+        detail_html,
     )
-    match = score_pattern.search(detail_html)
-    if match:
-        home_score = int(match.group(1))
-        away_score = int(match.group(2))
-        return home_score, away_score
+    if m:
+        home, away = int(m.group(1)), int(m.group(2))
+        print(f"        ↳ score found in JS  →  {home}:{away}")
+        return home, away
+
+    print("        ↳ no JS score pattern matched")
     return None, None
       
 def process_match(match: dict) -> dict:
     try:
+        print(f"   [processing] {match['title']}")
         m_html = fetch(match["url"])
-        embed = extract_embed_url(m_html)
+        if not m_html:
+            print("        ↳ empty detail page")
+            return {**match, "embed": None, "m3u8": None,
+                    "home_score": None, "away_score": None}
 
-        # ---------- NEW: grab score ----------
+        # ---------- score ----------
         home_score, away_score = extract_score(m_html)
-        # -------------------------------------
+        # ---------------------------
 
+        embed = extract_embed_url(m_html)
         if not embed:
+            print("        ↳ no embed link")
             return {**match, "embed": None, "m3u8": None,
                     "home_score": home_score, "away_score": away_score}
+
         embed_html = fetch(embed)
         m3u8_urls = extract_m3u8_from_embed(embed_html)
+        if m3u8_urls:
+            print(f"        ↳ {len(m3u8_urls)} stream(s) extracted")
+        else:
+            print("        ↳ no m3u8 found in embed")
+
         return {**match, "embed": embed, "m3u8": m3u8_urls,
                 "home_score": home_score, "away_score": away_score}
-    except Exception:
+
+    except Exception as e:
+        print(f"        ↳ exception: {e}")
         return {**match, "embed": None, "m3u8": None,
                 "home_score": None, "away_score": None}
 # ------------------------------------------------------------------
