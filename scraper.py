@@ -167,9 +167,19 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
     return urls if urls else None
 
 def extract_score(detail_html: str) -> tuple[int | None, int | None]:
-    m = re.search(r"document\.querySelector\s*\(\s*['\"]#bts['\"]\s*\)\.innerHTML\s*=\s*'(\d+):(\d+)", detail_html)
-    if m:
-        return int(m.group(1)), int(m.group(2))   # home, away
+    """
+    Extracts the score from the JavaScript code in the match detail page.
+    Returns (home_score, away_score) or (None, None) if not found.
+    """
+    # Regular expression to find the score in the JavaScript code
+    score_pattern = re.compile(
+        r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)</br></br>';"
+    )
+    match = score_pattern.search(detail_html)
+    if match:
+        home_score = int(match.group(1))
+        away_score = int(match.group(2))
+        return home_score, away_score
     return None, None
       
 def process_match(match: dict) -> dict:
