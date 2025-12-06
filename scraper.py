@@ -286,7 +286,7 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
     return result
 
 # ------------------------------------------------------------------
-# MAIN PIPELINE
+# MAIN PIPELINE  (with verbose logging)
 # ------------------------------------------------------------------
 def main():
     print("🚀 Starting hoofoot scraper…")
@@ -301,23 +301,41 @@ def main():
     if not matches:
         print("❌ No matches found")
         return
-    print(f"✅ Found {len(matches)} matches")
+    print(f"✅ Found {len(matches)} matches on homepage")
 
-    print("🎬 Extracting streams …")
-    data = [process_match(m) for m in matches]
+    # ---------- stream extraction ----------
+    print("🎬 Extracting stream URLs …")
+    matches_data = []
+    for idx, match in enumerate(matches, 1):
+        print(f"   [{idx:02d}/{len(matches)}] {match['title']}")
+        res = process_match(match)
+        if res.get("m3u8"):
+            print(f"        ↳ m3u8 OK  -> {res['m3u8'][:60]}…")
+        else:
+            print(f"        ↳ no stream found")
+        matches_data.append(res)
+        time.sleep(0.2)          # be polite
 
+    # ---------- logos ----------
     logos = fetch_and_parse_logos()
-    final = process_matches_to_json(data, logos)
 
+    # ---------- build json ----------
+    print("🔄 Building final JSON …")
+    final = process_matches_to_json(matches_data, logos)
+    print(f"   {len(final)} matches left after logo merge / grouping")
+
+    # ---------- save ----------
     os.makedirs("api", exist_ok=True)
-    with open("api/matches.json", "w", encoding="utf-8") as f:
+    out_file = "api/matches.json"
+    with open(out_file, "w", encoding="utf-8") as f:
         json.dump({
             "last_updated": datetime.now().isoformat(),
             "matches_count": len(final),
             "data": final,
         }, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Done – {len(final)} matches saved in {time.time()-t0:.1f}s")
+    elapsed = time.time() - t0
+    print(f"✅ Saved {len(final)} matches to {out_file}  ({elapsed:.1f}s)")
 
 if __name__ == "__main__":
     main()
