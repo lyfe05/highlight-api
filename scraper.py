@@ -265,7 +265,7 @@ def find_logo_url(team_name: str, league: str, logos: dict[str, dict]) -> str:
 # ------------------------------------------------------------------
 # BUILD FINAL JSON
 # ------------------------------------------------------------------
-def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
+def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
     print("🔄 Matching logos & grouping streams...")
     groups: dict[str, dict] = {}
     referer = "|Referer=https://hoofootay4.spotlightmoment.com/"
@@ -274,7 +274,15 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
         if not m.get("m3u8"):
             continue
         title = m["title"]
-        m3u8 = m["m3u8"] + referer
+        # Ensure m3u8 is a list of strings
+        m3u8_list = m["m3u8"] if isinstance(m["m3u8"], list) else [m["m3u8"]]
+        # Process each URL in the list
+        streams = []
+        for url in m3u8_list:
+            # Remove any existing referer and strip whitespace
+            url = url.split("|")[0].strip()
+            # Append the referer
+            streams.append(f"{url}{referer}")
         if title not in groups:
             groups[title] = {
                 "image": m.get("image") or "",
@@ -282,7 +290,8 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
                 "league": m.get("league") or "",
                 "streams": [],
             }
-        groups[title]["streams"].append(m3u8)
+        # Extend streams to avoid duplicates if title already exists
+        groups[title]["streams"].extend(streams)
 
     result = []
     for title, data in groups.items():
@@ -290,8 +299,8 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, str]):
             continue
         home, away = (x.strip() for x in title.split(" v ", 1))
         result.append({
-"home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos)},
-"away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos)},
+            "home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos)},
+            "away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos)},
             "stream_urls": data["streams"],
             "date": data["date"],
             "league": data["league"],
