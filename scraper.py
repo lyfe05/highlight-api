@@ -325,12 +325,14 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
                 # Append the referer
                 streams.append(f"{url}{referer}")
         if title not in groups:
-            groups[title] = {
-                "image": m.get("image") or "",
-                "date": m.get("date") or "",
-                "league": m.get("league") or "",
-                "streams": [],
-            }
+    groups[title] = {
+        "image": m.get("image") or "",
+        "date": m.get("date") or "",
+        "league": m.get("league") or "",
+        "streams": [],
+        "home_score": m.get("home_score"),   # ← add
+        "away_score": m.get("away_score"),   # ← add
+    }
         # Extend streams to avoid duplicates if title already exists
         groups[title]["streams"].extend(streams)
 
@@ -339,9 +341,17 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
         if " v " not in title:
             continue
         home, away = (x.strip() for x in title.split(" v ", 1))
-        result.append({
-            "home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos), "score": m.get("home_score")},
-            "away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos), "score": m.get("away_score")},
+       result.append({
+    "home": {
+        "name": home,
+        "logo_url": find_logo_url(home, data["league"], logos),
+        "score": data["home_score"],   # ← was m.get(...)
+    },
+    "away": {
+        "name": away,
+        "logo_url": find_logo_url(away, data["league"], logos),
+        "score": data["away_score"],   # ← was m.get(...)
+    },
             "stream_urls": data["streams"],
             "date": data["date"],
             "league": data["league"],
