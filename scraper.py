@@ -143,10 +143,14 @@ def extract_embed_url(match_html: str) -> str | None:
     return None
 
 def extract_m3u8_from_embed(embed_html: str) -> str | None:
-    # grab the first absolute URL inside src:{hls:'<here>'}
-    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(https://[^']+)'", embed_html)
+    # grab the first URL inside src:{hls:'<here>'}
+    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", embed_html)
     if m:
-        return m.group(1)          # already absolute, no fix-up needed
+        return m.group(1)  # already absolute URL
+    # fallback for URLs starting with '//'
+    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'//([^']+)'", embed_html)
+    if m:
+        return "https:" + m.group(1)
     return None
       
 
