@@ -281,8 +281,10 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
         for url in m3u8_list:
             # Remove any existing referer and strip whitespace
             url = url.split("|")[0].strip()
-            # Append the referer
-            streams.append(f"{url}{referer}")
+            # Check if the URL contains '/manifest/0.m3u8' to prioritize valid streams
+            if '/manifest/0.m3u8' in url:
+                # Append the referer
+                streams.append(f"{url}{referer}")
         if title not in groups:
             groups[title] = {
                 "image": m.get("image") or "",
