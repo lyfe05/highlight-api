@@ -141,34 +141,32 @@ def extract_embed_url(match_html: str) -> str | None:
         if "embed" in a["href"] or "spotlightmoment" in a["href"]:
             return urljoin(BASE, a["href"])
     return None
-      
-def extract_m3u8_from_embed(embed_html: str) -> list[str]:
+
+def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
     urls = []
 
-    # main src
-    for pat in (r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'",
-                r"src\s*:\s*{\s*hls\s*:\s*'//([^']+)'"):
-        m = re.search(pat, embed_html)
-        if m:
-            url = m.group(1) if m.group(1).startswith("http") else "https:" + m.group(1)
-            urls.append(url)
-            break  # stop after first good main URL
+    # Patterns to extract main and backup HLS URLs
+    patterns = [
+        (r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", False),
+        (r"src\s*:\s*{\s*hls\s*:\s*'//([^']+)'", True),
+        (r"backupSrc\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", False),
+        (r"backupSrc\s*:\s*{\s*hls\s*:\s*'//([^']+)'", True)
+    ]
 
-    # backupSrc
-    for pat in (r"backupSrc\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'",
-                r"backupSrc\s*:\s*{\s*hls\s*:\s*'//([^']+)'"):
-        m = re.search(pat, embed_html)
-        if m:
-            url = m.group(1) if m.group(1).startswith("http") else "https:" + m.group(1)
+    for pattern, add_https in patterns:
+        match = re.search(pattern, embed_html)
+        if match:
+            url = match.group(1)
+            if add_https:
+                url = "https:" + url
+            # Ensure the URL starts with 'https://'
+            if not url.startswith('https://'):
+                url = url.replace('https:', 'https://', 1)
             urls.append(url)
-            break  # stop after first good backup URL
 
-    return urls
+    return urls if urls else None
       
 
-# ------------------------------------------------------------------
-# PROCESS ONE MATCH
-# ------------------------------------------------------------------
 def process_match(match: dict) -> dict:
     try:
         m_html = fetch(match["url"])
@@ -176,11 +174,10 @@ def process_match(match: dict) -> dict:
         if not embed:
             return {**match, "embed": None, "m3u8": None}
         embed_html = fetch(embed)
-        m3u8 = extract_m3u8_from_embed(embed_html)
-        return {**match, "embed": embed, "m3u8": m3u8}
+        m3u8_urls = extract_m3u8_from_embed(embed_html)
+        return {**match, "embed": embed, "m3u8": m3u8_urls}
     except Exception:
         return {**match, "embed": None, "m3u8": None}
-
 # ------------------------------------------------------------------
 # TEAM LOGOS HELPERS  (country-aware)
 # ------------------------------------------------------------------
