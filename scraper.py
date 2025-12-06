@@ -141,27 +141,29 @@ def extract_embed_url(match_html: str) -> str | None:
         if "embed" in a["href"] or "spotlightmoment" in a["href"]:
             return urljoin(BASE, a["href"])
     return None
+      
+def extract_m3u8_from_embed(embed_html: str) -> list[str]:
+    urls = []
 
-def extract_m3u8_from_embed(embed_html: str) -> str | None:
-    # 1. main src – absolute or protocol-relative
-    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", embed_html)
-    if m:
-        return m.group(1)
+    # main src
+    for pat in (r"src\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'",
+                r"src\s*:\s*{\s*hls\s*:\s*'//([^']+)'"):
+        m = re.search(pat, embed_html)
+        if m:
+            url = m.group(1) if m.group(1).startswith("http") else "https:" + m.group(1)
+            urls.append(url)
+            break  # stop after first good main URL
 
-    m = re.search(r"src\s*:\s*{\s*hls\s*:\s*'//([^']+)'", embed_html)
-    if m:
-        return "https:" + m.group(1)
+    # backupSrc
+    for pat in (r"backupSrc\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'",
+                r"backupSrc\s*:\s*{\s*hls\s*:\s*'//([^']+)'"):
+        m = re.search(pat, embed_html)
+        if m:
+            url = m.group(1) if m.group(1).startswith("http") else "https:" + m.group(1)
+            urls.append(url)
+            break  # stop after first good backup URL
 
-    # 2. backupSrc – same treatment (kept for safety)
-    m = re.search(r"backupSrc\s*:\s*{\s*hls\s*:\s*'(https?://[^']+)'", embed_html)
-    if m:
-        return m.group(1)
-
-    m = re.search(r"backupSrc\s*:\s*{\s*hls\s*:\s*'//([^']+)'", embed_html)
-    if m:
-        return "https:" + m.group(1)
-
-    return None
+    return urls
       
 
 # ------------------------------------------------------------------
