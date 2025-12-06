@@ -1,19 +1,21 @@
 {
-  "last_updated": "2025-12-06T09:50:18.450615",
+  "last_updated": "2025-12-06T10:20:24.458327",
   "matches_count": 16,
   "data": [
     {
       "home": {
         "name": "Lille",
-        "logo_url": "https://football-logos.cc/logos/france/256x256/lille.451f5326.png"
+        "logo_url": "https://football-logos.cc/logos/france/256x256/lille.451f5326.png",
+        "score": 3
       },
       "away": {
         "name": "Marseille",
-        "logo_url": "https://football-logos.cc/logos/france/256x256/marseille.92b6437c.png"
+        "logo_url": "https://football-logos.cc/logos/france/256x256/marseille.92b6437c.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309492/manifest/0.m3u8?token=NHJCQWk3d2tjVFE5b2h0cW1uQU4zcHZNUmtMZGpzYnZQVC9sdWloRlgzZz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5Nzg2MDEwODE2&keypair=akZjRHZFZDdkS3QrSklmVFg1K2tHb2szaW02RnNpbkhiSitNdHlmOTg5cz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5Nzg2MDEwODE2|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309492/manifest/0.m3u8?token=QjY2d0tDd2s1RmdkSUZTb3FOUk4yV1dweEtCbEROZndxT0kxSktVOFp1ST06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4MDEzMzUzNTM=&keypair=S01YNUpRMEhHemhlR3JNcnQ5SDBPV1FTM1BDOWp6N0VIM1hMekRsV2pCdz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4MDEzMzUzNTM=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309492/manifest/0.m3u8?token=TGNnOU01MFR1UDhCbnRla09uczk1ZDRHM2Nwd3ZyZlJ4M2V4RDF6WDZ3ST06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc4NDUxNjAxNTY=&keypair=VlBOMjRmeDBjOEhFN3lUU0JaRjFxVWtVT0ozcnFvb2hPT0hmdW12UlllYz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc4NDUxNjAxNTY=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309492/manifest/0.m3u8?token=Y21qSzMyNFB4b2RTYVRja1h4ZFZoQS9BbFFaZXVZaE1YQTYrY01CVmJybz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc4NjA0NzkzMDE=&keypair=WjRHVXE2RGI3bHU0K3MzcUdRZTE4bFNna011NnBYUlRNUUl5ZXpoT3NwRT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc4NjA0NzkzMDE=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Ligue 1"
@@ -21,15 +23,17 @@
     {
       "home": {
         "name": "Benfica",
-        "logo_url": "https://football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png"
+        "logo_url": "https://football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png",
+        "score": 3
       },
       "away": {
         "name": "Sporting",
-        "logo_url": "https://football-logos.cc/logos/uruguay/256x256/defensor-sporting.8acb1824.png"
+        "logo_url": "https://football-logos.cc/logos/uruguay/256x256/defensor-sporting.8acb1824.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309493/manifest/0.m3u8?token=ajZXVVIwZ3MxUXJTWDZRd3pUdUYvbGw2ZERpSXNEN2JUSkF1cWU0OTAxOD06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4MTQ3NjI1NzU=&keypair=M3dicVB2STBPS1ZCU1g4TXJuVk9IdWg4NHlscW00eW55TEpRcHE2MmxPUT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4MTQ3NjI1NzU=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309493/manifest/0.m3u8?token=TExrN0N0RzlKODVsODVUZVluZmxGbFovcVNMcjlOTjEwL2p0UDhQVU1xdz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODI4MjAwODgx&keypair=Rnc2VkY5YnNmcGRuekRMWlpFZm1mVEt2WW11d0F0VGVUdkdickQwazR4bz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODI4MjAwODgx|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309493/manifest/0.m3u8?token=bEVCd3I5dFhzU1QwalpISnN3bytUdUtnMlE3U3FwdmxZdUF6aFIwYkxPZz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3ODc0NTQ0Mjg4&keypair=akVscVpKS2VQVmhxNEdzcDJuZGt0eUU0Sm91M2ovR0NxTjhWOE0wdHMxND06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3ODc0NTQ0Mjg4|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309493/manifest/0.m3u8?token=K0R5THZQRjhsTEFNWEo5TnU4R3g0UndXc0hpc0s0NFJUaUp6SEZqRVBGZz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3ODg3MzY1NTU5&keypair=bUlXMGNGNzlQdWJmaFJGZzlaN1Aydmw3aFhVZDZaNDB2MlZldWl4WWlPUT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3ODg3MzY1NTU5|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Liga Portugal"
@@ -37,15 +41,17 @@
     {
       "home": {
         "name": "Brest",
-        "logo_url": "https://football-logos.cc/logos/france/256x256/brest.bdb50f5e.png"
+        "logo_url": "https://football-logos.cc/logos/france/256x256/brest.bdb50f5e.png",
+        "score": 3
       },
       "away": {
         "name": "AS Monaco",
-        "logo_url": "https://football-logos.cc/logos/france/256x256/as-monaco.51dd5065.png"
+        "logo_url": "https://football-logos.cc/logos/france/256x256/as-monaco.51dd5065.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309484/manifest/0.m3u8?token=eHI0bEpId2QrelVhanNnNmk0Qi9adFF5Q3dqM3h1WkthcUV2dXMxdXZZaz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODQzNTIyNjM0&keypair=aUNNZmp0VmRCVkpMYzdEeWdNS1pXcVA3YndZSCszVDZwS0hyMmowMWJQND06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODQzNTIyNjM0|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309484/manifest/0.m3u8?token=WXI5YS94VFYxaFhuNzFtVFpFVkoydG5DOWlSbXpDMTBBbmVmV3gveDJJOD06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4NTY5NjA1MjI=&keypair=Uk9salUwYUxuTmVSbDRMYTFiNWFkZmErMHU4d3N0MkdtMmRRU2EyOGx6dz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4NTY5NjA1MjI=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309484/manifest/0.m3u8?token=ZkM0SGxOcmo4VUYyWnMvSFdaTGt6MHdncWh1T28yMFZQVFBtNnBsR29LTT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTAwMzM2Mjc5&keypair=RVc3aFFZT3dkazJJSWZ3eEVmWHNYdk9aeG5oOVNVSUxGNUVuODR2SzNmdz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTAwMzM2Mjc5|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309484/manifest/0.m3u8?token=THNTTUhWL0R3UDF3YnBzSmtWdklqVVd2enAyKzV5ZnJteFI5S3RZMzVqbz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5MTI2ODI2MDk=&keypair=bGhYSDI2SU5YWkZWTzNwQ3AyUWtlWFZIZ0JyOW43Zm5CSTMyZGdLLzBpVT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg0LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5MTI2ODI2MDk=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Ligue 1"
@@ -53,15 +59,17 @@
     {
       "home": {
         "name": "Mainz 05",
-        "logo_url": "https://football-logos.cc/logos/germany/256x256/mainz-05.508fc81a.png"
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/mainz-05.508fc81a.png",
+        "score": 3
       },
       "away": {
         "name": "M'gladbach",
-        "logo_url": ""
+        "logo_url": "",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309487/manifest/0.m3u8?token=M3RJUWpSTTRBbk84M1QycWhBMzFGeHA2dVFSOUhYK0x5cXgyN2t3bkl5ND06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4NzA1NTkzMDE=&keypair=UDluNlRaMElEK0I3bEtKTWg0RS9HNnQxNW5xNjEvUTQ3RGdLV0NKcjR4az06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4NzA1NTkzMDE=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309487/manifest/0.m3u8?token=bHZnOXB4VS9YU0tuUDI0NWQ1UVphcGV3aFZNM2c1QS9FRnppTWZ2Z3Btaz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4ODM5OTc4NjA=&keypair=bmF0NkV2ZXM3V29qbVpLcnpHQktNYUNuT0VXYlJzZ3VRZjFaSk8rdGtKVT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk4ODM5OTc4NjA=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309487/manifest/0.m3u8?token=VVNQYUlucHk2RGkzb09zZmpLbGozcWErRHd3a0VwRldCYUtXNitYKzJ1Yz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5MjY0MzYyMDI=&keypair=WjJHdzUyb0hCbmROQUtka3RXNFdwY0RkaE50UllBZHBrYVRFRDZxNUNXcz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5MjY0MzYyMDI=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309487/manifest/0.m3u8?token=c3drTWt2cFI5ZWtOZVhJZ0w2ZXl0SG1YN05qOERheGt6UHNiWFdzTStXST06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTQwNTAyOTQ2&keypair=dUIvOVkvUDNvOFliYitLV2d5ZWg5dUsxMklRdE9KR3lOeHZHeTVpUU1jUT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDg3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTQwNTAyOTQ2|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "BundesLiga"
@@ -69,15 +77,17 @@
     {
       "home": {
         "name": "Hull City",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/hull-city.28918662.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/hull-city.28918662.png",
+        "score": 3
       },
       "away": {
         "name": "Middlesbrough",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/middlesbrough.b9f845aa.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/middlesbrough.b9f845aa.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309490/manifest/0.m3u8?token=N2I0Yk9IcXNPUlo1ekhoL3NMeGpneitqVjZ2U3YwQStKOXFaMU82eHNpUT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODk1ODgwMTk2&keypair=by9abXJYOWFRVVhBNVd6T1YvcVNXdzlDd1cxOWs1ZndLQXJwcm0wTy9yVT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5ODk1ODgwMTk2|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309490/manifest/0.m3u8?token=Z1kzRnhLTXNHdzFtS3dQRzEvQjcrOTJtR0pMWk9FV2YvWittM2FmcjdLbz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTA3NTk5MDEz&keypair=VlJUekkxdFU3VUJWcExHRGsxL2lyVFNPaEJCL25CamdKd0ZiS2ZUbzVGZz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTA3NTk5MDEz|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309490/manifest/0.m3u8?token=MTM2L2x3SFJ2OU1lTHpmWkxHcnBBR01xV1lkdkNlbWp0ZS9sS2YrUmMrcz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5NTUwMzQ2Mzk=&keypair=KzlONThsdDNFZTA3R1VCaFlTdE1wRnI2YmNGQVJHbkpNN09BQXBhcUlXQT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5NTUwMzQ2Mzk=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309490/manifest/0.m3u8?token=ZFJ5N3ZqQ1FoejhpbEwwemM3UXpHSXkzck5keEpNL29uOVpDSkFjZVl3OD06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5NjgzMTgxNzU=&keypair=U0cwcmthUVlnVzFDclNFSGVCanBXMkpUK0ozUVFDR244Qk5qTzVocXpZRT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkwLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5NjgzMTgxNzU=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Championship"
@@ -85,15 +95,17 @@
     {
       "home": {
         "name": "Oviedo",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/oviedo.d7b26c52.png"
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/oviedo.d7b26c52.png",
+        "score": 3
       },
       "away": {
         "name": "Mallorca",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/mallorca.d244a18a.png"
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/mallorca.d244a18a.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309491/manifest/0.m3u8?token=WXRBcjB6VlVxSEJjdEExWW0wL2V6MUVXUnJCYmdyVVBHT05EUERMV1lrND06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5MTkzMjQxMjA=&keypair=RVJJTHhObWZUUFgyU3pxc0RRaFlrTVFQR2p1emhaVS9RSEs2aXkrS2dlRT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5MTkzMjQxMjA=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309491/manifest/0.m3u8?token=TmZVTXBrSmswK0dmcGN5MmJscEwvejR5bWQwdEdVaG9ZV1MxQndUWVAvbz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTMxMDQzNDkx&keypair=RzV4aE1SRVdGcy9pQzV5TXRwYVBHTUFBeU9tSFVLeld5UndiN29SR1NMRT06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTMxMDQzNDkx|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309491/manifest/0.m3u8?token=ZlBYNG9zWXVxdEpkRlVNVkhWRVBNUFo2Q21HN2VDZDBwejF6ZUFmeUlLcz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5ODA4MjYwNTU=&keypair=aWdWUWcxbkdyQUhPOEpHY3lycmZUUFU0VC9VU3Jwcmh5VC9XQlNFOVhLaz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjc5ODA4MjYwNTU=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309491/manifest/0.m3u8?token=TEI5WmF2aURKSVArb0diVnRRRGNZdzhQSGVGTTh2MTRRR0FkY0NpM21Rdz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTkyNzAxNDE2&keypair=RlhTMGtYaUphMTVodWRoem5qR0hnRjJQdWZEdEd5Zy9vSWI0eGJ4ck5mbz06VXBGaWxlcy8yMDI1LzEyLzYvNTEvMzA5NDkxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY3OTkyNzAxNDE2|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "La Liga"
@@ -101,15 +113,17 @@
     {
       "home": {
         "name": "Manchester United",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png",
+        "score": 3
       },
       "away": {
         "name": "West Ham",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/west-ham.c86eebf5.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/west-ham.c86eebf5.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309472/manifest/0.m3u8?token=TlRZYWJhcnhiclZRTEdkUWVFeXUwaU5rc1g4b3V2alk5LzU1Y1pQOVh0Yz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5NDI3NjU5MzY=&keypair=dVlDTk5DQnlvMGtWM01mZkJ5U1VUM1VmNFJqQk5EMERQS1lMdXd0QlRxYz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5NDI3NjU5MzY=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309472/manifest/0.m3u8?token=VklvQlQ4b3A5ampjMGZGQ3JpeCs3aWkzUlZUcGpRTlZZc0ZzNGdMcU1NOD06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTU0NDg1MDI4&keypair=WEpWcnpaT0xjTE1QeEdWcUhSbjBMcmdwNTVUeDBiQ3BjZmpmelNpRVpYTT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTU0MzI4Nzc4|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309472/manifest/0.m3u8?token=WjkzUWtnbWxhZFpYeE9EZXQxR1AyWWNGZk9OTnM5TUJZdFZoTGVRWE1MVT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDAzNjM5MjU0&keypair=VHE5T3dwc040d08rak0vQXdBUVlDSjFCZW0wVnNNRUYyVmVoZ0VackNtVT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDAzNjM5MjU0|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309472/manifest/0.m3u8?token=V01PUG1pZVJyM0NUcUFhNU1MclVEMWpyTkd3SlJJUk1kUFJxRlV3QlhlVT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDE1NjcwMDkx&keypair=MklhbWZEWVBDZ29IN1J1a0RRUTBIaW5vbnYwdlNCdnNmbzVhZFRncjlJZz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDcyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDE1NjcwMDkx|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Premier League"
@@ -117,15 +131,17 @@
     {
       "home": {
         "name": "Lazio",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/lazio.2386d28d.png"
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/lazio.2386d28d.png",
+        "score": 3
       },
       "away": {
         "name": "AC Milan",
-        "logo_url": ""
+        "logo_url": "",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309473/manifest/0.m3u8?token=MjFYK1diNDltckJaRzdkbUp1dHJGUm16Sy8xRisrclJiOG5jTUE3SUdHND06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5NjYwNTE2NDE=&keypair=R2JvUEN1K0VPT3Zudm45VGFXWGtTWDFrM2I0dVdULzR5cDlCSlhqRE1GYz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5NjYwNTE2NDE=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309473/manifest/0.m3u8?token=Tmx3S3h4R1pKZkM2WUV0ckYzNWJ0ZWkrdGVZWFZKNHpmaFJVeEh2V2N3UT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTc3NzcxNTE0&keypair=dGgrZzkvMlRWQXVlQmRhWXRCZlV3Um5kd2d4N2Yya1BHNEs3Z0ZWSUpCWT06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTQ5OTc3NzcxNTE0|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309473/manifest/0.m3u8?token=bWdzMzBZZXRYK2NxQlpCN2JoSmpYSjBYNk9pai96R2xBYmNxQm14a2hoST06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDI3MjM3NjE3&keypair=cHJXMFBlZFNWc2crU1FEWXJ5RWRhU3dHRTVxY21uTU9XSTlCaVQ1YTlQbz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDI3MjM3NjE3|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309473/manifest/0.m3u8?token=QWlpMi95NUM5eEZUdzlqb1lwbkhhTWladDZGZU1UeTkrMGdodnBVUk1odz06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDM4MzM2OTAw&keypair=SmtEMHQ5N0g0R3ZpVEwrQXppSXd0bUVvTnNwcVljNXFIUGJxZjk3ZXVLND06VXBGaWxlcy8yMDI1LzEyLzUvNTEvMzA5NDczLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDM4MzM2OTAw|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Coppa Italia"
@@ -133,15 +149,17 @@
     {
       "home": {
         "name": "Bologna",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/bologna.a78d435f.png"
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/bologna.a78d435f.png",
+        "score": 3
       },
       "away": {
         "name": "Parma",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/parma.ca4e3120.png"
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/parma.ca4e3120.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309464/manifest/0.m3u8?token=QkN6TVVqZExCRnN3MkJFSUdva1YxS09BUUt4c3lsMEJ3R25XSTg3SlNrdz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5ODk0OTMwNjU=&keypair=L1RBUjFFSkllZVk2TkdManNZeHpEanJEM29GaWJUMjVzV1RmUVd3OG96bz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNDk5ODk0OTMwNjU=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309464/manifest/0.m3u8?token=VDlSMmZNdmRRcWtwdHBVbUNDV2IvblJFeGp3VUUzR092QjAxMk4rd0FYOD06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDAyNzc0NzE2&keypair=MW9uRG1qdVVhcWN4OWJaVmZXSEVWVlhqb0MzM3A2S09CYmFMNjNjbWZ1VT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDAyNzc0NzE2|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309464/manifest/0.m3u8?token=b21kUVJDMnczR0dVL29NRDFXbllYNUMrSndON3YxTEd0SXZpaXV3dVRwVT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDQ5MjkyMzcx&keypair=a3I1YXYwY1N6bE9kYVBKN2lqWlNZUFBxekZNMzl1U1J5eU9yY0ZrTVFlUT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDQ5MjkyMzcx|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309464/manifest/0.m3u8?token=Z3hIbUtHYWVhTzE4UXNWMVhLWmVxM1l2ZGxVNENoOUFxTjJHZkk2cWVIcz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDYwMzkwNjk3&keypair=alZVbjdvb1lDY2VoSk9hYnRDNXYweURVbXI2Nk9RRVFFR3ZraEs5VVZYdz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDY0LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDYwMzkwNjk3|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Coppa Italia"
@@ -149,15 +167,17 @@
     {
       "home": {
         "name": "Arsenal",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/arsenal.e5528ede.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/arsenal.e5528ede.png",
+        "score": 3
       },
       "away": {
         "name": "Brentford",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/brentford.e3296e20.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/brentford.e3296e20.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309429/manifest/0.m3u8?token=T1JBVWNodEgrZzVZTkoxNFZnaXZFR1VSUzgzOXM0NzJuZFNqUnlKWGxFTT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDE0NjU3MjM3&keypair=OEFnR2E1VUROZkpNaU9ld2Y1L2FmNUxFamhjYzJFRzV6amtaMk9yMDhOST06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDE0NjU3MjM3|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309429/manifest/0.m3u8?token=U0x4SHI1Smtia2xHdXhXdTdkUytSQjQxd20zb3A3elRabFBrdFpwZnoxMD06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwMjYzMzQzNDc=&keypair=VzRjM0NqaTh5S3loZnAxZnlQQTBhYi84Tm1FWHIxSGFhVDJXYUszdWViaz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwMjYzMzQzNDc=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309429/manifest/0.m3u8?token=eHZWQmcvelFOdXdBVFJYRjQvWklhK3BSbk1UaWx1R2RGd1JIVmhyWjJwYz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDcxNDg1NzAy&keypair=bGM2cFhwSXBIQmdFQUFxbFRDU1JXVXVHc1RWVjViVVdLbVppaEh1U3V3RT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MDcxNDg1NzAy|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309429/manifest/0.m3u8?token=NmduM2U3Vi9UMG93YkNoTStTYU81RGJRM2V0dTNFVmI2dzBBUXdHeGpCcz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgwODMzNjk0NDQ=&keypair=dGhXbEpBeVFPbzlUeGNNbzdYaVU4dHZGeFh4bW80MFhleUROTjJWL0V3dz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI5LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgwODMzNjk0NDQ=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "Premier League"
@@ -165,15 +185,17 @@
     {
       "home": {
         "name": "Liverpool",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/liverpool.99c48ae3.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/liverpool.99c48ae3.png",
+        "score": 3
       },
       "away": {
         "name": "Sunderland",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/sunderland.2f55baea.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/sunderland.2f55baea.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309431/manifest/0.m3u8?token=MHMweHpGYzE3RkNVTCt0cU52c2swUTNSQjFMYTdVVzFCTzNqRU5ia2YzZz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDM3OTQ3NjUw&keypair=OEFQZXY0d0kxVTRGVFNZWUdJaGs1Nkp3c1VBcFRYejJTMjQvZEZvZlAvdz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDM3OTQ3NjUw|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309431/manifest/0.m3u8?token=Qlo0RnBFZHlQcy9pSTB1c0NWWG1BVFN3cjBwb3lSa1Q0VEloTzUyQmVBWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwNDk2NzY0MDY=&keypair=YU5md2tERGUzeEloVGtjcEtzVm5WRGtmVjhFZFhQdDlWaWJnNHNZcFNjVT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwNDk2NzY0MDY=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309431/manifest/0.m3u8?token=dS8wQ2JwNXNFRHFsZnAraFdkVUpwQmQ5K3BTUzI3TVI2ai95SHZHNGR4Yz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgwOTUwOTUyNTU=&keypair=ZFBBSW1PQ2pUTmU3V2FBY2tZNEp1N1VjSVF4c0hKbWZjRlE3Q2o2RG4xWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgwOTUwOTUyNTU=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309431/manifest/0.m3u8?token=RmtLaHZOMXNpWEVXUFhJbjVPaHFFUm9mUHBEaTJZR001MkVwdzFkYzFnbz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxMTYxOTQ4OTU=&keypair=YXg4OUl1c3VyUWQ5eVA3YUtYMWpWbVBVQnZPRVFlSXRyeVVXOE12RnZPMD06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxMTYxOTQ4OTU=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "Premier League"
@@ -181,15 +203,17 @@
     {
       "home": {
         "name": "Leeds",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/leeds-united.26dba8f5.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/leeds-united.26dba8f5.png",
+        "score": 3
       },
       "away": {
         "name": "Chelsea",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/chelsea.fe8d2c2e.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/chelsea.fe8d2c2e.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309432/manifest/0.m3u8?token=TjRxaXhhQWdiU25uUGJyWkRkMENuTS9LSUxFekx2SjZ2VUFHVjZNREtycz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwNzE1NTM0NTI=&keypair=Wk92ZDhhWTdNRnNBYWZ3dExaV0IzUWlwc1czSXFHSDdQdGhWVXJmYWdSZz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwNzE1NTM0NTI=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309432/manifest/0.m3u8?token=Q1ZBQXpTblN2eXRWdGx4Um5kVU8xK29SNEJ6cVh5amFpWHMxMzUwK2ZEMD06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwODMyNzI1NTE=&keypair=eCtkUk0raDhha1hwSjNTN1BJQ0NSSGt4d0lNd1lzZ1RtdXloSDAwbklpVT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAwODMyNzI1NTE=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309432/manifest/0.m3u8?token=Q3lncE1QbEg2bFNLclJKUFRtYitKMXRZWG9JemZEM3dNaTROREgzVG5mTT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTI3MTUzNDc1&keypair=OEZWQjh2M0Y4azVRT3RTZUtKRmIvTElXOGRKRUVaRUNJTjVHTDEzcHRWaz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTI3MTUzNDc1|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309432/manifest/0.m3u8?token=NFhBbTdGK2VYejA3SVRoR25VSGVIanNJSWRKZVF2VFVwd3hrOEhpZWQrdz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTM5MTg4MzY4&keypair=YldmU2pscXNzcmJmMjlTYTlaK2NxZzlDQ0c3bFBXVWM4V1M1dXJXQUJlbz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMyLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTM5MTg4MzY4|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "Premier League"
@@ -197,15 +221,17 @@
     {
       "home": {
         "name": "Athletic Club",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/athletic-club.e1bfba0c.png"
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/athletic-club.e1bfba0c.png",
+        "score": 3
       },
       "away": {
         "name": "Real Madrid",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png"
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309391/manifest/0.m3u8?token=MkVpeWJ4QklrYVdrTlNxaEVHVGdJakkzUXhra2x0bjZqa0pLOUU3WHlyMD06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDk1MDAwMzMy&keypair=RndxcW5yc2UyVlpXK3dNTjNmOGFnWWFiRjVGd0xqZjhLRjN6SDZZYnJPST06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMDk1MDAwMzMy|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309391/manifest/0.m3u8?token=eGthaFFrYm9HK0VhdERXUmJpc296czY0S2VqZXhNeDZZMkh4Mk5CVHBGbz06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTA2NzI0NDk5&keypair=ZXBuSTZtOUxEalVwY2NZYit2Qi8zb01ENmNRd043d0NZNTFkRUV3dU02az06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTA2NzI0NDk5|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309391/manifest/0.m3u8?token=Z1p1MkhRcmVBVlBFOVkxU0Ezb0F2TGh4RlQ1V3RycUpoZ1kyR1dWT3FiYz06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTUxODU1Nzc1&keypair=cnUrYW9zT1VXUVlVbytzZk9VUjBrNGVLTkdkSU85T09YcWd0QUgxWndwZz06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTUxODU1Nzc1|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309391/manifest/0.m3u8?token=cjErS0h2UzJrMmJpcVpGYVgrdzJSZVJHbkJySks2RmkxMS8rZy9vOFhIcz06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxNjQ4MjkzMzg=&keypair=RUxCdTZMZ3NFRVhwYmRJN1lpWVUxdXdVb2JvQ05nZFd6Vm1YZCsvdWx1VT06VXBGaWxlcy8yMDI1LzEyLzMvNTEvMzA5MzkxLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxNjQ4MjkzMzg=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "La Liga"
@@ -213,15 +239,17 @@
     {
       "home": {
         "name": "Union Berlin",
-        "logo_url": "https://football-logos.cc/logos/germany/256x256/union-berlin.b0d180f9.png"
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/union-berlin.b0d180f9.png",
+        "score": 3
       },
       "away": {
         "name": "Bayern",
-        "logo_url": "https://football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png"
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309415/manifest/0.m3u8?token=ZG1NeFcrZitXZ2NQVE9GL2NxeW9ZVkx1U21KNXhiUmtiUElUNFB3cXhObz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAxMTg0NTAwMzM=&keypair=OWVpOXprZ0YvbWprVmhDa3EvTTBoclRENC9rRXZSTXBaZ3F5VU1BSkx5dz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAxMTg0NTAwMzM=|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309415/manifest/0.m3u8?token=ak9TcENZaEZlSEJINWRkei92VUp4TnJnUXlPT3hiUk1Hd0dYZzZMUzY2cz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTMwMDE2NzMx&keypair=eS90OFdLbjZBSHhzaUF2dmdldnVUVkVwa1JLNjc1NnN1SXY1Q0lub2txaz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTMwMDE2NzMx|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309415/manifest/0.m3u8?token=alVhZmxoSHN6b1JtZzFNenJyR3R5RG8rR3ZrZUtCVWg0SGFyaEZEU1d4cz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxNzc0ODU1NTQ=&keypair=Lytjb1p0ZHNtZ0YzdFpMQXI1eGF6bDZBdU1hcCsrU3pGM0lZNFBGTzJHaz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgxNzc0ODU1NTQ=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309415/manifest/0.m3u8?token=ZGZOdXlBK0VFSVlQZUhkakl3OWN4VGNjVkpGWHVtTVY3cGRvL2VEWWRpZz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTg5MjA5Mjk2&keypair=bzI3WG9MaC9jRlYzc0FrbnBlNThKVTVKU0lxaTNGaFc2ZHlvRlp4MkFEWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MTg5MjA5Mjk2|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "DFB-Pokal"
@@ -229,15 +257,17 @@
     {
       "home": {
         "name": "Inter",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/inter.3a7ce90c.png"
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/inter.3a7ce90c.png",
+        "score": 3
       },
       "away": {
         "name": "Venezia",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/venezia.88255863.png"
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/venezia.88255863.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309426/manifest/0.m3u8?token=MURTcTJzK1Nib3N5MG12cEZHUXpiNXVFTDg4MlBtenRYaXJ0REMwYlRyWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTQxNzQyMTE3&keypair=YmF1RFRzeWtHbGNlcjJ3U1g3VlZLYldnaHpKeFI5SXhrR0wxbFliSU0vcz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTQxNzQyMTE3|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309426/manifest/0.m3u8?token=TWgwbDAyd3o2N2dQVlRwM0ZRei93dDY3dlZuQzJQUTdxcFZ6UmNtYStGWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTUzMzExNDU4&keypair=Rnh6OGtKVWs0RHQ3bUtqRkRYRjBSNWpRdGFDSzkzRFB6OUM5ZVZiNXI3ST06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTUzMzExNDU4|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309426/manifest/0.m3u8?token=ckgxWHEyQktlUjNsRjRrdW4vdlRvRWVJdDBKRU9BZ3lzbzdMaWlRbVhtTT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgyMDAzMDQ4NDQ=&keypair=QUFvT1RuSkJCK1N4THZ2SUNoZklCNXhjazN0dFY5Yy81VThObHFpZzJWbz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgyMDAzMDQ4NDQ=|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309426/manifest/0.m3u8?token=eDF3Nkw4SXVMUkZIeHQxSzljblVMV1VXK2d4WFd4eEJLdUJwOUZpLzRlZz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MjEyMzM2NDY4&keypair=alBvWXFxK2FpWUFrM1oxY01Jdm1LSFVhSVhOZzNrRHFrcTBWWXBLMVJUdz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MjEyMzM2NDY4|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "Coppa Italia"
@@ -245,15 +275,17 @@
     {
       "home": {
         "name": "Brighton",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/brighton.5da206a0.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/brighton.5da206a0.png",
+        "score": 3
       },
       "away": {
         "name": "Aston Villa",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/aston-villa.07a2646c.png"
+        "logo_url": "https://football-logos.cc/logos/england/256x256/aston-villa.07a2646c.png",
+        "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309430/manifest/0.m3u8?token=SFdWM0d5RC9LaTcrcG91MW96TEVFUkV4UUgxMXBhN0ZmYzRrb2FvenF4Yz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTY0ODc4Njky&keypair=N255ZmxmUWlIY1JWRHByQ0NuVmo0SDdjS0E4cDBXaGhKR1EvbjBpTk4yTT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTUwMTY0ODc4Njky|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls.videohatkora.com/upfiles/source/hls/51/309430/manifest/0.m3u8?token=UmRjZVRUMnM3ekxUMllVNHRCR1RWZys3MTBWQ3ZNaGF6TWltdy91Z1ZHVT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAxNzY3NjUyOTc=&keypair=TnF4UVp2UzhERm5VOVhXSEFEenBoTGNlSE81TCtjd01wY0tDOElpOW5Vaz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNTAxNzY3NjUyOTc=|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309430/manifest/0.m3u8?token=Zmp2dXQ1WUFkRy9VbUNEa1NhL3FxeGt6K1BXNlY5MDdieG8vSUZ2VHAxWT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MjI0OTk4MzM1&keypair=amFyMTBzQUYvU1k5eWRBZVZLZGIxdjNGeitxNUJha0RkMys0clpBK1MxOD06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDA2MTY4MjI0OTk4MzM1|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309430/manifest/0.m3u8?token=OTJuckhlalU2YWIzcVY1MWZFQUE5VVREZjl6YUl6dWR4cjN0Njd5WnBPYz06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzAubTN1ODolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgyMzc4MTEyMjU=&keypair=UU5MMUdpUHMzWi9keHhGaklsTEh1SDRUekpLOEhMeHZ5MnJEK2tXYTdvUT06VXBGaWxlcy8yMDI1LzEyLzQvNTEvMzA5NDMwLzolMkYlMkZobHMudmlkZW9oYXRrb3JhLmNvbSUyRjo2MzkwMDYxNjgyMzc4MTEyMjU=|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "3 days ago",
       "league": "Premier League"
