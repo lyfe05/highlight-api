@@ -324,14 +324,14 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
             if '/manifest/0.m3u8' in url:
                 # Append the referer
                 streams.append(f"{url}{referer}")
-        if title not in groups:
+       if title not in groups:
     groups[title] = {
         "image": m.get("image") or "",
         "date": m.get("date") or "",
         "league": m.get("league") or "",
         "streams": [],
-        "home_score": m.get("home_score"),   # ← add
-        "away_score": m.get("away_score"),   # ← add
+        "home_score": m.get("home_score"),
+        "away_score": m.get("away_score"),
     }
         # Extend streams to avoid duplicates if title already exists
         groups[title]["streams"].extend(streams)
