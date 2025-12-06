@@ -165,19 +165,32 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
             urls.append(url)
 
     return urls if urls else None
-      
 
+def extract_score(detail_html: str) -> tuple[int | None, int | None]:
+    m = re.search(r"document\.querySelector\s*\(\s*['\"]#bts['\"]\s*\)\.innerHTML\s*=\s*'(\d+):(\d+)", detail_html)
+    if m:
+        return int(m.group(1)), int(m.group(2))   # home, away
+    return None, None
+      
 def process_match(match: dict) -> dict:
     try:
         m_html = fetch(match["url"])
         embed = extract_embed_url(m_html)
+
+        # ---------- NEW: grab score ----------
+        home_score, away_score = extract_score(m_html)
+        # -------------------------------------
+
         if not embed:
-            return {**match, "embed": None, "m3u8": None}
+            return {**match, "embed": None, "m3u8": None,
+                    "home_score": home_score, "away_score": away_score}
         embed_html = fetch(embed)
         m3u8_urls = extract_m3u8_from_embed(embed_html)
-        return {**match, "embed": embed, "m3u8": m3u8_urls}
+        return {**match, "embed": embed, "m3u8": m3u8_urls,
+                "home_score": home_score, "away_score": away_score}
     except Exception:
-        return {**match, "embed": None, "m3u8": None}
+        return {**match, "embed": None, "m3u8": None,
+                "home_score": None, "away_score": None}
 # ------------------------------------------------------------------
 # TEAM LOGOS HELPERS  (country-aware)
 # ------------------------------------------------------------------
@@ -301,8 +314,8 @@ def process_matches_to_json(matches_data: list[dict], logos: dict[str, dict]):
             continue
         home, away = (x.strip() for x in title.split(" v ", 1))
         result.append({
-            "home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos)},
-            "away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos)},
+            "home": {"name": home, "logo_url": find_logo_url(home, data["league"], logos), "score": m.get("home_score")},
+            "away": {"name": away, "logo_url": find_logo_url(away, data["league"], logos), "score": m.get("away_score")},
             "stream_urls": data["streams"],
             "date": data["date"],
             "league": data["league"],
