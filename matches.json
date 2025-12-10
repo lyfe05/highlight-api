@@ -1,7 +1,115 @@
 {
-  "last_updated": "2025-12-10T21:51:24.833463",
+  "last_updated": "2025-12-10T22:28:13.115159",
   "matches_count": 16,
   "data": [
+    {
+      "home": {
+        "name": "Real Madrid",
+        "logo_url": "https://football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png",
+        "score": 1
+      },
+      "away": {
+        "name": "Man City",
+        "logo_url": "",
+        "score": 2
+      },
+      "stream_urls": [
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309846/manifest/0.m3u8?token=cXh1ViswYVBUSVVaczJEYnJBdzBzNVF0cStReUI1cngySWRKTXI3UGllRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0Ni8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDUwMDQwMDE4MQ==&keypair=ZVM0bGFFVDhJNmJWQXZkb21CUmdVa3RlczlRbDRVRHNNd3pKQWxjWVl3RT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0Ni86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDUwMDQwMDE4MQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309846/manifest/0.m3u8?token=VWxYb1VKWmtpT0tZYUFEdVhkUHM3YU5NbWtIMTU4WWxqZVZiL3V3SnNtRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0Ni8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTEyOTAwNTkx&keypair=eFhXRzYvVXk3dTZXbzYwaitlaVRuM3FmT3ZBTTlITnFMMDB4Y0J3Vy81az06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0Ni86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTEyOTAwNTkx|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Club Brugge",
+        "logo_url": "https://football-logos.cc/logos/belgium/256x256/club-brugge.78d50f94.png",
+        "score": 0
+      },
+      "away": {
+        "name": "Arsenal",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/arsenal.e5528ede.png",
+        "score": 3
+      },
+      "stream_urls": [
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309845/manifest/0.m3u8?token=RTdMVkh0TCttM3lOU2Rhbm54RzFTZm9NQVllMWxPeFY4YmZPNE52M0FFZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0NS8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTI2MTgyMjA5&keypair=UmNYcHI4WlJRSXVaZTAxUTVnTW9aR09obnp0M0pRamg5RkIxWThoa0Z0UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0NS86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTI2MTgyMjA5|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309845/manifest/0.m3u8?token=RlYxZGhVUDVScGN2bndOZFZvTlNFVFp5dG5HNmpVdXRqNEhRcVc4Y3Njaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0NS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDUzODY4MjYwMA==&keypair=RXZmYXg5NmpicnBZOG5pd3QxOS9JRFN2Tmc1TUp0RWplc00zMVJobVVScz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTg0NS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDUzODY4MjYwMA==|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Bayer Leverkusen",
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/bayer-leverkusen.72f211d8.png",
+        "score": 2
+      },
+      "away": {
+        "name": "Newcastle",
+        "logo_url": "https://football-logos.cc/logos/england/256x256/newcastle.53b65b3d.png",
+        "score": 2
+      },
+      "stream_urls": [
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309847/manifest/0.m3u8?token=YWpJbmZkS3VtMG1KOUE5UVRRWnZ4T3lKSHphMThCWmI0RHQxUXVDWG12az06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg0Ny8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU1MjEyMDUwOA==&keypair=dmpqWWZsQ3RwN2pOVk81cFVHeCtxbHg3UHhoRkpmN1FqTXBnMUtOTEhuTT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg0Ny86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU1MjEyMDUwOA==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309847/manifest/0.m3u8?token=VzhocFBlcWdWbUtrVnM5TTdENllzOXlKY1ZvUXQxUjFGcXlNM2ZmcFJnRT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg0Ny8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU2NTg3MDkyMA==&keypair=RXFtOEZDV0JxZ242MWNNWXdBSlk5ODBVWk9LK1o4UUx0cTRUdHJtSUxLUT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg0Ny86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU2NTg3MDkyMA==|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Benfica",
+        "logo_url": "https://football-logos.cc/logos/portugal/256x256/benfica.3e4d3034.png",
+        "score": 2
+      },
+      "away": {
+        "name": "Napoli",
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/napoli.ee47a50b.png",
+        "score": 0
+      },
+      "stream_urls": [
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309853/manifest/0.m3u8?token=YmNiTTdsN2hZWDUySGV6K29zQTZKOVdLbUNSTTRDVW11N1F3V2xXWjA1QT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1My8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTgxMDI3NjI5&keypair=WTk3eVQ2SUlZeUhQQ3htUmlrUVJzNGFDQVVTWDhxT1BrOGdWbzBhWERtST06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1My86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNTgxMDI3NjI5|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309853/manifest/0.m3u8?token=VXB5SXViMFI3SE5PTXM4VjBaOEQ4WUR2bHJKcy9TZU05Mnd0TVRwQnh6VT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1My8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU5Mzg0MDUxMg==&keypair=Y0JrRDAyWFhNb3BVYzVTUWJVRS8rSzdLMWtuYk9scHcvVVowVkFqMzUyVT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1My86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDU5Mzg0MDUxMg==|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Dortmund",
+        "logo_url": "https://football-logos.cc/logos/germany/256x256/borussia-dortmund.09ffedcd.png",
+        "score": 2
+      },
+      "away": {
+        "name": "Bodo Glimt",
+        "logo_url": "",
+        "score": 2
+      },
+      "stream_urls": [
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309851/manifest/0.m3u8?token=YysrSjRYVFIzeFVURllTc2lRZU94VnR5cXhyQyt4SDV2dzY0MU5Jcml5QT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1MS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYwNzU5MDkzNQ==&keypair=UWtJUHQ5M05HQ3A3aDJrYXltRjgzMXgvdkxKd0pITTIxVU1FWExrS2J6bz06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1MS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYwNzU5MDkzNQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309851/manifest/0.m3u8?token=YkF4bjVRYW8yVEU5c0pOd2REZWFyL2ZWcUNnK2NjQnZHYVprR2FhckdJaz06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1MS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYyMTM0MTM1Nw==&keypair=eHdISS82MXFBa21mU1lCNURYSGZMNGZWd1Z2K0tyTzJid2VQRW9NS1FKcz06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1MS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYyMTM0MTM1Nw==|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Juventus",
+        "logo_url": "https://football-logos.cc/logos/italy/256x256/juventus.a8baf848.png",
+        "score": 2
+      },
+      "away": {
+        "name": "Pafos",
+        "logo_url": "https://football-logos.cc/logos/cyprus/256x256/pafos.8e13950a.png",
+        "score": 0
+      },
+      "stream_urls": [
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309854/manifest/0.m3u8?token=VzdlaXc1dHVneGlTSFptSE4rZ1RXOVlkT3BpOG5nOWwzSEFsNjlZdGZhQT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1NC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYzNTA5MTg4NQ==&keypair=b2dDL2NvQ3ZqOU1CSEdhazJtR1IycHlnY2R2Qzc3cFlOMzFocnZTZ2c3bz06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1NC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDYzNTA5MTg4NQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309854/manifest/0.m3u8?token=ZTBKNHNXY3pMdDBtaFNrVFVnMlVFR1ZCQm9kakRjVng1Y2FZb3I1eEZMWT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1NC8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNjQ4MjE3MTU3&keypair=QmFjVE53S3pIOVBSUUg3QlBXNzdTQ3B1T1diOGFnQ1Q2ZndJR0tMejBzTT06VXBGaWxlcy8yMDI1LzEyLzExLzUxLzMwOTg1NC86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNjQ4MjE3MTU3|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
     {
       "home": {
         "name": "Villarreal",
@@ -14,8 +122,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=NklVRlZacmNIUHlCM0NIaDVJNUN6UDlka2k3ZkozclF0dE1HWUE5eXpaZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODM2OTIxMzM5Ng==&keypair=aEdhZzF0Z3VPa1BES2xnUVg0MnRVbm1aaDlHeFhGeERZY096ZnZjWFR1dz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODM2OTIxMzM5Ng==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=L2F1QzFiZ3Y1MVNocGJ4blZTM0lQYitOdFduUTBHcURoSnJjQU8wOUsvVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODM4NjA5NDI2Mg==&keypair=TWh6VGp3enNQdTlyaVZHcTNRZlRCNVdBSmJlWDFhZVFBa0tuTmRmUXhzVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODM4NjA5NDI2Mg==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=VXZmcS9WNk10alI4RWZwOWhvNkhQWDdHVlhzV1ZLb1grd2hOMW5CaWg3MD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNjYwNDA1MDI3&keypair=WC9xcW45Z3U4bzVKQklGODhBZEhIU3k0dnJtR0ZxODRNMVFJZWtML25SUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNjYwNDA1MDI3|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=R2dtRDBGZ0pvWjVLZWxDdjJVdDhHSGIrNndDa0dTUFpNcTErUHlNVFJUND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY3MjEyNDE0MQ==&keypair=dHRDeHR0SWQrYklXVTc5QmpIZFhHaGkvTGtyandXMmM5Z3ZPWktxcDM4Zz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY3MjEyNDE0MQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -32,8 +140,8 @@
         "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=NUt0NWFJckt4ZkFEVlhsNVQrQVNWQWRaNnRQWFN3STJudHo5Y2JLWVVMTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQwMjE4ODUyMA==&keypair=cmFUR0lubVcyN3I1c3NjcklONTZ2V2tQLzIreTJyWEVvZVlnU2JwYW54az06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQwMjE4ODUyMA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=eWQrYnB0amo4MmJoUGFOOEtxaEpic0lTaVJybjdWODJDZG40enZOaUVLOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQxODEzMTQxMw==&keypair=SmtaTGRMN3NmcVR0eWZrMkRGbzJaQmVLSTRhVEZoZThJcXA0SFlocFloMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQxODEzMTQxMw==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=ODNmT0JsYkdMeGJTb2c1SU5yeFJuZzQzOFppN1B5TFBpUkRjc05SSzBuZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY4Mzg0MzI0MA==&keypair=eXk4KzhVckEvd25hOVFlK0cxWnB5WnI4TUdDMytncU1JTTdNbUtOM2Z1VT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY4Mzg0MzI0MA==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=VzlUZFpNUCtidUw3WEdHcmNvOWc0QURqT2l4TXJwbDJHYzd1ZnZSd3I1bz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY5NTU2MjM1MQ==&keypair=SXlJeGV1VWhPeWx4TU03ZmVOd2pKMkVMTTh5VUFrclpXOUtBMm84SWJWOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDY5NTU2MjM1MQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -50,8 +158,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=V3JqSzFWSjJ5bm9oV0tZd0VyaU5oWURYZ3dMM0RHK1A2RFp5MXB2T3hPND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQzNDY5Njc0NQ==&keypair=N0dKMUhSWVBJUjRhaEUwZkNvWWJrK3FwalNvOVk4cFFGRlQrV3RNeG5YQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQzNDY5Njc0NQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=NjNXeHBBVGhmQWd0U3NFZ3ZTRUtYMTYwRDRWVzlWWWt2aUNDSnpQQW9Xaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ1MTQxNzQ2MA==&keypair=WlNxdHJlTGRyZVpZblF2bWhtN09aS0VLMGhZWFFuQzlCWHZrOWd0Nlo4UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ1MTQxNzQ2MA==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=Q3RIQlBIUXF5NFMzNTFsZHR4b2JnT3JOczVvVWxLaHJRYmNIQ0FmREhJVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDcwNzI4MTQzNQ==&keypair=U0V6L0ZTN1gxYUQyTEE3aGNZWlNYU1dGS0dUNGVtYVlGcG5VR2tBWUt2RT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDcwNzI4MTQzNQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=NEUwamNPRHBhUkhpaDR3aGk1UjFaTjNFWnEvRVhTUlJlSm9vTjlQN2ZXST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDcyMzM3NTY2OQ==&keypair=M2VrMjNENHA4S0RCbjlNM053TXdOMzZPbmdBWG9DZEd2V3k3MkZiRERRTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDcyMzM3NTY2OQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -68,8 +176,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=QkxDam9vb0FsZ0pHeWpDb0xYNjNTQXBxamk2UWdpd0t2NXZNMHNrRlloTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ2NjI2NzY1MQ==&keypair=N0VUQ3o2RFR5NFNYRHI5VFNLWmRYdnMxOWRvM25JL0IrRnF2TE1RQTc2Yz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ2NjI2NzY1MQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=N0tuYmY4NUhqZFZzWDRTTWN1VUllU1BxWXpPNVRCKzJLWVNEOE1oLzVOTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ4MjUxODI1Nw==&keypair=VVlUeWlpdDR0ck5UVHQzbjNaMnlraWNiaE9FL0JHcVo1NllScGdScGpVOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ4MjUxODI1Nw==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=SzBLZVplaVlDdUpFTkEyVHQ3REM5WjE0SkJrYUcxa2RRTnFIQU80MVZOYz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDczNzc1MTEwMw==&keypair=UVhLczVCUjVFZVdmY3pLdzhmQ0ZMLzRGSzUxMCs2NkxzenNlMlUzQWdvaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDczNzc1MTEwMw==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=bzVhM0RkKzAwWHl5UXFBVVBmQlpKcTlCLzF4KzZLMk5aYzEwSHJab00zZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNzUzMDY0MDcw&keypair=Rm1iTENZa0pKazdKSUtBTTNldmN2TkpuYm1xeDRkaWlIaUs5bFFvMjl1VT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNzUzMDY0MDcw|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -86,8 +194,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=cDhmeExEQk5RSDVxbExLM3dCMkZ6N0ROYWoxbElMbmhDY0NFT1I5VVBzOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ5ODc3MjU5OA==&keypair=bUt1d1h2SjZHcW93cms1blBlZ0syd2ZOTkhzaHN4cElKcHlyRlN0Y0ZwUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODQ5ODc3MjU5OA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=dStvNmZiWGxHMGcrSnlJQVpNOTVaKzI4VWk2QklkYVIzZVZmakFyK2FURT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODUxNTE4Mjc1Mw==&keypair=WEF0S1lCT3ZhNE5lZERzNUpFWDNBOU1tdU9oQmN3QUw1aEFXUUNka3hWND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODUxNTE4Mjc1Mw==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=WmRMMG9ZSEpLWkdhdzArRHN4aFY4eHhJSnIxYWg2bkZQZFpMQkpuMzRYZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDc2NTg3NzA0Ng==&keypair=U0paMWxuRlM2ZCtvN3hkTS9iUi8yTS9IWDJUalB4QnBoRWNzSzJLaHgvVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDc2NTg3NzA0Ng==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=ODB6bTFiOGE0Sng5YkZvUDNOTkUwcmovY2dyU1BMWHNxSno3ckZIWG1Icz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDc3OTQ3MTEyMQ==&keypair=SDA0ZUJjRW5nUmUzQ0NqTmVtWjVGdEM2TXRhZHhJNTJXcE54dDFBQnMvaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDc3OTQ3MTEyMQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -104,8 +212,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=QXgxTmtLQnduK2crQlcwRGY2eXY1SmtGVjJJVXJ1U0Vva0NDbkhnQnY2bz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODUzMTU4OTUxOQ==&keypair=NzJJT2QwaTIrWXcvYlR5UlNQOTRVZWhBKzdESFpybFArUlQwUFcwTXdkMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODUzMTU4OTUxOQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=NnBvSDIxSitVTVNLOGtWWGRPOTlzNFprQk1HbDd0QVZTNXhxNGI4UnVuTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU0NjQzNTM0NQ==&keypair=MXhqRkx6S2NWV0lXdnB5R2c4UXhmOFNqOEZSSEFUbVUxcEgwS2J4Z2Z1dz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU0NjQzNTM0NQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=QmFpd1BXam9OcGs0QTV0MHdodnh3Sk80Nk1iUlJRL2ZTOGwxTjRnL0lpTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNzkxOTcxNDk2&keypair=RTFzUkU3WGVYRWZBTDZmODczNmhscE1hMjVEZ2ZjRWdVL01UUVdOK2ltYz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwNzkxOTcxNDk2|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=cTNLa0dIMlpZbXRzVzFtdFFhZkRDVFYyVDlqbkZ3bko4UFZtVHNidHJkdz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODA1NTY1NjQ0&keypair=UDFCaXE3WWUycG0yc0xza1djdFkzWlZaY0ViNVU5ckdhYmdJUlNXcUVwWT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODA1NTY1NjQ0|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -122,8 +230,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=aTdTZ0l6RGRLYmRHRXhDZVdEb0ZyVk9jTktlT09aZkl3aEF6NGdUQTBqST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU2MTQ0MDYwMQ==&keypair=QzlFOEVFTy81SjdsQjdmZkJhK0k0bTZQMmRsRmNwMGVBQUpOUUZPcjRtMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU2MTQ0MDYwMQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=cUx0Q3lMUFEwWmJJUk9EMW9mUlJYc2ZNeVNvNnRsbGFKZzZjbW9SSmpFWT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU3NTY2MjcyMg==&keypair=cWZFNjZDc2pTV2VXbUJ6Y0hhQ0wzMnpBM2NaU0UvVGw4MFkxY1ErbjVoMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU3NTY2MjcyMg==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=YXZxT05MT3BscG40TXRnandONlcwUDNxdzYrcy9DY0I3d3NEZHMvWkxGQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODE4MDY2MDIy&keypair=WWJlZHllNFdKL1dqcUw0b0VqbFhCRzVMOElxcUVGb1owMjQ0NHlraVA5UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODE4MDY2MDIy|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=UnhRU3ZZb3IyWSt3Yksrc0lOUU5qVnlTeHRtckpNU0djSUV1UjhPTzFXQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDgyOTk0MTM3Nw==&keypair=UzZnM0EvakhNQk9Jc2o4MEhxWitQeHVqWVlyK2dSWEN1SXNmOGl0aDNQUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDgyOTk0MTM3Nw==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -140,8 +248,8 @@
         "score": 0
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=Qk5sTXRUVUk0RjJhSDdCSkI0dUEwanV5SUw3MWRsM2t5YXQ0RG5pR2dWbz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU4OTU2OTM5Nw==&keypair=dTZLVmFNMkRYKzBleUErNjZUVzVpam8yWWo2dUtUTjR2K3hxQWhNdVFyUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODU4OTU2OTM5Nw==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=WTloS3gxbjI1K3BINHRGNld1c0VtV3R2V1I1UmhuMDVoYVovVHBxTFBUQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYwMzk0ODI1MQ==&keypair=RjhzSXkxa0xJT3dwOU1TaDZSWStFZVNVYVNaMjBscnMybmp6VkdRclA2cz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYwMzk0ODI1MQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=UzZZdUk1VTJRSDlKYnpYcmI1VlM4ZkdFWVFNb0NCN2tSZUpHOFBVa0tBYz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg1MzUzNTg0MQ==&keypair=QU16Ujd1cmh3ZnNEMk83OC8wd2VkeHBDTld6QVBKZEZabkZ5UzRkMTFXUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg1MzUzNTg0MQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=L3JHZE5CaEkwY2VJSHgyVEdoVXRMRS9Jcnc4RUx1NVBWMkJ6RStGNVFTUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg2NzI4NjI1Mw==&keypair=dFZQUURSOFlGbW5DUnl3NkQ1QlJWN2F5dVVJdjBIemJjOGF5d2ptUG9rQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg2NzI4NjI1Mw==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -158,8 +266,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=aS93SnF5ZEpCN3JMVXlKMUJNRTRRMkYwVjRkR3RXYTFHblVEa2thaHJZcz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYxODc5NTEwNQ==&keypair=SjJYT202ZkhINjRJd1huVVV6RmxrSXZLY3RnYjllTHBWcGNDVHV4bUdjcz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYxODc5NTEwNQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=aEFqeUJ4QVVmZ2p0aGh2RDNaYUl0c3hQejVXbVhRNm5jWUdhdnRiT3ozTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYzMzQ4NDExMg==&keypair=V0FJU3liU0UycElwZzBFZzdqR3hnWVdYYlhXNEYyNTBoNWtXVW4ySmxHcz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODYzMzQ4NDExMg==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls.videohatkora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=OEY0SE9lMTUxODdGdkdnYjQzYTFVOEZoTjhHdFVKZ1MvemdJZkp5UTR4bz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODgwODgwNDA0&keypair=RmFsUjFRdTZOT1lNKzhEc0tQNmFzbFMxR2ZQbGV2NThUZFZRdVo5bllrbz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzLnZpZGVvaGF0a29yYS5jb20lMkY6NjM5MDEwMDYwODgwODgwNDA0|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=Qk9Wb2dWYzFUZmd4ZGROekpIcFFCcm84SEZUTUp2R2I5R3lURTN5VmNpdz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg5NDYzMDgxNw==&keypair=eWZUK2pUSDJqUVlXejgzS1gvbndkalJjTzJUNCthNnRIYnEyZ0txSGwyYz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDg5NDYzMDgxNw==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -176,119 +284,11 @@
         "score": 0
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=ZldJTFQ4aUZHQWJ0YmdpWnN3MXNvS2xkOWg3dzRhVW9aQTUxSjBXT08rTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODY0ODQ4NjcyOA==&keypair=RitGSkgxWHUxNHdFUGdFMmNCalBBYzZwa3RCU2gxQmRTM2x2Zy93NFZGOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODY0ODQ4NjcyOA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=b1pEcDkxc3l5RHRZSnYvVEhsMDZuRUVOVjRSZGpPTUEwYk0ydEJTNDk1az06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODY2MjU1MTg5NQ==&keypair=UUlscld4NVNvOHFQbUs0ci8yd3FNaERJVzB5RFI2czVNMmRZeWZlTHdXQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAzODY2MjU1MTg5NQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=d0F4N1JsQ2hCWGwwL01VUXMxR3J3UHI1VWZXODhiQjUreGdnNjhDWll4VT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDkwODM4MTIyNA==&keypair=ckNUSTZjdEZ5Tk8vMnBDZy9UN1hnMnRjNUFuM3ZBQ0x2WDl2YjJwbVFpUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDkwODM4MTIyNA==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=b25scEtETTFxdlo4RnpzK2NOU1A2ZDlFVFFwZnprVzZLeElodS9Eblk1ST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDkyMTk3NTM4NQ==&keypair=ejJhNVdCc3hTQ2lvQzdoc1AzZ3VudytueHJ5VGV0bGJGb2RuQjd1dW41ND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDA2MDkyMTk3NTM4NQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
-    },
-    {
-      "home": {
-        "name": "Kairat",
-        "logo_url": "https://football-logos.cc/logos/kazakhstan/256x256/kairat.90f40cc4.png",
-        "score": 0
-      },
-      "away": {
-        "name": "Olympiacos",
-        "logo_url": "https://football-logos.cc/logos/greece/256x256/olympiacos.2eaa46ae.png",
-        "score": 1
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=TG9qWG1VVEMwaXErRy9oMDJnU0pJMGZGbDBtTU9ibGNFMW5kMk9DN1lHQT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4Njc2MTQ5NDc3&keypair=cmgyRXl3YlNUT0ZrbXRIaVZNdUNpL0RDNU9IUjlMQ3h5ZlhwSmJtOVlEWT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4Njc2MTQ5NDc3|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=dlhVRnBwVm9iR29QQ3JIb0hpdmxGczhuRHVqV2JpcGVOUUp4V3ZjUTJaYz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NjkwNTI0OTI0&keypair=a09rK1ZlemVYQ1hrL2VZTFE4NTB1Q0wyblJGTHFpelVaSWdvY1l6UDkyWT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NjkwNTI0OTI0|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Yesterday",
-      "league": "Champions Laegue"
-    },
-    {
-      "home": {
-        "name": "Wolves",
-        "logo_url": "",
-        "score": 1
-      },
-      "away": {
-        "name": "Manchester United",
-        "logo_url": "https://football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png",
-        "score": 4
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=bVBlaGRPSTYrQTFLR2J3VndmTTM0YTcxUk4vaVp1aUxkT2ducVJEVytjTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzA1MzcxMTU1&keypair=WW5IOHFidE5RUDJCTFVSMktYb3RwaGxGOU9lbWtjbVVXd0gvNVpvMDB2WT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzA1MzcxMTU1|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=NHE3ajNFaE9YZDBhVnd3dlNaYUlZellGYW40MW5VM045TW9Db2E4WDJnTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzE4OTcwMjAx&keypair=aldxNzNFQzRtKzFGbkF5eWFXc0RGK2ZnaTZudW1KMUl0VHorMGJDSkp4UT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzE4OTcwMjAx|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "Premier League"
-    },
-    {
-      "home": {
-        "name": "Torino",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/torino.a6c78dd6.png",
-        "score": 2
-      },
-      "away": {
-        "name": "AC Milan",
-        "logo_url": "",
-        "score": 3
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=LzBQb0I3Y1VyZE5td1MwbzVyYlQrd3VaRVl0ZFJxc0hxeGE1Vk9iaDlZST06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzMzMzQ1NjUw&keypair=K09LbjRaTVYrVGNuN0JBWTdFNEdJQ21VVThsUW1pNWpsdEVnWDQ0MzVOTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzMzMzQ1NjUw|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=V0xLU3U4dGMyWEMxR2daV0ZuemJQNVFEQ1hyNUZXS01TemU2T0J3b3JWTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzQ4MTk1NDkz&keypair=R1FZSzlQYVZudmJKQWFLNUlxWUx4VHNLdDFGYlRBL0h1bUtHdW5hQ2R5Yz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzQ4MTk1NDkz|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "Serie A"
-    },
-    {
-      "home": {
-        "name": "Pisa",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/pisa.390b80ab.png",
-        "score": 0
-      },
-      "away": {
-        "name": "Parma",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/parma.ca4e3120.png",
-        "score": 1
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=MjJqdEd6OE1qRXZ6dkVLQjZ3Z0JvcnhnNVJOZkkyWTZ0VXI4M0krbWhYdz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzYyNTc1NjMz&keypair=eDJOTytPaVhDRUdwalMwdjhiYzZnTnZtalh6TnFoZHpvTExGVzk2d1BoVT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzYyNTc1NjMz|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=QTQyUmx1bnlKK01pUE1tMGlPb1p5bFk5Rlg2VWZ6L3pkZzQyOVhCaGs1RT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4Nzc3NzMyNDU1&keypair=cWEvbG1nT3ZpYUNOQ3d0TkVFa2EzeEFlNzhJMWNlZHF3a3czbW5pRHVJYz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4Nzc3NzMyNDU1|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "Serie A"
-    },
-    {
-      "home": {
-        "name": "Udinese",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/udinese.a69e0bef.png",
-        "score": 1
-      },
-      "away": {
-        "name": "Genoa",
-        "logo_url": "https://football-logos.cc/logos/italy/256x256/genoa.a5ec9be4.png",
-        "score": 2
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=cEFISjFMUzlKNnBwcVFTbjhVUmxTMEJUYUFHVUx1bEhFNmI4Nnpva3V6Zz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzkyNTgzNjE2&keypair=NTA1QnlFL3Z5WG5nOTJHZGZYa1VzM1pkMVRUNGtvODJvdVdlTGMyT3lTQT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4NzkyNTgzNjE2|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=dzJEdjNpTXdCLzJMVmwyUGlvdEwwT0VjcFNxbVp6Y1pwaUl1NG9WVHNBRT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODA3ODk4Njc3&keypair=S2RWbUl5ZVA0c2kyNGROSkdkM0xidWx5Sm1nZW1ocy9kRWhmNWZLb1pnbz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODA3ODk4Njc3|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "Serie A"
-    },
-    {
-      "home": {
-        "name": "Osasuna",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/osasuna.c82eefd4.png",
-        "score": 2
-      },
-      "away": {
-        "name": "Levante",
-        "logo_url": "https://football-logos.cc/logos/spain/256x256/levante.f0f15e76.png",
-        "score": 0
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=TjkvRlR4WTU2UVlwcTloUWZmcTVyU2FqWEFRTG9BOTM4MnFYS2IvWm5ROD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODIyNzQ3NTMx&keypair=dDY0aGswRzZnSEhHL0liZVh2bUFvNkZ5c3JGaWt5K0NKa3dOaTRNaWQ4dz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODIyNzQ3NTMx|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=Q3NpVHV2UUdicmhBVm9ubXR0ZjFCV2JuNjJVNzFTS3owR2JCcjRKMkdSRT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODM3NTkzMzM2&keypair=M0pPY2hFVEU2NHlpY1B1aU50Ry9iWG1lVjA3Z2tUemtid2xHbzl3MUE3MD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDM4ODM3NTkzMzM2|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "2 days ago",
-      "league": "La Liga"
     }
   ]
 }
