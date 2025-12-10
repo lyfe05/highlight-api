@@ -1,25 +1,7 @@
 {
-  "last_updated": "2025-12-10T20:55:55.905088",
+  "last_updated": "2025-12-10T21:30:54.262529",
   "matches_count": 16,
   "data": [
-    {
-      "home": {
-        "name": "Qarabag",
-        "logo_url": "",
-        "score": 2
-      },
-      "away": {
-        "name": "Ajax",
-        "logo_url": "https://football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png",
-        "score": 4
-      },
-      "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=aUtCYllFS0NSNzRlZ3QrOUVPT1ZSNWVZeHorYmlvcTRrSW1JaTlURzIxRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTExODcyMTMxMQ==&keypair=TURaRVpjelU3LytOMDdqN0QrV0p2d3ZTbkNRNmh6N1JHZnVtVFJZQ3dLbz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTExODcyMTMxMQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=ajdKZG5RWnpWZERVVVdiYTRwNTBUYU9IajFEY2xSRU1UcDg2dGV1S3ZVRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTEzNTEyOTcwNQ==&keypair=TEIwU1NXejA5VUI1S1pYeUcyRWhTb1hIUmZDZjNjOHlmSGtCZWRvK0VQTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTEzNTEyOTcwNQ==|Referer=https://hoofootay4.spotlightmoment.com/"
-      ],
-      "date": "Today",
-      "league": "Champions Laegue"
-    },
     {
       "home": {
         "name": "Villarreal",
@@ -32,8 +14,26 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=WnR0amhhMHoxNXJPazcvN0ZEYnNOSmhST1JTVmhwakZ6QjF3NHRpVzg4RT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE1MTM4MjQ1NQ==&keypair=bHBSSmpmbVZCSGxhYmU2U0dpY2lwWUI5Sk1OeFNUTHlKY0tRNVlSQkQ2cz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE1MTM4MjQ1NQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=Z1pHb1B0Y0JDM2Yra21jNGcwQXZoSGF3RG9tbk82WXp6M3l5ZTFHMzFiND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE2NzAxMzQzNQ==&keypair=Q041VmUza1RxV1dHdUlHVUdkSEh3ZjdKVDd0YThWN0pYa3BEaTlWdTBmOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE2NzAxMzQzNQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=REhSRkRGcnQ0eklDR3laSzFMbEtPTmcyL2Q0M2hsQk1veXpVVlRmbEpETT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjA5ODM2NzcxNg==&keypair=RWh3UlJzWHdCdWJSRDdOR2RQRlhMSGdDR3VLMkcrZHV3R0YrOFZMYWVBTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjA5ODM2NzcxNg==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309833/manifest/0.m3u8?token=NkdNV3VmZ20wTU1la2M1RGg5VG5EOFF4M2hldzRzSjFNd01pK0xlS29DVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjExNDc3ODc1Ng==&keypair=K0JUWDBDelFWUUtNRGlRaEd2L0Jod0dodEY2UjRTVUM1WENKaGNRL0xYND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzMy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjExNDc3ODc1Ng==|Referer=https://hoofootay4.spotlightmoment.com/"
+      ],
+      "date": "Today",
+      "league": "Champions Laegue"
+    },
+    {
+      "home": {
+        "name": "Qarabag",
+        "logo_url": "",
+        "score": 2
+      },
+      "away": {
+        "name": "Ajax",
+        "logo_url": "https://football-logos.cc/logos/netherlands/256x256/ajax.fadc62c4.png",
+        "score": 4
+      },
+      "stream_urls": [
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=enRTVFpGUDVDaGVwMVowSGNQalhSTEVLVXY1QVNqSXptKzBsQ2tQaUlvMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjEzNTg3NDgzMw==&keypair=YiszUGJjN2N4QlYwZ1JmVUxaZU9yd21JTmgzcEtEbFJDVStvRURXYmE4TT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjEzNTg3NDgzMw==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309836/manifest/0.m3u8?token=anpYVC9vRmNENVhPY253eWZyVFc4L3BTSmkzbURscmUvL1NlOHhubW1pOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE1MjYxNDY4Ng==&keypair=RTcvUUNza0Z0bk44WHcwOXBPaU1mcGdWZk4ya1dMa1RKQmh6Z0tyeUM5ST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgzNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE1MjYxNDY4Ng==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Today",
       "league": "Champions Laegue"
@@ -50,8 +50,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=dUVsVWZoWXlHYWpDK0xWR3k1TzBQZzZKQzhqaENqcUxvOHdkR0pRWDRsWT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE4MjYzODg0Nw==&keypair=K3AwV2FyNkNGMG5LNWc4MzRNUEZQdDV5QVhneEczQURmaWVUQnNOZ0F3Zz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE4MjYzODg0Nw==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=cHNlUGVvbnd1Skxvako0emlwb0lLVnB2Z0RCTEZjTGkvd2hEYTN5OW5TVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE5NzAxNjA4NA==&keypair=eTZ0TzRnc3dhQTlpQ0wrUlE4SXpZb3JvT2xQVjlPcXVheFZ1QzM4VE15az06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTE5NzAxNjA4NA==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=TlU5UXRBQnJvZXZ1dXFRSkl4RjdmbTVHd0U1SDJtN0MzMVAxUXdoSjFUZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE2OTMyNDQ4Mw==&keypair=QWxkS1BWZm1MM0ViKytPbkpack9Rd2FJaFZjVXZlenJmM3VoalVRNU94UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE2OTMyNDQ4Mw==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309821/manifest/0.m3u8?token=NEFXSU9TRkhnVlR3WDFnVHR1R3dkS2tsbFFLS3VHam1POU0xY3F2K2Uzaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE4NDk1MTg4NQ==&keypair=NDVxK2R5U1RuakxGYTRTeUZFM0Q5dnBRc2tLbGtNYVYrSFRrKy9jRjhUUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE4NDk1MTg4NQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -68,8 +68,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=NVV3UzNlRDBIdXpqSCtyQVQyL0x1SlNPUnU3MjVaRXE3QXpicGNZQ3cyRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIwOTgyODkzMg==&keypair=SFU5enVwbWVleTVLWWlYYVBlMGpOK0Q3ZENUb2M0QklNNWNHS05nSFd6dz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIwOTgyODkzMg==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=VWNhRGlNRmF1aFhiR2kvRXM1QTVUK0FRZ3dLTGF6T0RHaVBUY0piTi9FZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIyMzExMTU0MQ==&keypair=U3o0QUFuRkF4M2t5ZUdvNWJqWFkxREZSWmM4Nk1YVWU2Wkw5MjJ4TCtnTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIyMzExMTU0MQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=VDVlZkc0S1FtTWVvZFg5Y3laVE85WEY1ZTBJUjVRdmVLWmtmY0ZrRWpEWT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE5ODIzMzY0Ng==&keypair=UkpVYUFOOXlRMmlmMDd5azZDUk1BTXp3bzlRUU9nK21vTlRBMGE4d213bz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjE5ODIzMzY0Ng==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309811/manifest/0.m3u8?token=RmFQeXFwWGxQcThFOGc5Y3lUZFdiNC9pT0JtYy9xQ3k1ZkN5WlhmUjU1cz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIxMDgwNzM2MQ==&keypair=NWI1enZHa3dadjczaVRxZVcrL2NLNXgxa0trblIza3dvc0lHN0dQOFNsZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxMS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIxMDgwNzM2MQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -86,8 +86,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=WnR6UVBkRjZMZDJjOFhGQkhUYkJSVTBIMUR4TVlEYkw3QTh0cTdFajYwZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIzNzQ4ODgxMQ==&keypair=SmlLYVZTbnVJaEIwWU56UHZDYUpqczJKNUFCV1cvVWlDRkY0M1JwUWovST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTIzNzQ4ODgxMQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=NWYyekt4L2pDVFQ2akZUaXdiQzFpY0xETkp6MWV2K1VYU01nVTE1NW92Yz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI1MTM5NTQ5OA==&keypair=amNscjhCRWMvQzJIZ2pNaytqQ1dHOENxNDJObnFaNzM5QWR2Q2VNQmxLND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI1MTM5NTQ5OA==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=QUpteWNBU3BSOE4vSEtySVZQTXFiYngyMmpzY2hRSGVSNElwZURWeUZyZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIyMzIzNzIyNg==&keypair=VzV0dUVKTERGYVE0VWNKeVdsWXNyang1UkNDUFdKYXkzSXRrVmg5UmNsaz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIyMzIzNzIyNg==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309820/manifest/0.m3u8?token=WDZwMU1HV0ZNUlordWk4M1dkMEtIdEdsUmxRMVBjaCs1d2JCN2NVdGVuVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIzNzkyNjczMA==&keypair=QWc3Tm5XUjJrZ045NjdzNFo2NVFIaThKakduYmVpelR4NnBkdGZLb21LZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgyMC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjIzNzkyNjczMA==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -104,8 +104,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=Mk40ZXdIWk55clRmOU5jZUNaTVNBeW9qUVRnSHNQVWFRRDdSc0FqNUxXST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI2NTMwMjU5MA==&keypair=RkN1d2VTN1hIVld5Qmg1dHVwc25ISDdIYXRqUUhENGdrVFZrZ3lydjh5UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI2NTMwMjU5MA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=SDZvRUdSWTZyTjlRWHJDZEtQRStEaVBaVlhLVHIyM0dWMEdzMmhFVVB6QT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI3ODg5NzE3OA==&keypair=aEcraTJQOG96ZnJmSFh0V3duYWw0N0lFN3YrN3huMXpraUpwMjE1YmE3UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI3ODg5NzE3OA==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=dkh6WVlHT1E2UHc4WFJ0b01sd1dSdkE5eEh5dDVodkc3aDFBcEE3cXR1MD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI1MjE0Nzg2OA==&keypair=VDYvS0R3TGlqdzVUNEpSZHVKWXR2UjNudTcrZEtiYllwODlpeDRTdkFBWT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI1MjE0Nzg2OA==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309819/manifest/0.m3u8?token=Tm9BU1hqVk5xeEN6RlpRcWwzd2MraW5xd3ByeVVld3dBb0lUMDFqME94RT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI2NDY0ODUyNQ==&keypair=bGhwUjI5TEp1THpUM3daMSt1SjI0N0xQR1d6NXVlMys2UDQ0b25URDdmZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxOS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI2NDY0ODUyNQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -122,8 +122,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=VGdjMHAxcXBPTjQxNlR3VlNzdGhWdUVpT2xPelFHWmRZQlFmYVF3Qk9Odz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI5MjgwNTU3NA==&keypair=UmhoV2ZzVFdLOWpvY0FxMkdJdXdKL3M1Ly9yc2ZLU2NqTXJQRStlRjRhdz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTI5MjgwNTU3NA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=Qmx4d2NuckdBZUNrMGxudzErZCtOdk1UTEpTc0F2RlpNM3IrRHc3cE9QND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMwNzAyNTEyMg==&keypair=RGZzbk9XTXQwWWhteFBFbjJHMFl4bVVBRU5vQ0o3QVpOTTJzNzF2NlRXST06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMwNzAyNTEyMg==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=M1k5bGVoWEJkM1k3R2pZR2Q2ZVZqV1NQTGNUTlVrTDNLd09zeXNwVVl0OD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI3ODI0MzE4OQ==&keypair=cHR6SGZGWWhCMFVZNHZvMjBpOUxLQy9mT3pDeHp3aUtIOTB5ZlQ1UEVhZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI3ODI0MzE4OQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309814/manifest/0.m3u8?token=WHVxQ0NpR1oyYkVJSVdPZ3RNQy81Z293V0hMc05vd0hxUVd1TjVzcVMrUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI5MzA4OTYwMg==&keypair=NS9iV1VzbVJvYms5N1lKd0R3Qkl2OERlZTRSVy9uRzBYWlBrWFUyNmtZRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNC86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjI5MzA4OTYwMg==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -140,8 +140,8 @@
         "score": 0
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=eWhDUG1WK0llWEljS3piVGt6U2E4Mk5QUWpuWWhpUW5tNmlKVGpNMndRRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMyMTA5MTA0NQ==&keypair=elp1bU9qd0dYSzk5RlFPNzVaNHAydm5JaWZXb3h4OGFjclFndzRlUjVpMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMyMTA5MTA0NQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=bnZsUmEyQjJZOEJTSm1tMTN6SkljKyttamk3UzVhZ3dKZXVpbWFkSTVxRT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMzMzkwNTkzMQ==&keypair=eG5odzRFdm5LdFRIWFZCYW05YWFpeXRLMFhXSWFqb3k0RjczdEFhc1RNbz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTMzMzkwNTkzMQ==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=UUxGbEdRMWwwbk4yc0g0K0t2djg1OThLeS8xLzFDZGFDR3N2cXhia29wQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMwODU2MDk3Ng==&keypair=OVFxd0k4S3NMVlpmNzEzMVVadWdNcVl6VUZaUGFFQUtSQTdBbHFLTlE3Yz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMwODU2MDk3Ng==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309815/manifest/0.m3u8?token=N3pSdzl0enNTcHZWTysyQ1J1ZGhGMDJJcFNWa2pGLytMNENReU4vaGFKQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMyMDkwNzE4Ng==&keypair=NU53MUFvMWZZNkZGY2NOWkl3WklRUjFDdVJuNXc5Q2NIODMvcnloMkYwVT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNS86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMyMDkwNzE4Ng==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -158,8 +158,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=a044WjNLRkJhL2NXVjZNaWJ3TTBmSno0SGRpdGZSeEFNNnBiM0tFV0JMbz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM0Njg3NjU4OQ==&keypair=Y3E4QW5ueUNyVlZKV3F6YUVabldSWnAyTzUxMFhKWDMzeWljL0ZHVmIraz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM0Njg3NjU4OQ==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=NndlVFRyY3NrcnhabTVPUkppVW1iZlVsNmlsMjluQXZ2bForOVM0SHVHQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM2MjAzMzI0OA==&keypair=ZmN0NXkvNzhRU2c3TUxKNENKSU5rejR1Rms3b0xsZlE3UGt0aHd0eGc5Zz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM2MjAzMzI0OA==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=aTAvWkNDekhuQXR1RWVnYTZzdE5OSDZXbGVTZ0JZYkhQYzFpVndqNVErdz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMzMzQwNzY2Mw==&keypair=UWc5TzFTbkpzd0drZS93bUVvMzI2SGNGa2tCY2JUMG03a3JwTFEveGVXZz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjMzMzQwNzY2Mw==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309816/manifest/0.m3u8?token=UG14d1o1WUZXVnlqQUxsdkJtYjRta1FVTDIySURVdURrS3FYV2dweEFPQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM0ODI1MzE5OQ==&keypair=OWJ1Nzk1MXlYRUgxQ09xa01TS0dyR0JyQ2hGd3RRZHViMXJ5N2FtWm05UT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNi86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM0ODI1MzE5OQ==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -176,8 +176,8 @@
         "score": 0
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=dlZWeWkxcmpqSk5mN1J0Y1VxMVNRRjhMeS9qWVVYK1dnWERQRTZTL05VND06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM3Njg4MTEwOA==&keypair=T3N6OU0xRmpQQ0k0K2srcnQ5TDZiek4xNDZqeVBaVThXU1FaRUsrVDZDQT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM3Njg4MTEwOA==|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=Qk9RYVE1RlNubytqeXVLUEtIUGM1Uy9zTFI1NTZjR25nNVlXaEpKMzZpYz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM5MTU3MDY0Mw==&keypair=VXF3KzRTaEdwaXVXWi9UbFVpa1Jlbm1zMk5MNGJpTVVVZ1J3RXo4LysxOD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAwNTM5MTU3MDY0Mw==|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=bnFWeUVmcHluMmlNSnFqM09TOUlvSDRlMTIvLzhQQjZ1Snh4SXlZanZWMD06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM2NTEzNDM5NQ==&keypair=dmdKdEhvWHVkUm0rZEN5SFVuQ1V6NFJjWnNKeFpJc1F4eTNzbE1LZHdPUT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM2NTEzNDM5NQ==|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309817/manifest/0.m3u8?token=V05OQm1Mc2tMK2tiTHZGcXhHZ0JsazdpWWZKbnJyRUFLc01nR3NrZGFQTT06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy8wLm0zdTg6JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM4MTM4ODY3MA==&keypair=QytpLzJwOEVzMDJXa2RIbFBKbld5Mm5PWG55cm8rWDc3VTZZYklmME1ldz06VXBGaWxlcy8yMDI1LzEyLzEwLzUxLzMwOTgxNy86JTJGJTJGaGxzODYuZ29vZm9ya29vcmEuY29tJTJGOjYzOTAxMDAyNjM4MTM4ODY3MA==|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -194,8 +194,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=dW5YTzNseEMyTEZFMUUyTEZLdnIwWXp2RnBqT2RwR05RbGhLMXFRQlF5MD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDA1MzIxMDE3&keypair=eThQL0ZXaEVNQmdkM2lKSS9aNnpEamNySHZZaUZCS0pxUDI3bjhNRlNtVT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDA1MzIxMDE3|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=Q3FRNlRnSTM4Q2FXYnAvUVhBZHpGNVNHZkJONjhNZ2RjWFVnUXdOOFpycz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDE5NTQ0NDcz&keypair=MFRqSEpQSEw5M1krejUvaTVkQjl3T0hLaU4xeUI0M3dWRkNKZmNWSTM4dz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDE5NTQ0NDcz|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=eVFKcSthd1h0TlQvRzRGMmMzUUlQdWdTMytkTDhmQzd4dHVySGV3VmRlZz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2MzkzNzYzMjEx&keypair=ZzE1UkpDcE1SUGR1d3lHTllFb2wzdEUySU9LZlZGc3V0SHVJdC9VbDM1cz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2MzkzNzYzMjEx|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309786/manifest/0.m3u8?token=N2d4Nk9TYXhLVmZia0swNEpGL2NubXpVdTBsd1VPdVlMWHdlc3ZsY3FFUT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDA2Mzk4Njg5&keypair=d2xFeUdNeXNrbFp1Y0NVT0NjVmt1L2NQRXBmNWtqVGdZOFY5S3YvY2pvYz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5Nzg2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDA2Mzk4Njg5|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "Yesterday",
       "league": "Champions Laegue"
@@ -212,8 +212,8 @@
         "score": 4
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=TXpwbjlXdUZoTWVKZzh4UGFBZ0ZpN255MWx1STdnYzltUlBENmpXaXdPcz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDMzNjA4Mjgw&keypair=bWxOVFZDZmd5SXNUWlZkM2lpZXJvbWZVZVBLWjRQYTZQMDBoeDYzSmxmaz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDMzNjA4Mjgw|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=QUZaMi84NGRpeC9xVzNqeDBYNnIxSlVsRmEzZkpYN0diOUxvRU5PbXNyQT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDQ2NzM1NDYz&keypair=aHpoalRkY3pSV2x5RVoyS0czVHM2enZWOWhZVEo0bDJURmpzOTNXN21HOD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDQ2NzM1NDYz|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=dzBzQ2ZlVWdYS1ROYnRvWmNxWUpQOWpEeVpiSjdIdm9lMVVXMnNoUXJKTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDIwNDYzODcw&keypair=OVptdGhNQTZVb2l3Sm5aSmMyTWpBWEtucFBJU1dsV0c3QVBJMGVTQmRiYz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDIwNDYzODcw|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309731/manifest/0.m3u8?token=QklnOStDYVdLRjAvWTJZbUFiT2tPVloxVFhtMCt1V2R2UmFlb2JmUnBBUT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDMyODA4MDky&keypair=RWpKWHdxK1ljNENWd1lCMjlZM0d1SSs1QnhNR2ZUcUl5aFhLTnZ4czFTOD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzMxLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDMyODA4MDky|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Premier League"
@@ -230,8 +230,8 @@
         "score": 3
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=Y2hUeXN6WmwxYlBRN2Z6N2lyNUl1bHUrWnNiTWJIRHM2alhiZmViTENRcz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDYwMTczMzI4&keypair=Y09NbWxZRTl0cEkzVUVYN1ZhaVNiQWFkSlg2akJqanVUbTNGMVVOOGptaz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDYwMTczMzI4|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=MkgxUkRBdnAzbENML0ZtRWcyRXJtQmxadW0yNUd5dVlQYjU0MHlITnUwVT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDczNjExMTky&keypair=d2pWYzlRZEFQU1ptbkdVa0xjNXgvbHFEK3hjeGZWMjBta1NlbWtzclFTYz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDczNjExMTky|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=UXkvUi9DMjhNRmRuVnVTMURKelJqYS9zWUtZcWZsaytqWlpuOVE4aFd0cz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDQ1MzEyNDA5&keypair=WGEyMDVBUW0zY0hULzdpVFRWNDJBTExKTEpHckNBaVpNSkM1c09XTnN1RT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDQ1MzEyNDA5|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309727/manifest/0.m3u8?token=MHZvYkMxZHh6dHkvcERpOEF3V3pBc3FZK0NqY284L09ZeW1TcmdudGZXdz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDU3ODEzMTQw&keypair=aFFhRGNaMkJPVWtONjdsT01pKzNWN0Y5YWcwRFg3U2ZzaDJXR09NOXhMOD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI3LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDU3ODEzMTQw|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Serie A"
@@ -248,8 +248,8 @@
         "score": 1
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=Q0VicDNvdER1NkhvazZmRndja0V0NVVhNk02dWZjUThZVjBEaUtxRHNsbz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDg2MjcwNTg2&keypair=TDlyWjhXY0dSdlcyc0NyOHpyN2dxTHlLRW9yYnlCWjd0bEd3aGQzalpkcz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDg2MjcwNTg2|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=N1BtWDJxMXM1Q3hUNDF1OFpIZlBaVTZjQzU1UmtBS2pZc0cyc013Z2diRT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDk4OTI3Njkw&keypair=QWVsQ0RRWTdBSTU5ejZkVmlWWUhnSFYxOUV2emVlblkxaHB0c1liK3BhTT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NDk4OTI3Njkw|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=VFZ5Q3Bnd0w0a3lDdVR5MkFBM2krZ3BobmN6VTZKYmt0S3lGU1BCS2lOTT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDcxNzIxNjQ1&keypair=MU8yK0NtT2ZzYWZEdTFLNmRhRDFSbFhoR0h3RDhFQVZVRnU4azhzWUVKST06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDcxNzIxNjQ1|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309703/manifest/0.m3u8?token=RUY2VUJYeFVrQ1dUY1Q0TlMwMTRyZVpWOWlhb08rbWE0YXh5ZklBNUZzMD06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDg1MzE1OTA0&keypair=VGRkekRKYnRCd2VTVnErd2FsKzh2VXdhQ0Rkd1gzdklCTXZKMXRRSFhlbz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzAzLzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDg1MzE1OTA0|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Serie A"
@@ -266,8 +266,8 @@
         "score": 2
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=QitCeUx6WSsweDNjVmU3MndSeldoaHFtdDdkWDVKelVRN2h4YldJbzU1OD06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTExMjczNTgy&keypair=UFBQZHlSMnVmalAveXIzbGZCNTkxVDhteTA4Mk54VjJyWUFHdkM4ZU0wND06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTExMjczNTgy|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=UXdRa3d6ZHZhS3BFYmZRTnVKbW9mZFFoNmlMa1lpbUdtUDdsb1dzWThGYz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTI0MjQ1Mjc0&keypair=UXVwa0J2N0lBbUJ2NnNVM1Q1R1NCcEFreVhBaVFwd2Z3VUdCaTB3NW1LOD06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTI0MjQ1Mjc0|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=T3hMNGgrVm1iQVlhTjlqZFZ6bzZ3a09jTXBzRzFiSzREeG1CV3VZT01vND06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDk4NjAyMTM4&keypair=NXdyMWlUZnNvekxkMFlVUjhkcGU5aFdvMWFVRnd3Um5UbUd0ckxFTTF0RT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NDk4NjAyMTM4|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309715/manifest/0.m3u8?token=aDNuM25HSHErdzg5SnNvTzlaQ3J2Tlo5Y0svSWNyeENtcUFUOExzNlc1RT06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTExMjU4OTI2&keypair=dExWcTlOMkQ0TFIvMzFtTHVzNGk0T0RIY1JDWVR1WmV6U2lQTlQ4MzVwdz06VXBGaWxlcy8yMDI1LzEyLzgvNTEvMzA5NzE1LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTExMjU4OTI2|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "Serie A"
@@ -284,8 +284,8 @@
         "score": 0
       },
       "stream_urls": [
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=eDlxUmRVcEE2TmlkYTBCd3JyNzVkUmpLNUcrQlp1eHg5LzhBS0c1dXJtaz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTM4OTM1MDQ2&keypair=MHpGcktXb1VNeTVjdjQ1czZkNU9NMW0zMFE3UXZ5VFZWS0VYQ1MzRG1vTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTM4OTM1MDQ2|Referer=https://hoofootay4.spotlightmoment.com/",
-        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=MzdKckpUdit2aWpkMmp0Wk1Vc21hbVE4b2czNjNNbXZFTFM1bVpVdTB4OD06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTUyMjIxMTQx&keypair=bS9pNWExZFhGYVZ0ZGwzc2VvSVRlcC9xMjFVRHhEM1ZQbWUxZmdpQlFLaz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDA1NTUyMjIxMTQx|Referer=https://hoofootay4.spotlightmoment.com/"
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=Y3pCYkJ1czMwYVNHeitPeE5xUTV1bnNaRWdJbERIbjd5OU9hclNxUE5RYz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTIzNzYxMjUy&keypair=R3ZrYWFmRXM3cVViNHk2KzEreVNjamxwK3dvejRXZHNPWFk4R0ZCUktndz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTIzNzYxMjUy|Referer=https://hoofootay4.spotlightmoment.com/",
+        "https://hls86.gooforkoora.com/upfiles/source/hls/51/309726/manifest/0.m3u8?token=SlVDM2x4UGtWelNHYjhTMlJxQUEvcHR2SFZieWJTRGFYQzFuY0F2SW9hTT06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzAubTN1ODolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTM2NDE3OTg2&keypair=amJPZVN2RGlDZ3ZSaGJYbXhPdWpQNHgxcEgzS1VUNTJ1S1BKQlZHUldzZz06VXBGaWxlcy8yMDI1LzEyLzkvNTEvMzA5NzI2LzolMkYlMkZobHM4Ni5nb29mb3Jrb29yYS5jb20lMkY6NjM5MDEwMDI2NTM2NDE3OTg2|Referer=https://hoofootay4.spotlightmoment.com/"
       ],
       "date": "2 days ago",
       "league": "La Liga"
