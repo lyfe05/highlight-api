@@ -156,10 +156,10 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
 
 def extract_score(detail_html: str) -> tuple[int | None, int | None]:
     """
-    Extracts the score from the JavaScript block
-    document.querySelector('#bts').innerHTML = 'X:Y</br></br>';
-    Returns (home, away) or (None, None)
+    Returns (home_score, away_score) or (None, None) if not found.
+    Tries plain 'X:Y' first, then penalty patterns.
     """
+    # 1. classic score
     m = re.search(
         r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)</br></br>';",
         detail_html,
@@ -168,7 +168,26 @@ def extract_score(detail_html: str) -> tuple[int | None, int | None]:
         home, away = int(m.group(1)), int(m.group(2))
         print(f"        ↳ score found in JS  →  {home}:{away}")
         return home, away
-    print("        ↳ no JS score pattern matched")
+
+    # 2. penalty shoot-out patterns
+    #    examples:  (3) 0:0 (4)   or   0:0 (3:4 pens)
+    pen_m = re.search(
+        r"\((\d+)\)\s*(\d+):(\d+)\s*\((\d+)\)",
+        detail_html,
+    ) or re.search(
+        r"(\d+):(\d+)\s*\((\d+):(\d+)\s*pens?\)",
+        detail_html,
+    )
+    if pen_m:
+        # regular-time score is group 2-3 in first regex, 1-2 in second
+        if len(pen_m.groups()) == 4 and pen_m.group(1).isdigit():
+            home, away = int(pen_m.group(2)), int(pen_m.group(3))
+        else:
+            home, away = int(pen_m.group(1)), int(pen_m.group(2))
+        print(f"        ↳ penalty score (90') →  {home}:{away}  pens: {pen_m.groups()[-2]}:{pen_m.groups()[-1]}")
+        return home, away
+
+    print("        ↳ no score pattern matched")
     return None, None
 
 def process_match(match: dict) -> dict:
