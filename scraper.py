@@ -156,30 +156,26 @@ def extract_m3u8_from_embed(embed_html: str) -> list[str] | None:
 
 def extract_score(detail_html: str) -> tuple[int | None, int | None]:
     """
-    Returns (home_score, away_score) or (None, None) if not found.
-    Tries plain 'X:Y' first, then penalty patterns.
+    Returns (home_score, away_score) or (None, None).
+    Strips HTML tags first, then tries plain + penalty patterns.
     """
-    # 1. classic score
+    # 1. de-tag the tiny fragment that contains the score
+    bare = re.sub(r"<[^>]+>", "", detail_html)
+
+    # 2. classic 90-minute score
     m = re.search(
-        r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)</br></br>';",
-        detail_html,
+        r"document\.querySelector\('#bts'\)\.innerHTML\s*=\s*'(\d+):(\d+)",
+        bare,
     )
     if m:
         home, away = int(m.group(1)), int(m.group(2))
         print(f"        ↳ score found in JS  →  {home}:{away}")
         return home, away
 
-    # 2. penalty shoot-out patterns
-    #    examples:  (3) 0:0 (4)   or   0:0 (3:4 pens)
-    pen_m = re.search(
-        r"\((\d+)\)\s*(\d+):(\d+)\s*\((\d+)\)",
-        detail_html,
-    ) or re.search(
-        r"(\d+):(\d+)\s*\((\d+):(\d+)\s*pens?\)",
-        detail_html,
-    )
+    # 3. penalty shoot-out:  (3) 0:0 (4)   or   0:0 (3:4 pens)
+    pen_m = re.search(r"\((\d+)\)\s*(\d+):(\d+)\s*\((\d+)\)", bare) or \
+            re.search(r"(\d+):(\d+)\s*\((\d+):(\d+)\s*pens?\)", bare)
     if pen_m:
-        # regular-time score is group 2-3 in first regex, 1-2 in second
         if len(pen_m.groups()) == 4 and pen_m.group(1).isdigit():
             home, away = int(pen_m.group(2)), int(pen_m.group(3))
         else:
