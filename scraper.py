@@ -22,7 +22,6 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 LOGOS_URL = ("https://raw.githubusercontent.com/lyfe05/foot_logo/"
              "refs/heads/main/logos.txt")
-MANUAL_LOGOS_FILE = "manual.txt"
 
 # ------------------------------------------------------------------
 # LOW-LEVEL FETCH
@@ -219,46 +218,44 @@ def normalize_team_name(name: str):
     return name
 
 def load_manual_logos():
+    """Load manual logos from GitHub repository file instead of local file"""
+    try:
+        # Try to load from GitHub raw content
+        manual_url = "https://raw.githubusercontent.com/lyfe05/foot_logo/refs/heads/main/manual.txt"
+        txt = requests.get(manual_url, timeout=30).text
+    except Exception:
+        # Fallback to empty manual logos if GitHub file not accessible
+        return {}
+
     manual = {}
+    for line in txt.splitlines():
+        if "=" not in line:
+            continue
 
-    if not os.path.exists(MANUAL_LOGOS_FILE):
-        return manual
+        names, url = line.split("=", 1)
+        url = url.strip()
 
-    with open(MANUAL_LOGOS_FILE, "r", encoding="utf-8") as f:
-        for line in f:
-            if "=" not in line:
-                continue
-
-            names, url = line.split("=", 1)
-            url = url.strip()
-
-            for alias in names.split(","):
-                alias = normalize_team_name(alias.strip())
+        for alias in names.split(","):
+            alias = normalize_team_name(alias.strip())
+            if alias and url:  # Only add if both alias and URL exist
                 manual[alias] = url
 
     return manual
 
-def auto_add_missing_team(team_name: str):
-    """Add logoless team to manual.txt for manual logo assignment"""
-    team = normalize_team_name(team_name)
-    
-    # Ensure manual.txt exists
-    if not os.path.exists(MANUAL_LOGOS_FILE):
-        with open(MANUAL_LOGOS_FILE, "w", encoding="utf-8") as f:
-            f.write("")
-    
-    # Read existing content and check if team already exists
-    with open(MANUAL_LOGOS_FILE, "r", encoding="utf-8") as f:
-        content = f.read().lower()
-        
-    # Only add if team doesn't already exist
-    if team not in content:
-        with open(MANUAL_LOGOS_FILE, "a", encoding="utf-8") as f:
-            f.write(f"{team_name} = \n")
-        print(f"Added '{team_name}' to {MANUAL_LOGOS_FILE} for manual logo assignment")
+def collect_missing_teams(missing_teams: set):
+    """Collect missing teams to report them instead of writing to file"""
+    if missing_teams:
+        print("\n=== MISSING TEAM LOGOS ===")
+        print("Teams without logos found:")
+        for team in sorted(missing_teams):
+            print(f"  - {team}")
+        print("\nAdd these teams to your manual.txt file in the GitHub repository:")
+        print("https://github.com/lyfe05/foot_logo/blob/main/manual.txt")
+        print("Format: Team Name = https://logo-url.com/logo.png")
+        print("==========================\n")
 
-def find_logo_url(team_name, league, logos, manual_logos):
-    """Find logo URL for a team, add to manual.txt if logoless"""
+def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
+    """Find logo URL for a team, track missing teams for reporting"""
     team = normalize_team_name(team_name)
     
     # Try exact filename match first
@@ -276,8 +273,8 @@ def find_logo_url(team_name, league, logos, manual_logos):
     if team in manual_logos:
         return manual_logos[team]
     
-    # No logo found - add to manual.txt
-    auto_add_missing_team(team_name)
+    # No logo found - add to missing teams set for reporting
+    missing_teams.add(team_name)
     return ""
 
 # ------------------------------------------------------------------
@@ -286,6 +283,7 @@ def find_logo_url(team_name, league, logos, manual_logos):
 def process_matches_to_json(matches_data, logos, manual_logos):
     groups = {}
     referer = "|Referer=https://hoofootay4.spotlightmoment.com/"
+    missing_teams = set()  # Track missing teams
 
     for m in matches_data:
         if not m.get("m3u8"):
@@ -322,12 +320,12 @@ def process_matches_to_json(matches_data, logos, manual_logos):
         result.append({
             "home": {
                 "name": home,
-                "logo_url": find_logo_url(home, data["league"], logos, manual_logos),
+                "logo_url": find_logo_url(home, data["league"], logos, manual_logos, missing_teams),
                 "score": data["home_score"],
             },
             "away": {
                 "name": away,
-                "logo_url": find_logo_url(away, data["league"], logos, manual_logos),
+                "logo_url": find_logo_url(away, data["league"], logos, manual_logos, missing_teams),
                 "score": data["away_score"],
             },
             "stream_urls": data["streams"],
@@ -335,6 +333,9 @@ def process_matches_to_json(matches_data, logos, manual_logos):
             "league": data["league"],
         })
 
+    # Report missing teams
+    collect_missing_teams(missing_teams)
+    
     return result
 
 # ------------------------------------------------------------------
