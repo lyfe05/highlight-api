@@ -239,31 +239,44 @@ def load_manual_logos():
     return manual
 
 def auto_add_missing_team(team_name: str):
+    """Add logoless team to manual.txt for manual logo assignment"""
     team = normalize_team_name(team_name)
-
+    
+    # Ensure manual.txt exists
     if not os.path.exists(MANUAL_LOGOS_FILE):
-        open(MANUAL_LOGOS_FILE, "w").close()
-
-    with open(MANUAL_LOGOS_FILE, "r+", encoding="utf-8") as f:
+        with open(MANUAL_LOGOS_FILE, "w", encoding="utf-8") as f:
+            f.write("")
+    
+    # Read existing content and check if team already exists
+    with open(MANUAL_LOGOS_FILE, "r", encoding="utf-8") as f:
         content = f.read().lower()
-        if team not in content:
-            f.write(f"\n{team} = ")
+        
+    # Only add if team doesn't already exist
+    if team not in content:
+        with open(MANUAL_LOGOS_FILE, "a", encoding="utf-8") as f:
+            f.write(f"{team_name} = \n")
+        print(f"Added '{team_name}' to {MANUAL_LOGOS_FILE} for manual logo assignment")
 
 def find_logo_url(team_name, league, logos, manual_logos):
+    """Find logo URL for a team, add to manual.txt if logoless"""
     team = normalize_team_name(team_name)
-
+    
+    # Try exact filename match first
     exact = team.replace(" ", "-")
     if exact in logos:
         return logos[exact]["url"]
-
+    
+    # Try word subset matching
     words = set(team.split())
     for data in logos.values():
         if words.issubset(set(data["name_clean"].split())):
             return data["url"]
-
+    
+    # Check manual logos
     if team in manual_logos:
         return manual_logos[team]
-
+    
+    # No logo found - add to manual.txt
     auto_add_missing_team(team_name)
     return ""
 
