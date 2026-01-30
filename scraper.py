@@ -16,7 +16,8 @@ import json
 import requests
 import os
 from datetime import datetime
-import difflib  # Added for fuzzy matching
+import difflib
+import unicodedata
 
 BASE = "https://hoofoot.com/"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -185,8 +186,16 @@ def process_match(match: dict) -> dict:
         return {**match, "embed": None, "m3u8": None, "home_score": None, "away_score": None}
 
 # ------------------------------------------------------------------
-# LOGO HANDLING
+# LOGO HANDLING (IMPROVED)
 # ------------------------------------------------------------------
+def normalize_string(s: str) -> str:
+    """Aggressive string normalization: strip accents, lower, alpha-only."""
+    if not s:
+        return ""
+    # Normalize unicode characters (e.g., é -> e, ö -> o)
+    s = unicodedata.normalize('NFD', s).encode('ascii', 'ignore').decode("utf-8")
+    return s.lower().strip()
+
 def fetch_and_parse_logos():
     try:
         txt = requests.get(LOGOS_URL, timeout=30).text
@@ -203,117 +212,133 @@ def fetch_and_parse_logos():
             continue
 
         desc = desc_m.group(1).strip()
-        name_clean = re.sub(r"\([^)]*\)", "", desc).strip().lower()
+        # Clean the description for better matching
+        # Remove text in parentheses (Country) and "logo"
+        clean_desc = re.sub(r"\([^)]*\)", "", desc) 
+        clean_desc = re.sub(r"\s+logo$", "", clean_desc, flags=re.IGNORECASE)
+        
+        search_key = normalize_string(clean_desc)
+        filename = fname_m.group(1).strip()
 
-        logos[fname_m.group(1).strip()] = {
+        logos[filename] = {
             "url": url_m.group(1).strip(),
-            "name_clean": name_clean
+            "search_key": search_key,
+            "filename": filename
         }
 
     return logos
 
 def normalize_team_name(name: str):
-    name = name.lower()
-    name = re.sub(r"[^\w\s]", "", name)
-    name = re.sub(r"\s+", " ", name).strip()
-    return name
+    return normalize_string(name)
 
 def load_manual_logos():
-    """Load manual logos from GitHub repository file instead of local file"""
     try:
-        # Try to load from GitHub raw content
         manual_url = "https://raw.githubusercontent.com/lyfe05/foot_logo/refs/heads/main/manual.txt"
         txt = requests.get(manual_url, timeout=30).text
     except Exception:
-        # Fallback to empty manual logos if GitHub file not accessible
         return {}
 
     manual = {}
     for line in txt.splitlines():
         if "=" not in line:
             continue
-
         names, url = line.split("=", 1)
         url = url.strip()
-
         for alias in names.split(","):
             alias = normalize_team_name(alias.strip())
-            if alias and url:  # Only add if both alias and URL exist
+            if alias and url:
                 manual[alias] = url
-
     return manual
 
 def collect_missing_teams(missing_teams: set):
-    """Collect missing teams to report them instead of writing to file"""
     if missing_teams:
         print("\n=== MISSING TEAM LOGOS ===")
         print("Teams without logos found:")
         for team in sorted(missing_teams):
             print(f"  - {team}")
-        print("\nAdd these teams to your manual.txt file in the GitHub repository:")
-        print("https://github.com/lyfe05/foot_logo/blob/main/manual.txt")
-        print("Format: Team Name = https://logo-url.com/logo.png")
         print("==========================\n")
 
 def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
-    """Find logo URL with fuzzy matching, accent handling, and prefix removal."""
-    # 1. Normalize basic characters (lowercase, strip)
-    team = normalize_team_name(team_name)
+    """Robust logo finder using accent stripping and fuzzy matching."""
     
-    # 2. Check Manual Overrides first
-    if team in manual_logos:
-        return manual_logos[team]
-
-    # 3. Smart Prefix/Suffix Stripper
-    # Handles "SC Freiburg", "Malmo FF", "FC Utrecht", etc.
-    def clean_name(name):
-        # Add any common football prefixes/suffixes here
-        junk = ["fc ", "fk ", "sc ", " sv", " ff", " as", " cf", "sk "]
-        cleaned = name
-        for j in junk:
-            if cleaned.startswith(j):
-                cleaned = cleaned[len(j):]
-            if cleaned.endswith(j):
-                cleaned = cleaned[:-len(j)]
-        return cleaned.strip()
-
-    team_core = clean_name(team)
-
-    # 4. Strategy A: Exact & Core Key Match
-    # Checks for "malmo-ff" AND "malmo" in your logos dictionary keys
-    candidates = [team.replace(" ", "-"), team_core.replace(" ", "-")]
-    for cand in candidates:
-        if cand in logos:
-            return logos[cand]["url"]
+    # 1. Clean the team name (strip accents, lower case)
+    team_clean = normalize_team_name(team_name)
     
-    # 5. Strategy B: Substring & Reverse Matching
-    # Handles "Lyon" (Team) vs "Olympique Lyonnais" (Logo)
-    for logo_key, data in logos.items():
-        logo_clean = data["name_clean"]
+    # 2. Check Manual List
+    if team_clean in manual_logos:
+        return manual_logos[team_clean]
+
+    # 3. Create a "Core" name by stripping common suffixes
+    # This handles "Malmo FF" -> "malmo", "Ferencvarosi TC" -> "ferencvarosi"
+    def get_core_name(name):
+        # Remove common suffixes/prefixes (with space boundary)
+        garbage = [" fc", " fk", " sc", " ff", " tc", " as", " cf", " sv", " sk", " sp", " cd"]
+        core = name
+        for g in garbage:
+            if core.endswith(g):
+                core = core[:-len(g)]
+            if core.startswith(g.strip() + " "):
+                core = core[len(g.strip())+1:]
+        return core.strip()
+
+    team_core = get_core_name(team_clean)
+
+    # 4. Direct Lookup Strategies
+    # Check A: Exact match on filename (e.g. "malmo-ff")
+    fname_guess = team_clean.replace(" ", "-")
+    if fname_guess in logos:
+        return logos[fname_guess]["url"]
+
+    # Check B: Core match on filename (e.g. "malmo")
+    core_guess = team_core.replace(" ", "-")
+    if core_guess in logos:
+        return logos[core_guess]["url"]
+
+    # 5. Search in Description Keys
+    # We iterate through all logos and check if our team name matches the logo description
+    
+    # Helper to calculate similarity
+    candidates = []
+    
+    for filename, data in logos.items():
+        logo_key = data["search_key"]
         
-        # Check if team name is inside logo name (e.g. "Lyon" in "Olympique Lyonnais")
-        # We use team_core to match "Freiburg" in "SC Freiburg"
-        if team_core in logo_clean:
+        # Exact match of core names (strongest signal)
+        if team_core == logo_key:
             return data["url"]
             
-        # Check if logo name is inside team name (e.g. "Chelsea" in "Chelsea FC")
-        if logo_clean in team_core:
-            return data["url"]
+        # Substring match: "ferencvaros" in "ferencvarosi tc"
+        # We enforce a length check to avoid matching short words like "fc"
+        if len(team_core) > 3:
+            if team_core in logo_key or logo_key in team_core:
+                # Prioritize this, but keep looking for exact matches? 
+                # Actually, usually safe to return immediately if significant overlap
+                return data["url"]
+        
+        candidates.append(logo_key)
 
-    # 6. Strategy C: Fuzzy Matching (The "Magic" Fix)
-    # Handles accents and spelling diffs: "Qarabag" -> "Qarabağ", "Ferencvaros" -> "Ferencvárosi"
-    logo_names = [data["name_clean"] for data in logos.values()]
-    # cutoff=0.8 means 80% similarity required. 
-    matches = difflib.get_close_matches(team_core, logo_names, n=1, cutoff=0.8)
+    # 6. Fuzzy Matching (Last Resort)
+    # difflib uses Gestalt Pattern Matching. 
+    # We match against the 'search_key' (description) of the logos.
     
+    # Attempt 1: Match against team_core (e.g. "malmo")
+    matches = difflib.get_close_matches(team_core, candidates, n=1, cutoff=0.8)
     if matches:
-        best_match = matches[0]
-        # Retrieve the URL for this match
+        best_key = matches[0]
+        # Find which logo has this key
         for data in logos.values():
-            if data["name_clean"] == best_match:
+            if data["search_key"] == best_key:
                 return data["url"]
 
-    # If all fails, mark as missing
+    # Attempt 2: Match against full team name (e.g. "malmo ff")
+    # Sometimes the logo is "malmo ff" and core stripping hurt us
+    matches_full = difflib.get_close_matches(team_clean, candidates, n=1, cutoff=0.8)
+    if matches_full:
+        best_key = matches_full[0]
+        for data in logos.values():
+            if data["search_key"] == best_key:
+                return data["url"]
+
     missing_teams.add(team_name)
     return ""
 
@@ -323,7 +348,7 @@ def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
 def process_matches_to_json(matches_data, logos, manual_logos):
     groups = {}
     referer = "|Referer=https://hoofootay4.spotlightmoment.com/"
-    missing_teams = set()  # Track missing teams
+    missing_teams = set()
 
     for m in matches_data:
         if not m.get("m3u8"):
@@ -373,7 +398,6 @@ def process_matches_to_json(matches_data, logos, manual_logos):
             "league": data["league"],
         })
 
-    # Report missing teams
     collect_missing_teams(missing_teams)
     
     return result
