@@ -16,6 +16,7 @@ import json
 import requests
 import os
 from datetime import datetime
+import difflib  # Added for fuzzy matching
 
 BASE = "https://hoofoot.com/"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -255,25 +256,64 @@ def collect_missing_teams(missing_teams: set):
         print("==========================\n")
 
 def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
-    """Find logo URL for a team, track missing teams for reporting"""
+    """Find logo URL with fuzzy matching, accent handling, and prefix removal."""
+    # 1. Normalize basic characters (lowercase, strip)
     team = normalize_team_name(team_name)
     
-    # Try exact filename match first
-    exact = team.replace(" ", "-")
-    if exact in logos:
-        return logos[exact]["url"]
-    
-    # Try word subset matching
-    words = set(team.split())
-    for data in logos.values():
-        if words.issubset(set(data["name_clean"].split())):
-            return data["url"]
-    
-    # Check manual logos
+    # 2. Check Manual Overrides first
     if team in manual_logos:
         return manual_logos[team]
+
+    # 3. Smart Prefix/Suffix Stripper
+    # Handles "SC Freiburg", "Malmo FF", "FC Utrecht", etc.
+    def clean_name(name):
+        # Add any common football prefixes/suffixes here
+        junk = ["fc ", "fk ", "sc ", " sv", " ff", " as", " cf", "sk "]
+        cleaned = name
+        for j in junk:
+            if cleaned.startswith(j):
+                cleaned = cleaned[len(j):]
+            if cleaned.endswith(j):
+                cleaned = cleaned[:-len(j)]
+        return cleaned.strip()
+
+    team_core = clean_name(team)
+
+    # 4. Strategy A: Exact & Core Key Match
+    # Checks for "malmo-ff" AND "malmo" in your logos dictionary keys
+    candidates = [team.replace(" ", "-"), team_core.replace(" ", "-")]
+    for cand in candidates:
+        if cand in logos:
+            return logos[cand]["url"]
     
-    # No logo found - add to missing teams set for reporting
+    # 5. Strategy B: Substring & Reverse Matching
+    # Handles "Lyon" (Team) vs "Olympique Lyonnais" (Logo)
+    for logo_key, data in logos.items():
+        logo_clean = data["name_clean"]
+        
+        # Check if team name is inside logo name (e.g. "Lyon" in "Olympique Lyonnais")
+        # We use team_core to match "Freiburg" in "SC Freiburg"
+        if team_core in logo_clean:
+            return data["url"]
+            
+        # Check if logo name is inside team name (e.g. "Chelsea" in "Chelsea FC")
+        if logo_clean in team_core:
+            return data["url"]
+
+    # 6. Strategy C: Fuzzy Matching (The "Magic" Fix)
+    # Handles accents and spelling diffs: "Qarabag" -> "Qarabağ", "Ferencvaros" -> "Ferencvárosi"
+    logo_names = [data["name_clean"] for data in logos.values()]
+    # cutoff=0.8 means 80% similarity required. 
+    matches = difflib.get_close_matches(team_core, logo_names, n=1, cutoff=0.8)
+    
+    if matches:
+        best_match = matches[0]
+        # Retrieve the URL for this match
+        for data in logos.values():
+            if data["name_clean"] == best_match:
+                return data["url"]
+
+    # If all fails, mark as missing
     missing_teams.add(team_name)
     return ""
 
