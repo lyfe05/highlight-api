@@ -26,17 +26,33 @@ LOGOS_URL = ("https://raw.githubusercontent.com/lyfe05/foot_logo/"
              "refs/heads/main/logos.txt")
 
 # ------------------------------------------------------------------
-# INTERNAL ALIAS FIXES (Add stubborn abbreviations here)
+# 1. KNOWN ALIASES (The Fix for Wolves, Gladbach, etc.)
 # ------------------------------------------------------------------
+# This dictionary maps the "Match Feed Name" -> "Logo File Name"
 KNOWN_ALIASES = {
+    # England
     "wolves": "wolverhampton wanderers",
+    "spurs": "tottenham hotspur",
+    "man utd": "manchester united",
+    "man city": "manchester city",
+    
+    # Germany
     "m'gladbach": "borussia monchengladbach",
     "mgladbach": "borussia monchengladbach",
-    "monchengladbach": "borussia monchengladbach",
     "gladbach": "borussia monchengladbach",
+    "mainz": "mainz 05",
+    "schalke": "schalke 04",
+    
+    # Rest of Europe
     "qarabag": "qarabag fk",
     "malmo ff": "malmo",
     "ferencvaros": "ferencvarosi",
+    "psg": "paris saint-germain",
+    "sporting cp": "sporting",
+    "ac milan": "milan",
+    "inter milan": "inter",
+    "inter": "inter",
+    "atm": "atletico madrid"
 }
 
 # ------------------------------------------------------------------
@@ -132,7 +148,7 @@ def find_matches_from_html(html: str):
     return matches
 
 # ------------------------------------------------------------------
-# STREAM EXTRACTION (UNCHANGED)
+# STREAM EXTRACTION
 # ------------------------------------------------------------------
 def extract_embed_url(match_html: str) -> str | None:
     soup = BeautifulSoup(match_html, "html.parser")
@@ -208,7 +224,10 @@ def normalize_string(s: str) -> str:
         return ""
     # Normalize unicode characters (e.g., é -> e, ö -> o)
     s = unicodedata.normalize('NFD', s).encode('ascii', 'ignore').decode("utf-8")
-    return s.lower().strip()
+    # Convert to lower case and strip special chars (keep spaces)
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    return s.strip()
 
 def fetch_and_parse_logos():
     try:
@@ -226,7 +245,7 @@ def fetch_and_parse_logos():
             continue
 
         desc = desc_m.group(1).strip()
-        # Clean the description for better matching
+        # Clean the description: remove country in parens, remove "logo" at end
         clean_desc = re.sub(r"\([^)]*\)", "", desc) 
         clean_desc = re.sub(r"\s+logo$", "", clean_desc, flags=re.IGNORECASE)
         
@@ -274,23 +293,24 @@ def collect_missing_teams(missing_teams: set):
 def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
     """Robust logo finder using internal aliases, accent stripping and fuzzy matching."""
     
-    # 1. Normalize
-    team_clean = normalize_team_name(team_name)
+    # 1. Normalize the incoming team name
+    raw_normalized = normalize_string(team_name)
     
-    # 2. Check Manual List (GitHub)
-    if team_clean in manual_logos:
-        return manual_logos[team_clean]
+    # 2. Check Manual List (GitHub) matches first
+    if raw_normalized in manual_logos:
+        return manual_logos[raw_normalized]
 
-    # 3. Check INTERNAL ALIASES (Script Hardcoded Fixes)
-    if team_clean in KNOWN_ALIASES:
-        # Translate "wolves" -> "wolverhampton wanderers"
-        # Then search for that translated name
-        team_clean = normalize_team_name(KNOWN_ALIASES[team_clean])
-        # Re-check manual list with the alias just in case
-        if team_clean in manual_logos:
-            return manual_logos[team_clean]
+    # 3. Check INTERNAL ALIASES (This fixes Wolves, M'gladbach, etc.)
+    # We check if the raw normalized name (e.g. "wolves") is in our list
+    target_search_name = raw_normalized
+    if raw_normalized in KNOWN_ALIASES:
+        # If found, we swap "wolves" for "wolverhampton wanderers"
+        target_search_name = normalize_string(KNOWN_ALIASES[raw_normalized])
+        # Re-check manual list with the new alias just in case
+        if target_search_name in manual_logos:
+            return manual_logos[target_search_name]
 
-    # 4. Create a "Core" name by stripping common suffixes
+    # 4. Define Helper to get "Core" name (strip common prefixes/suffixes)
     def get_core_name(name):
         garbage = [" fc", " fk", " sc", " ff", " tc", " as", " cf", " sv", " sk", " sp", " cd"]
         core = name
@@ -301,11 +321,11 @@ def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
                 core = core[len(g.strip())+1:]
         return core.strip()
 
-    team_core = get_core_name(team_clean)
+    team_core = get_core_name(target_search_name)
 
-    # 5. Direct Lookup Strategies
-    # Check A: Exact match on filename
-    fname_guess = team_clean.replace(" ", "-")
+    # 5. Direct Lookup Strategies in Logos Dictionary
+    # Check A: Exact match on filename (e.g. "wolverhampton-wanderers")
+    fname_guess = target_search_name.replace(" ", "-")
     if fname_guess in logos:
         return logos[fname_guess]["url"]
 
@@ -314,7 +334,7 @@ def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
     if core_guess in logos:
         return logos[core_guess]["url"]
 
-    # 6. Search in Description Keys
+    # 6. Search in Description Keys (The robust search)
     candidates = []
     
     for filename, data in logos.items():
@@ -327,28 +347,32 @@ def find_logo_url(team_name, league, logos, manual_logos, missing_teams: set):
         # Substring match: "ferencvaros" in "ferencvarosi tc"
         # We enforce a length check to avoid matching short words like "fc"
         if len(team_core) > 3:
-            if team_core in logo_key or logo_key in team_core:
+            if team_core in logo_key:
                 return data["url"]
         
         candidates.append(logo_key)
 
     # 7. Fuzzy Matching (Last Resort)
-    # Attempt 1: Match against team_core (e.g. "malmo")
-    matches = difflib.get_close_matches(team_core, candidates, n=1, cutoff=0.75)
+    # We match against the 'target_search_name' (e.g. "wolverhampton wanderers")
+    # NOT the original "wolves", because "wolves" is too short/different.
+    
+    # Attempt 1: Fuzzy match the full alias name
+    matches = difflib.get_close_matches(target_search_name, candidates, n=1, cutoff=0.85)
     if matches:
         best_key = matches[0]
         for data in logos.values():
             if data["search_key"] == best_key:
                 return data["url"]
 
-    # Attempt 2: Match against full team name
-    matches_full = difflib.get_close_matches(team_clean, candidates, n=1, cutoff=0.75)
-    if matches_full:
-        best_key = matches_full[0]
+    # Attempt 2: Fuzzy match the core name
+    matches_core = difflib.get_close_matches(team_core, candidates, n=1, cutoff=0.85)
+    if matches_core:
+        best_key = matches_core[0]
         for data in logos.values():
             if data["search_key"] == best_key:
                 return data["url"]
 
+    # If all fails, mark as missing
     missing_teams.add(team_name)
     return ""
 
